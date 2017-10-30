@@ -1,0 +1,339 @@
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+          Version H-2013.03-SP5 for RHEL64 -- Oct 18, 2013
+               Copyright (c) 1988-2013 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Initializing...
+#---- making a list of register using reg_na (regname) and reg_lower_bound and reg_up_bound
+proc make-reg_l {reg_na reg_lower_bound reg_up_bound} {
+    set reg_l {}
+    set num_l {}
+    for {set a $reg_lower_bound} {$a < $reg_up_bound} {incr a} {
+        lappend num_l $a
+    }
+    foreach el $num_l {
+        #append concat_res reg_a_reg $el 
+        lappend reg_l  "${reg_na}\[${el}\]"
+        #reg_a_reg[${el}]
+    }
+    set reg_l_flattened [join $reg_l]
+    return $reg_l_flattened
+}
+set BWAC 1
+1
+#set WDIR /home/unga/sglee/Share/ac_hw_syn
+set WDIR "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn
+#~/behzad_local/verilog_files/synthesis
+set RTLDIR  "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+#~/behzad_local/verilog_files/apx_operators/int_ops_apx
+set REPORTS_DIR ${WDIR}/reports
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/reports
+set DESIGN_NAME config_int_add_clkGate
+config_int_add_clkGate
+set RESULTS_DIR ${WDIR}/results
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results
+set DCRM_FINAL_TIMING_REPORT timing.rpt
+timing.rpt
+set DCRM_FINAL_AREA_REPORT area.rpt
+area.rpt
+set DCRM_FINAL_POWER_REPORT power.rpt
+power.rpt
+set search_path "${RTLDIR}"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+#/* Top-level Module     */
+set my_toplevel ${DESIGN_NAME}
+config_int_add_clkGate
+#set lib_dir /usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib
+set lib_dir_1 "/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib"
+/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib
+set lib_dir_2 "/home/polaris/behzad/behzad_local/verilog_files/libraries"
+/home/polaris/behzad/behzad_local/verilog_files/libraries
+set lib_dir_3 "/home/polaris/behzad/behzad_local/verilog_files/libraries/FreePDK45/osu_soc/lib/files"
+/home/polaris/behzad/behzad_local/verilog_files/libraries/FreePDK45/osu_soc/lib/files
+#--- NOTE: I had to include *_rvt as well, cause ow the compiler was erroring out
+set search_path [concat  $search_path $lib_dir_1/stdcell_rvt/db_nldm $lib_dir_1/stdcell_lvt/db_nldm $lib_dir_2/germany_NanGate/db $lib_dir_3]
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src /usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_rvt/db_nldm /usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_lvt/db_nldm /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db /home/polaris/behzad/behzad_local/verilog_files/libraries/FreePDK45/osu_soc/lib/files
+#set search_path [concat $search_path $lib_dir_2/germany_NanGate/db]
+set design_dir_addr "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+#source ${WDIR}/lib_list.txt
+set compile_delete_unloaded_sequential_cells false
+false
+set compile_seqmap_propagate_constants false
+false
+set compile_enable_register_merging false
+false
+set compile_seqmap_enable_output_inversion false
+false
+set AC_NAME config_int_add_clkGate
+config_int_add_clkGate
+#--- specifying libraries 
+#set std_library "saed32rvt_tt1p05v25c.db"
+#set std_library "saed32lvt_tt1p05v25c.db"; #the best(amon lvts)
+set  std_library  "noAging.db" 
+noAging.db
+#set std_library "gscl45nm.db"; #PDK45 themselves
+set target_library "$std_library" 
+noAging.db
+set link_library "$std_library" 
+noAging.db
+define_design_lib WORK -path ./WORK
+1
+set verilogout_show_unconnected_pins "true"
+true
+#---- Parameters
+#DATA_PATH_WIDTH should most likely stay 32
+set DATA_PATH_WIDTH 32
+32
+#--- numebr of apx bits
+set CLKGATED_BITWIDTH 16    
+16
+set clk_period .270
+.270
+set apx_optimal 0
+0
+#for { set CLKGATED_BITWIDTH 0}  {$CLKGATED_BITWIDTH < 1} {incr CLKGATED_BITWIDTH 1} {
+#--- read the design 
+analyze -format verilog [list ${design_dir_addr}/config_int_add_clkGate.v ${design_dir_addr}/acc_int_add.v]
+Running PRESTO HDLC
+Compiling source file /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/config_int_add_clkGate.v
+Compiling source file /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/acc_int_add.v
+Presto compilation completed successfully.
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+1
+elaborate $my_toplevel -parameters $DATA_PATH_WIDTH,$CLKGATED_BITWIDTH
+Loading db file '/usr/local/packages/synopsys_2013/synH/libraries/syn/gtech.db'
+Loading db file '/usr/local/packages/synopsys_2013/synH/libraries/syn/standard.sldb'
+  Loading link library 'typical'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine config_int_add_clkGate_DATA_PATH_BITWIDTH32_CLKGATED_BITWIDTH16 line 36 in file
+		'/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/config_int_add_clkGate.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   reg_en_reg_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     rst_reg_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine config_int_add_clkGate_DATA_PATH_BITWIDTH32_CLKGATED_BITWIDTH16 line 51 in file
+		'/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/config_int_add_clkGate.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      reg_a_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      reg_b_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine config_int_add_clkGate_DATA_PATH_BITWIDTH32_CLKGATED_BITWIDTH16 line 65 in file
+		'/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/config_int_add_clkGate.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      reg_a_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      reg_b_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine config_int_add_clkGate_DATA_PATH_BITWIDTH32_CLKGATED_BITWIDTH16 line 80 in file
+		'/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/config_int_add_clkGate.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      reg_c_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine config_int_add_clkGate_DATA_PATH_BITWIDTH32_CLKGATED_BITWIDTH16 line 92 in file
+		'/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/config_int_add_clkGate.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      reg_c_reg      | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'config_int_add_clkGate_DATA_PATH_BITWIDTH32_CLKGATED_BITWIDTH16'.
+Information: Building the design 'acc_int_add' instantiated from design 'config_int_add_clkGate_DATA_PATH_BITWIDTH32_CLKGATED_BITWIDTH16' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully.
+1
+check_design
+1
+#--- define design environement (setting up the design environment such as external operating conditions (manufacturing process, temperature, and voltage), loads, drives, fanouts, and wire load models)
+set endpoints [add_to_collection [all_outputs] [all_registers -data_pins]]
+Loading db file '/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+{c[31] c[30] c[29] c[28] c[27] c[26] c[25] c[24] c[23] c[22] c[21] c[20] c[19] c[18] c[17] c[16] c[15] c[14] c[13] c[12] c[11] c[10] c[9] c[8] c[7] c[6] c[5] c[4] c[3] c[2] c[1] c[0] reg_c_reg[0]/next_state reg_c_reg[1]/next_state reg_c_reg[2]/next_state reg_c_reg[3]/next_state reg_c_reg[4]/next_state reg_c_reg[5]/next_state reg_c_reg[6]/next_state reg_c_reg[7]/next_state reg_c_reg[8]/next_state reg_c_reg[9]/next_state reg_c_reg[10]/next_state reg_c_reg[11]/next_state reg_c_reg[12]/next_state reg_c_reg[13]/next_state reg_c_reg[14]/next_state reg_c_reg[15]/next_state reg_c_reg[16]/next_state reg_c_reg[17]/next_state reg_c_reg[18]/next_state reg_c_reg[19]/next_state reg_c_reg[20]/next_state reg_c_reg[21]/next_state reg_c_reg[22]/next_state reg_c_reg[23]/next_state reg_c_reg[24]/next_state reg_c_reg[25]/next_state reg_c_reg[26]/next_state reg_c_reg[27]/next_state reg_c_reg[28]/next_state reg_c_reg[29]/next_state reg_c_reg[30]/next_state reg_c_reg[31]/next_state reg_b_reg[0]/next_state reg_b_reg[1]/next_state reg_b_reg[2]/next_state reg_b_reg[3]/next_state reg_b_reg[4]/next_state reg_b_reg[5]/next_state reg_b_reg[6]/next_state reg_b_reg[7]/next_state reg_b_reg[8]/next_state reg_b_reg[9]/next_state reg_b_reg[10]/next_state reg_b_reg[11]/next_state reg_b_reg[12]/next_state reg_b_reg[13]/next_state reg_b_reg[14]/next_state reg_b_reg[15]/next_state reg_a_reg[0]/next_state reg_a_reg[1]/next_state reg_a_reg[2]/next_state reg_a_reg[3]/next_state reg_a_reg[4]/next_state reg_a_reg[5]/next_state reg_a_reg[6]/next_state reg_a_reg[7]/next_state reg_a_reg[8]/next_state reg_a_reg[9]/next_state reg_a_reg[10]/next_state reg_a_reg[11]/next_state reg_a_reg[12]/next_state reg_a_reg[13]/next_state reg_a_reg[14]/next_state reg_a_reg[15]/next_state reg_b_reg[16]/next_state reg_b_reg[17]/next_state reg_b_reg[18]/next_state reg_b_reg[19]/next_state ...}
+set inputpoints [add_to_collection [all_inputs] [all_registers -data_pins]]
+{clk rst reg_en a[31] a[30] a[29] a[28] a[27] a[26] a[25] a[24] a[23] a[22] a[21] a[20] a[19] a[18] a[17] a[16] a[15] a[14] a[13] a[12] a[11] a[10] a[9] a[8] a[7] a[6] a[5] a[4] a[3] a[2] a[1] a[0] b[31] b[30] b[29] b[28] b[27] b[26] b[25] b[24] b[23] b[22] b[21] b[20] b[19] b[18] b[17] b[16] b[15] b[14] b[13] b[12] b[11] b[10] b[9] b[8] b[7] b[6] b[5] b[4] b[3] b[2] b[1] b[0] reg_c_reg[0]/next_state reg_c_reg[1]/next_state reg_c_reg[2]/next_state reg_c_reg[3]/next_state reg_c_reg[4]/next_state reg_c_reg[5]/next_state reg_c_reg[6]/next_state reg_c_reg[7]/next_state reg_c_reg[8]/next_state reg_c_reg[9]/next_state reg_c_reg[10]/next_state reg_c_reg[11]/next_state reg_c_reg[12]/next_state reg_c_reg[13]/next_state reg_c_reg[14]/next_state reg_c_reg[15]/next_state reg_c_reg[16]/next_state reg_c_reg[17]/next_state reg_c_reg[18]/next_state reg_c_reg[19]/next_state reg_c_reg[20]/next_state reg_c_reg[21]/next_state reg_c_reg[22]/next_state reg_c_reg[23]/next_state reg_c_reg[24]/next_state reg_c_reg[25]/next_state reg_c_reg[26]/next_state reg_c_reg[27]/next_state reg_c_reg[28]/next_state reg_c_reg[29]/next_state reg_c_reg[30]/next_state reg_c_reg[31]/next_state reg_b_reg[0]/next_state ...}
+#--- linking to libraries
+link
+
+  Linking design 'config_int_add_clkGate_DATA_PATH_BITWIDTH32_CLKGATED_BITWIDTH16'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  typical (library)           /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db
+
+1
+#saif_map -start 
+#--- set the optimization constraints 
+create_clock -name clk -period $clk_period [get_ports clk]
+1
+set_ideal_network -no_propagate [get_ports clk]
+1
+set_input_delay -max 0 -clock clk [get_ports b*]     
+1
+set_input_delay -max 0 -clock clk [get_ports a*]     
+1
+set_input_delay -max 0 -clock clk [get_ports reg_en]     
+1
+set_dont_touch_network [get_clocks clk]
+1
+#--- enable clock propagation of the related clocks
+#--- design rule constraints 
+#set_max_area 0'
+#foreach_in_collection endpt $endpoints { set pin [get_object_name $endpt] 
+#    puts "hello" 
+#    puts $pin   
+#    group_path -name $pin -to $pin
+#}
+set all_reg_a_l [make-reg_l "reg_a_reg" 0 $DATA_PATH_WIDTH]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15] reg_a_reg[16] reg_a_reg[17] reg_a_reg[18] reg_a_reg[19] reg_a_reg[20] reg_a_reg[21] reg_a_reg[22] reg_a_reg[23] reg_a_reg[24] reg_a_reg[25] reg_a_reg[26] reg_a_reg[27] reg_a_reg[28] reg_a_reg[29] reg_a_reg[30] reg_a_reg[31]
+set all_reg_b_l [make-reg_l "reg_b_reg" 0 $DATA_PATH_WIDTH]
+reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15] reg_b_reg[16] reg_b_reg[17] reg_b_reg[18] reg_b_reg[19] reg_b_reg[20] reg_b_reg[21] reg_b_reg[22] reg_b_reg[23] reg_b_reg[24] reg_b_reg[25] reg_b_reg[26] reg_b_reg[27] reg_b_reg[28] reg_b_reg[29] reg_b_reg[30] reg_b_reg[31]
+set all_reg_c_l [make-reg_l "reg_c_reg" 0 $DATA_PATH_WIDTH]
+reg_c_reg[0] reg_c_reg[1] reg_c_reg[2] reg_c_reg[3] reg_c_reg[4] reg_c_reg[5] reg_c_reg[6] reg_c_reg[7] reg_c_reg[8] reg_c_reg[9] reg_c_reg[10] reg_c_reg[11] reg_c_reg[12] reg_c_reg[13] reg_c_reg[14] reg_c_reg[15] reg_c_reg[16] reg_c_reg[17] reg_c_reg[18] reg_c_reg[19] reg_c_reg[20] reg_c_reg[21] reg_c_reg[22] reg_c_reg[23] reg_c_reg[24] reg_c_reg[25] reg_c_reg[26] reg_c_reg[27] reg_c_reg[28] reg_c_reg[29] reg_c_reg[30] reg_c_reg[31]
+set all_reg_a_b_joined [concat $all_reg_a_l $all_reg_b_l]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15] reg_a_reg[16] reg_a_reg[17] reg_a_reg[18] reg_a_reg[19] reg_a_reg[20] reg_a_reg[21] reg_a_reg[22] reg_a_reg[23] reg_a_reg[24] reg_a_reg[25] reg_a_reg[26] reg_a_reg[27] reg_a_reg[28] reg_a_reg[29] reg_a_reg[30] reg_a_reg[31] reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15] reg_b_reg[16] reg_b_reg[17] reg_b_reg[18] reg_b_reg[19] reg_b_reg[20] reg_b_reg[21] reg_b_reg[22] reg_b_reg[23] reg_b_reg[24] reg_b_reg[25] reg_b_reg[26] reg_b_reg[27] reg_b_reg[28] reg_b_reg[29] reg_b_reg[30] reg_b_reg[31]
+set lsb_bits $CLKGATED_BITWIDTH
+16
+set msb_bits [expr $DATA_PATH_WIDTH - $lsb_bits]
+16
+#----------------------------------------------------
+#----------------------------------------------------
+#--- lab_1 ,1 means the superclass
+set lsb_1_reg_a_l [make-reg_l "reg_a_reg" 0 $lsb_bits]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15]
+set lsb_1_reg_b_l [make-reg_l "reg_b_reg" 0 $lsb_bits]
+reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15]
+set lsb_1_reg_c_l [make-reg_l "reg_c_reg" 0 $lsb_bits]
+reg_c_reg[0] reg_c_reg[1] reg_c_reg[2] reg_c_reg[3] reg_c_reg[4] reg_c_reg[5] reg_c_reg[6] reg_c_reg[7] reg_c_reg[8] reg_c_reg[9] reg_c_reg[10] reg_c_reg[11] reg_c_reg[12] reg_c_reg[13] reg_c_reg[14] reg_c_reg[15]
+set lsb_1_reg_a_b_joined [concat $lsb_1_reg_a_l $lsb_1_reg_b_l]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15] reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15]
+set msb_1_reg_a_l [make-reg_l "reg_a_reg" $lsb_bits $DATA_PATH_WIDTH]
+reg_a_reg[16] reg_a_reg[17] reg_a_reg[18] reg_a_reg[19] reg_a_reg[20] reg_a_reg[21] reg_a_reg[22] reg_a_reg[23] reg_a_reg[24] reg_a_reg[25] reg_a_reg[26] reg_a_reg[27] reg_a_reg[28] reg_a_reg[29] reg_a_reg[30] reg_a_reg[31]
+set msb_1_reg_b_l [make-reg_l "reg_b_reg" $lsb_bits $DATA_PATH_WIDTH]
+reg_b_reg[16] reg_b_reg[17] reg_b_reg[18] reg_b_reg[19] reg_b_reg[20] reg_b_reg[21] reg_b_reg[22] reg_b_reg[23] reg_b_reg[24] reg_b_reg[25] reg_b_reg[26] reg_b_reg[27] reg_b_reg[28] reg_b_reg[29] reg_b_reg[30] reg_b_reg[31]
+set msb_1_reg_c_l [make-reg_l "reg_c_reg" $lsb_bits $DATA_PATH_WIDTH]
+reg_c_reg[16] reg_c_reg[17] reg_c_reg[18] reg_c_reg[19] reg_c_reg[20] reg_c_reg[21] reg_c_reg[22] reg_c_reg[23] reg_c_reg[24] reg_c_reg[25] reg_c_reg[26] reg_c_reg[27] reg_c_reg[28] reg_c_reg[29] reg_c_reg[30] reg_c_reg[31]
+set msb_1_reg_a_b_joined [concat $msb_reg_a_l $msb_reg_b_l]
+Error: can't read "msb_reg_a_l": no such variable
+	Use error_info for more info. (CMD-013)
+set lsb_2_reg_a_l [make-reg_l "reg_a_reg" 0 $lsb_bits]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15]
+set lsb_2_reg_b_l [make-reg_l "reg_b_reg" 0 $lsb_bits]
+reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15]
+set lsb_2_reg_c_l [make-reg_l "reg_c_reg" 0 $lsb_bits]
+reg_c_reg[0] reg_c_reg[1] reg_c_reg[2] reg_c_reg[3] reg_c_reg[4] reg_c_reg[5] reg_c_reg[6] reg_c_reg[7] reg_c_reg[8] reg_c_reg[9] reg_c_reg[10] reg_c_reg[11] reg_c_reg[12] reg_c_reg[13] reg_c_reg[14] reg_c_reg[15]
+set lsb_2_reg_a_b_joined [concat $lsb_2_reg_a_l $lsb_2_reg_b_l]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15] reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15]
+set msb_2_reg_a_l [make-reg_l "reg_a_reg" [expr $lsb_bits - 4] $DATA_PATH_WIDTH]
+reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15] reg_a_reg[16] reg_a_reg[17] reg_a_reg[18] reg_a_reg[19] reg_a_reg[20] reg_a_reg[21] reg_a_reg[22] reg_a_reg[23] reg_a_reg[24] reg_a_reg[25] reg_a_reg[26] reg_a_reg[27] reg_a_reg[28] reg_a_reg[29] reg_a_reg[30] reg_a_reg[31]
+set msb_2_reg_b_l [make-reg_l "reg_b_reg" [expr $lsb_bits - 4] $lsb_bits $DATA_PATH_WIDTH]
+Error: wrong # args: should be "make-reg_l reg_na reg_lower_bound reg_up_bound"
+	Use error_info for more info. (CMD-013)
+set msb_2_reg_c_l [make-reg_l "reg_c_reg" [expr $lsb_bits - 4] $lsb_bits $DATA_PATH_WIDTH]
+Error: wrong # args: should be "make-reg_l reg_na reg_lower_bound reg_up_bound"
+	Use error_info for more info. (CMD-013)
+set msb_2_reg_a_b_joined [concat $msb_reg_a_l $msb_reg_b_l]
+Error: can't read "msb_reg_a_l": no such variable
+	Use error_info for more info. (CMD-013)
+set lsb_3_reg_a_l [make-reg_l "reg_a_reg" 0 $lsb_bits]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15]
+set lsb_3_reg_b_l [make-reg_l "reg_b_reg" 0 $lsb_bits]
+reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15]
+set lsb_3_reg_c_l [make-reg_l "reg_c_reg" 0 $lsb_bits]
+reg_c_reg[0] reg_c_reg[1] reg_c_reg[2] reg_c_reg[3] reg_c_reg[4] reg_c_reg[5] reg_c_reg[6] reg_c_reg[7] reg_c_reg[8] reg_c_reg[9] reg_c_reg[10] reg_c_reg[11] reg_c_reg[12] reg_c_reg[13] reg_c_reg[14] reg_c_reg[15]
+set lsb_3_reg_a_b_joined [concat $lsb_3_reg_a_l $lsb_3_reg_b_l]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15] reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15]
+set msb_3_reg_a_l [make-reg_l "reg_a_reg" [expr $lsb_bits - 12]  $DATA_PATH_WIDTH]
+reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15] reg_a_reg[16] reg_a_reg[17] reg_a_reg[18] reg_a_reg[19] reg_a_reg[20] reg_a_reg[21] reg_a_reg[22] reg_a_reg[23] reg_a_reg[24] reg_a_reg[25] reg_a_reg[26] reg_a_reg[27] reg_a_reg[28] reg_a_reg[29] reg_a_reg[30] reg_a_reg[31]
+set msb_3_reg_b_l [make-reg_l "reg_b_reg" [expr $lsb_bits - 12] $DATA_PATH_WIDTH]
+reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15] reg_b_reg[16] reg_b_reg[17] reg_b_reg[18] reg_b_reg[19] reg_b_reg[20] reg_b_reg[21] reg_b_reg[22] reg_b_reg[23] reg_b_reg[24] reg_b_reg[25] reg_b_reg[26] reg_b_reg[27] reg_b_reg[28] reg_b_reg[29] reg_b_reg[30] reg_b_reg[31]
+set msb_3_reg_c_l [make-reg_l "reg_c_reg" [expr $lsb_bits - 12] $DATA_PATH_WIDTH]
+reg_c_reg[4] reg_c_reg[5] reg_c_reg[6] reg_c_reg[7] reg_c_reg[8] reg_c_reg[9] reg_c_reg[10] reg_c_reg[11] reg_c_reg[12] reg_c_reg[13] reg_c_reg[14] reg_c_reg[15] reg_c_reg[16] reg_c_reg[17] reg_c_reg[18] reg_c_reg[19] reg_c_reg[20] reg_c_reg[21] reg_c_reg[22] reg_c_reg[23] reg_c_reg[24] reg_c_reg[25] reg_c_reg[26] reg_c_reg[27] reg_c_reg[28] reg_c_reg[29] reg_c_reg[30] reg_c_reg[31]
+set msb_3_reg_a_b_joined [concat $msb_reg_a_l $msb_reg_b_l]
+Error: can't read "msb_reg_a_l": no such variable
+	Use error_info for more info. (CMD-013)
+set lsb_4_reg_a_l [make-reg_l "reg_a_reg" 0 $lsb_bits]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15]
+set lsb_4_reg_b_l [make-reg_l "reg_b_reg" 0 $lsb_bits]
+reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15]
+set lsb_4_reg_c_l [make-reg_l "reg_c_reg" 0 $lsb_bits]
+reg_c_reg[0] reg_c_reg[1] reg_c_reg[2] reg_c_reg[3] reg_c_reg[4] reg_c_reg[5] reg_c_reg[6] reg_c_reg[7] reg_c_reg[8] reg_c_reg[9] reg_c_reg[10] reg_c_reg[11] reg_c_reg[12] reg_c_reg[13] reg_c_reg[14] reg_c_reg[15]
+set lsb_4_reg_a_b_joined [concat $lsb_4_reg_a_l $lsb_4_reg_b_l]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15] reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15]
+set msb_4_reg_a_l [make-reg_l "reg_a_reg" [expr $lsb_bits - 16] $DATA_PATH_WIDTH]
+reg_a_reg[0] reg_a_reg[1] reg_a_reg[2] reg_a_reg[3] reg_a_reg[4] reg_a_reg[5] reg_a_reg[6] reg_a_reg[7] reg_a_reg[8] reg_a_reg[9] reg_a_reg[10] reg_a_reg[11] reg_a_reg[12] reg_a_reg[13] reg_a_reg[14] reg_a_reg[15] reg_a_reg[16] reg_a_reg[17] reg_a_reg[18] reg_a_reg[19] reg_a_reg[20] reg_a_reg[21] reg_a_reg[22] reg_a_reg[23] reg_a_reg[24] reg_a_reg[25] reg_a_reg[26] reg_a_reg[27] reg_a_reg[28] reg_a_reg[29] reg_a_reg[30] reg_a_reg[31]
+set msb_4_reg_b_l [make-reg_l "reg_b_reg" [expr $lsb_bits - 16]  $DATA_PATH_WIDTH]
+reg_b_reg[0] reg_b_reg[1] reg_b_reg[2] reg_b_reg[3] reg_b_reg[4] reg_b_reg[5] reg_b_reg[6] reg_b_reg[7] reg_b_reg[8] reg_b_reg[9] reg_b_reg[10] reg_b_reg[11] reg_b_reg[12] reg_b_reg[13] reg_b_reg[14] reg_b_reg[15] reg_b_reg[16] reg_b_reg[17] reg_b_reg[18] reg_b_reg[19] reg_b_reg[20] reg_b_reg[21] reg_b_reg[22] reg_b_reg[23] reg_b_reg[24] reg_b_reg[25] reg_b_reg[26] reg_b_reg[27] reg_b_reg[28] reg_b_reg[29] reg_b_reg[30] reg_b_reg[31]
+set msb_4_reg_c_l [make-reg_l "reg_c_reg" [expr $lsb_bits - 16] $DATA_PATH_WIDTH]
+reg_c_reg[0] reg_c_reg[1] reg_c_reg[2] reg_c_reg[3] reg_c_reg[4] reg_c_reg[5] reg_c_reg[6] reg_c_reg[7] reg_c_reg[8] reg_c_reg[9] reg_c_reg[10] reg_c_reg[11] reg_c_reg[12] reg_c_reg[13] reg_c_reg[14] reg_c_reg[15] reg_c_reg[16] reg_c_reg[17] reg_c_reg[18] reg_c_reg[19] reg_c_reg[20] reg_c_reg[21] reg_c_reg[22] reg_c_reg[23] reg_c_reg[24] reg_c_reg[25] reg_c_reg[26] reg_c_reg[27] reg_c_reg[28] reg_c_reg[29] reg_c_reg[30] reg_c_reg[31]
+set msb_4_reg_a_b_joined [concat $msb_reg_a_l $msb_reg_b_l]
+Error: can't read "msb_reg_a_l": no such variable
+	Use error_info for more info. (CMD-013)
+puts "msb_1_reg_a_b_joined"
+msb_1_reg_a_b_joined
+puts $msb_1_reg_a_b_joined
+Error: can't read "msb_1_reg_a_b_joined": no such variable
+	Use error_info for more info. (CMD-013)
+puts "--------------"
+--------------
+puts "msb_2_reg_a_b_joined"
+msb_2_reg_a_b_joined
+puts $msb_2_reg_a_b_joined
+Error: can't read "msb_2_reg_a_b_joined": no such variable
+	Use error_info for more info. (CMD-013)
+puts "--------------"
+--------------
+puts "msb_3_reg_a_b_joined"
+msb_3_reg_a_b_joined
+puts $msb_3_reg_a_b_joined
+Error: can't read "msb_3_reg_a_b_joined": no such variable
+	Use error_info for more info. (CMD-013)
+puts "--------------"
+--------------
+puts "msb_4_reg_a_b_joined"
+msb_4_reg_a_b_joined
+puts $msb_4_reg_a_b_joined
+Error: can't read "msb_4_reg_a_b_joined": no such variable
+	Use error_info for more info. (CMD-013)
+puts "--------------"
+--------------
+#----------------------------------------------------
+exit
+
+Thank you...

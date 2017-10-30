@@ -1,0 +1,62 @@
+ 
+****************************************
+Report : design
+Design : idct_BitWidth31_BitWidth130
+Version: L-2016.03-SP5-3
+Date   : Wed Sep 13 19:38:28 2017
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/various_temps__db__all_values/1.2V_75T.db)
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : typical
+    Library : typical
+    Process :   1.00
+    Temperature :  75.00
+    Voltage :   1.20
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1

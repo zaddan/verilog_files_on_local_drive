@@ -1,0 +1,53 @@
+--- TCL'S PARAMETER INFO
+U0
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar  9 20:17:13 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+U2
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar  9 20:17:13 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d (out)                             0.01 f            0.00        -0.01
+
+1
+U1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar  9 20:17:13 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1

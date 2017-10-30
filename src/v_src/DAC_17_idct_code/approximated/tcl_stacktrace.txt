@@ -1,0 +1,13 @@
+Tue Apr 11 11:43:35 AM CDT 2017
+Trace back: can't read "vlistLastY": no such variable
+    while executing
+"expr {$y - $vlistLastY}"
+    (procedure "SelectMotion" line 22)
+    invoked from within
+"SelectMotion $w $x $y"
+    (procedure "VList::Button1Drag" line 19)
+    invoked from within
+"VList::Button1Drag .main_pane.mdi.interior.cs.vm.paneset.cli_2.wf.clip.cs.tbl 937 263"
+    (command bound to event)
+  2: ::tkerror {can't read "vlistLastY": no such variable}
+  1: ::bgerror {can't read "vlistLastY": no such variable}

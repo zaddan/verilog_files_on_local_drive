@@ -1,0 +1,79 @@
+----------------------------------------------------
+----------------------------------------------------
+--- TCL'S PARAMETER INFO
+DATA_PATH_WIDTH: 32
+CLKGATED_BITWIDTH: 1
+clk_period : 0.27
+apx_optimal: 1
+apx_optimal_mode(first): 0
+apx_optimal_mode(second): 0
+apx_optimal_mode(third): 0
+apx_optimal_mode(fourth): 1
+msb_1_max_delay: 0.265
+msb_2_max_delay: 0.256
+msb_3_max_delay: 0.244
+msb_4_max_delay: 0.237
+---- REG INFO
+pin__na:rst_reg_reg,  line__nu:361635,arr_t:0.118, req t:0.135
+pin__na:reg_en_reg_reg,  line__nu:347377,arr_t:0.124, req t:0.135
+pin__na:reg_b_reg[5],  line__nu:61939,arr_t:0.271, req t:0.242
+pin__na:reg_a_reg[8],  line__nu:81547,arr_t:0.268, req t:0.242
+pin__na:reg_a_reg[12],  line__nu:70076,arr_t:0.269, req t:0.242
+pin__na:reg_a_reg[18],  line__nu:48,arr_t:0.259, req t:0.209
+pin__na:reg_a_reg[1],  line__nu:63441,arr_t:0.271, req t:0.242
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+--- TCL'S PARAMETER INFO
+DATA_PATH_WIDTH: 32
+CLKGATED_BITWIDTH: 1
+clk_period : 0.27
+apx_optimal: 1
+apx_optimal_mode(first): 0
+apx_optimal_mode(second): 0
+apx_optimal_mode(third): 0
+apx_optimal_mode(fourth): 1
+msb_1_max_delay: 0.265
+msb_2_max_delay: 0.256
+msb_3_max_delay: 0.244
+msb_4_max_delay: 0.242
+---- REG INFO
+pin__na:rst_reg_reg,  line__nu:355050,arr_t:0.118, req t:0.135
+pin__na:reg_en_reg_reg,  line__nu:340923,arr_t:0.124, req t:0.135
+pin__na:reg_b_reg[5],  line__nu:52772,arr_t:0.271, req t:0.242
+pin__na:reg_a_reg[11],  line__nu:73904,arr_t:0.268, req t:0.242
+pin__na:reg_a_reg[13],  line__nu:65448,arr_t:0.269, req t:0.242
+pin__na:reg_a_reg[18],  line__nu:48,arr_t:0.259, req t:0.214
+pin__na:reg_a_reg[1],  line__nu:54254,arr_t:0.271, req t:0.242
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+--- TCL'S PARAMETER INFO
+DATA_PATH_WIDTH: 32
+CLKGATED_BITWIDTH: 1
+clk_period : 0.27
+apx_optimal: 1
+apx_optimal_mode(first): 0
+apx_optimal_mode(second): 0
+apx_optimal_mode(third): 0
+apx_optimal_mode(fourth): 1
+msb_1_max_delay: 0.265
+msb_2_max_delay: 0.256
+msb_3_max_delay: 0.244
+msb_4_max_delay: 0.247
+---- REG INFO
+pin__na:rst_reg_reg,  line__nu:347042,arr_t:0.118, req t:0.135
+pin__na:reg_en_reg_reg,  line__nu:335977,arr_t:0.124, req t:0.135
+pin__na:reg_a_reg[7],  line__nu:34494,arr_t:0.272, req t:0.242
+pin__na:reg_a_reg[11],  line__nu:49002,arr_t:0.269, req t:0.242
+pin__na:reg_b_reg[12],  line__nu:58480,arr_t:0.268, req t:0.242
+pin__na:reg_a_reg[19],  line__nu:48,arr_t:0.260, req t:0.219
+pin__na:reg_b_reg[2],  line__nu:55309,arr_t:0.268, req t:0.242
+----------------------------------------------------
+----------------------------------------------------

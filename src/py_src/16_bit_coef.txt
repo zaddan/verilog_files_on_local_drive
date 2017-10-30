@@ -1,0 +1,72 @@
+assign COSBlock[0][0][15:0] = 16'd0x5a82;   assign COSBlock[0][0][BitWidth:16] = {(BitWidth1-16){COSBlock[0][0][15]}};
+assign COSBlock[0][1][15:0] = 16'd0x7d8a;   assign COSBlock[0][1][BitWidth:16] = {(BitWidth1-16){COSBlock[0][1][15]}};
+assign COSBlock[0][2][15:0] = 16'd0x7642;   assign COSBlock[0][2][BitWidth:16] = {(BitWidth1-16){COSBlock[0][2][15]}};
+assign COSBlock[0][3][15:0] = 16'd0x6a6e;   assign COSBlock[0][3][BitWidth:16] = {(BitWidth1-16){COSBlock[0][3][15]}};
+assign COSBlock[0][4][15:0] = 16'd0x5a82;   assign COSBlock[0][4][BitWidth:16] = {(BitWidth1-16){COSBlock[0][4][15]}};
+assign COSBlock[0][5][15:0] = 16'd0x471d;   assign COSBlock[0][5][BitWidth:16] = {(BitWidth1-16){COSBlock[0][5][15]}};
+assign COSBlock[0][6][15:0] = 16'd0x30fc;   assign COSBlock[0][6][BitWidth:16] = {(BitWidth1-16){COSBlock[0][6][15]}};
+assign COSBlock[0][7][15:0] = 16'd0x18f9;   assign COSBlock[0][7][BitWidth:16] = {(BitWidth1-16){COSBlock[0][7][15]}};
+
+assign COSBlock[1][0][15:0] = 16'd0x5a82;   assign COSBlock[1][0][BitWidth:16] = {(BitWidth1-16){COSBlock[1][0][15]}};
+assign COSBlock[1][1][15:0] = 16'd0x6a6e;   assign COSBlock[1][1][BitWidth:16] = {(BitWidth1-16){COSBlock[1][1][15]}};
+assign COSBlock[1][2][15:0] = 16'd0x30fc;   assign COSBlock[1][2][BitWidth:16] = {(BitWidth1-16){COSBlock[1][2][15]}};
+assign COSBlock[1][3][15:0] = 16'd0xe707;   assign COSBlock[1][3][BitWidth:16] = {(BitWidth1-16){COSBlock[1][3][15]}};
+assign COSBlock[1][4][15:0] = 16'd0xa57e;   assign COSBlock[1][4][BitWidth:16] = {(BitWidth1-16){COSBlock[1][4][15]}};
+assign COSBlock[1][5][15:0] = 16'd0x8276;   assign COSBlock[1][5][BitWidth:16] = {(BitWidth1-16){COSBlock[1][5][15]}};
+assign COSBlock[1][6][15:0] = 16'd0x89be;   assign COSBlock[1][6][BitWidth:16] = {(BitWidth1-16){COSBlock[1][6][15]}};
+assign COSBlock[1][7][15:0] = 16'd0xb8e3;   assign COSBlock[1][7][BitWidth:16] = {(BitWidth1-16){COSBlock[1][7][15]}};
+
+assign COSBlock[2][0][15:0] = 16'd0x5a82;   assign COSBlock[2][0][BitWidth:16] = {(BitWidth1-16){COSBlock[2][0][15]}};
+assign COSBlock[2][1][15:0] = 16'd0x471d;   assign COSBlock[2][1][BitWidth:16] = {(BitWidth1-16){COSBlock[2][1][15]}};
+assign COSBlock[2][2][15:0] = 16'd0xcf04;   assign COSBlock[2][2][BitWidth:16] = {(BitWidth1-16){COSBlock[2][2][15]}};
+assign COSBlock[2][3][15:0] = 16'd0x8276;   assign COSBlock[2][3][BitWidth:16] = {(BitWidth1-16){COSBlock[2][3][15]}};
+assign COSBlock[2][4][15:0] = 16'd0xa57e;   assign COSBlock[2][4][BitWidth:16] = {(BitWidth1-16){COSBlock[2][4][15]}};
+assign COSBlock[2][5][15:0] = 16'd0x18f9;   assign COSBlock[2][5][BitWidth:16] = {(BitWidth1-16){COSBlock[2][5][15]}};
+assign COSBlock[2][6][15:0] = 16'd0x7642;   assign COSBlock[2][6][BitWidth:16] = {(BitWidth1-16){COSBlock[2][6][15]}};
+assign COSBlock[2][7][15:0] = 16'd0x6a6e;   assign COSBlock[2][7][BitWidth:16] = {(BitWidth1-16){COSBlock[2][7][15]}};
+
+assign COSBlock[3][0][15:0] = 16'd0x5a82;   assign COSBlock[3][0][BitWidth:16] = {(BitWidth1-16){COSBlock[3][0][15]}};
+assign COSBlock[3][1][15:0] = 16'd0x18f9;   assign COSBlock[3][1][BitWidth:16] = {(BitWidth1-16){COSBlock[3][1][15]}};
+assign COSBlock[3][2][15:0] = 16'd0x89be;   assign COSBlock[3][2][BitWidth:16] = {(BitWidth1-16){COSBlock[3][2][15]}};
+assign COSBlock[3][3][15:0] = 16'd0xb8e3;   assign COSBlock[3][3][BitWidth:16] = {(BitWidth1-16){COSBlock[3][3][15]}};
+assign COSBlock[3][4][15:0] = 16'd0x5a82;   assign COSBlock[3][4][BitWidth:16] = {(BitWidth1-16){COSBlock[3][4][15]}};
+assign COSBlock[3][5][15:0] = 16'd0x6a6e;   assign COSBlock[3][5][BitWidth:16] = {(BitWidth1-16){COSBlock[3][5][15]}};
+assign COSBlock[3][6][15:0] = 16'd0xcf04;   assign COSBlock[3][6][BitWidth:16] = {(BitWidth1-16){COSBlock[3][6][15]}};
+assign COSBlock[3][7][15:0] = 16'd0x8276;   assign COSBlock[3][7][BitWidth:16] = {(BitWidth1-16){COSBlock[3][7][15]}};
+
+assign COSBlock[4][0][15:0] = 16'd0x5a82;   assign COSBlock[4][0][BitWidth:16] = {(BitWidth1-16){COSBlock[4][0][15]}};
+assign COSBlock[4][1][15:0] = 16'd0xe707;   assign COSBlock[4][1][BitWidth:16] = {(BitWidth1-16){COSBlock[4][1][15]}};
+assign COSBlock[4][2][15:0] = 16'd0x89be;   assign COSBlock[4][2][BitWidth:16] = {(BitWidth1-16){COSBlock[4][2][15]}};
+assign COSBlock[4][3][15:0] = 16'd0x471d;   assign COSBlock[4][3][BitWidth:16] = {(BitWidth1-16){COSBlock[4][3][15]}};
+assign COSBlock[4][4][15:0] = 16'd0x5a82;   assign COSBlock[4][4][BitWidth:16] = {(BitWidth1-16){COSBlock[4][4][15]}};
+assign COSBlock[4][5][15:0] = 16'd0x9592;   assign COSBlock[4][5][BitWidth:16] = {(BitWidth1-16){COSBlock[4][5][15]}};
+assign COSBlock[4][6][15:0] = 16'd0xcf04;   assign COSBlock[4][6][BitWidth:16] = {(BitWidth1-16){COSBlock[4][6][15]}};
+assign COSBlock[4][7][15:0] = 16'd0x7d8a;   assign COSBlock[4][7][BitWidth:16] = {(BitWidth1-16){COSBlock[4][7][15]}};
+
+assign COSBlock[5][0][15:0] = 16'd0x5a82;   assign COSBlock[5][0][BitWidth:16] = {(BitWidth1-16){COSBlock[5][0][15]}};
+assign COSBlock[5][1][15:0] = 16'd0xb8e3;   assign COSBlock[5][1][BitWidth:16] = {(BitWidth1-16){COSBlock[5][1][15]}};
+assign COSBlock[5][2][15:0] = 16'd0xcf04;   assign COSBlock[5][2][BitWidth:16] = {(BitWidth1-16){COSBlock[5][2][15]}};
+assign COSBlock[5][3][15:0] = 16'd0x7d8a;   assign COSBlock[5][3][BitWidth:16] = {(BitWidth1-16){COSBlock[5][3][15]}};
+assign COSBlock[5][4][15:0] = 16'd0xa57e;   assign COSBlock[5][4][BitWidth:16] = {(BitWidth1-16){COSBlock[5][4][15]}};
+assign COSBlock[5][5][15:0] = 16'd0xe707;   assign COSBlock[5][5][BitWidth:16] = {(BitWidth1-16){COSBlock[5][5][15]}};
+assign COSBlock[5][6][15:0] = 16'd0x7642;   assign COSBlock[5][6][BitWidth:16] = {(BitWidth1-16){COSBlock[5][6][15]}};
+assign COSBlock[5][7][15:0] = 16'd0x9592;   assign COSBlock[5][7][BitWidth:16] = {(BitWidth1-16){COSBlock[5][7][15]}};
+
+assign COSBlock[6][0][15:0] = 16'd0x5a82;   assign COSBlock[6][0][BitWidth:16] = {(BitWidth1-16){COSBlock[6][0][15]}};
+assign COSBlock[6][1][15:0] = 16'd0x9592;   assign COSBlock[6][1][BitWidth:16] = {(BitWidth1-16){COSBlock[6][1][15]}};
+assign COSBlock[6][2][15:0] = 16'd0x30fc;   assign COSBlock[6][2][BitWidth:16] = {(BitWidth1-16){COSBlock[6][2][15]}};
+assign COSBlock[6][3][15:0] = 16'd0x18f9;   assign COSBlock[6][3][BitWidth:16] = {(BitWidth1-16){COSBlock[6][3][15]}};
+assign COSBlock[6][4][15:0] = 16'd0xa57e;   assign COSBlock[6][4][BitWidth:16] = {(BitWidth1-16){COSBlock[6][4][15]}};
+assign COSBlock[6][5][15:0] = 16'd0x7d8a;   assign COSBlock[6][5][BitWidth:16] = {(BitWidth1-16){COSBlock[6][5][15]}};
+assign COSBlock[6][6][15:0] = 16'd0x89be;   assign COSBlock[6][6][BitWidth:16] = {(BitWidth1-16){COSBlock[6][6][15]}};
+assign COSBlock[6][7][15:0] = 16'd0x471d;   assign COSBlock[6][7][BitWidth:16] = {(BitWidth1-16){COSBlock[6][7][15]}};
+
+assign COSBlock[7][0][15:0] = 16'd0x5a82;   assign COSBlock[7][0][BitWidth:16] = {(BitWidth1-16){COSBlock[7][0][15]}};
+assign COSBlock[7][1][15:0] = 16'd0x8276;   assign COSBlock[7][1][BitWidth:16] = {(BitWidth1-16){COSBlock[7][1][15]}};
+assign COSBlock[7][2][15:0] = 16'd0x7642;   assign COSBlock[7][2][BitWidth:16] = {(BitWidth1-16){COSBlock[7][2][15]}};
+assign COSBlock[7][3][15:0] = 16'd0x9592;   assign COSBlock[7][3][BitWidth:16] = {(BitWidth1-16){COSBlock[7][3][15]}};
+assign COSBlock[7][4][15:0] = 16'd0x5a82;   assign COSBlock[7][4][BitWidth:16] = {(BitWidth1-16){COSBlock[7][4][15]}};
+assign COSBlock[7][5][15:0] = 16'd0xb8e3;   assign COSBlock[7][5][BitWidth:16] = {(BitWidth1-16){COSBlock[7][5][15]}};
+assign COSBlock[7][6][15:0] = 16'd0x30fc;   assign COSBlock[7][6][BitWidth:16] = {(BitWidth1-16){COSBlock[7][6][15]}};
+assign COSBlock[7][7][15:0] = 16'd0xe707;   assign COSBlock[7][7][BitWidth:16] = {(BitWidth1-16){COSBlock[7][7][15]}};
+

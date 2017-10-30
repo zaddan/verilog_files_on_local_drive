@@ -1,0 +1,18 @@
+set const [expr [lindex $delays_striving_for__l 1]]
+set counter 1
+foreach non_transition_cells__l__e $non_transition_cells__l__string {
+    reset_path -to  $outputs_of_interest ;# need this b/c ow the other set_max_delays 
+    set const [expr [lindex $delays_striving_for__l $counter]]
+    set_max_delay $const -to $outputs_of_interest
+    set non_transition_cells__l [split  $non_transition_cells__l__e " "]
+    set_max_delay $clk_period -through $non_transition_cells__l -to $outputs_of_interest
+    
+    #*** F:DN probing in 
+    set precision_to_be_shown [lindex $Pn__l $counter]
+    set my_string  ***PRECISION:$precision_to_be_shown 
+    echo $my_string >> $all_data__file__addr
+    report_timing -sort_by slack -exclude $non_transition_cells__l -significant_digits 4 >>  $all_data__file__addr
+
+    #echo $first_el >> non_transition_cells__l__acquired__in_tcl
+    incr counter
+}

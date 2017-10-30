@@ -1,0 +1,52 @@
+ncverilog(64): 06.10-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+TOOL:	ncverilog(64)	06.10-s002: Started on Jun 01, 2017 at 19:08:52 CDT
+ncverilog
+	-v
+	/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_udp.v
+	/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog.v
+	/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mul__noFF__arch_agnos__tb.v
+	/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/mul_to_test.v
+	+access+r
+ncvlog: *W,BDLPAT: no such path (hdl.var LIB_MAP) '../../../../../libraries/germany_NanGate/verilog_files/verilog_N0P0.v'.
+ncvlog: *W,BDLPAT: no such path (hdl.var LIB_MAP) '../../../../../libraries/germany_NanGate/verilog_files/verilog_N0P0.v'.
+file: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog.v
+file: /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mul__noFF__arch_agnos__tb.v
+	module worklib.test_bench_tb:v
+		errors: 0, warnings: 0
+file: /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/mul_to_test.v
+file: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_udp.v
+file: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_udp.v
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+		Caching library 'worklib' ....... Done
+		Caching library 'verilog_udp' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test_bench_tb:v <0x75de767f>
+			streams:  12, words:  6759
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:               11761     145
+		UDPs:                     15       4
+		Primitives:            17595       5
+		Timing outputs:         5884      13
+		Registers:                 7      11
+		Scalar wires:           5893       -
+		Vectored wires:            1       -
+		Initial blocks:            7       7
+		Cont. assignments:         3       6
+		Timing checks:            80       1
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.AND4_X1:v
+Loading snapshot worklib.AND4_X1:v .................... Done
+ncsim> source /usr/local/packages/cadence_2007/ius61/tools/inca/files/ncsimrc
+ncsim> run
+$readmem warning: address incremented out of range. Too many data words read
+	at line 1 of file "../../build/functional/int_values_in_hex.txt". Current address: 1000, address range: [0:999].
+Simulation complete via $finish(1) at time 20 US + 0
+./conf_int_mul__noFF__arch_agnos__tb.v:103     $finish;
+ncsim> exit
+TOOL:	ncverilog(64)	06.10-s002: Exiting on Jun 01, 2017 at 19:08:54 CDT  (total: 00:00:02)

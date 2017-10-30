@@ -1,0 +1,611 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:54:22 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: a[1] (input port clocked by clk)
+  Endpoint: d[31] (output port)
+  Path Group: non_priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  a[1] (in)                              0.0000     0.0000 r
+  U1868/ZN (INV_X2)                      0.0149     0.0149 f
+  U371/ZN (NOR2_X1)                      0.0311     0.0460 r
+  U1655/S (FA_X1)                        0.0942     0.1402 f
+  U1657/S (FA_X1)                        0.0864     0.2266 r
+  U409/ZN (XNOR2_X1)                     0.0403     0.2669 r
+  U428/ZN (NAND2_X1)                     0.0185     0.2855 f
+  U788/ZN (INV_X1)                       0.0148     0.3003 r
+  U1676/ZN (AOI21_X2)                    0.0211     0.3214 f
+  U1678/ZN (OAI21_X2)                    0.0236     0.3450 r
+  U1679/ZN (AOI21_X2)                    0.0216     0.3666 f
+  U1687/ZN (OAI21_X2)                    0.0234     0.3900 r
+  U1702/ZN (AOI21_X2)                    0.0212     0.4112 f
+  U1714/ZN (OAI21_X2)                    0.0237     0.4349 r
+  U1732/ZN (AOI21_X2)                    0.0193     0.4542 f
+  U1753/ZN (OAI21_X2)                    0.0210     0.4753 r
+  U1767/ZN (AOI21_X2)                    0.0190     0.4943 f
+  U1780/ZN (OAI21_X2)                    0.0208     0.5151 r
+  U1807/ZN (AOI21_X2)                    0.0191     0.5343 f
+  U1814/ZN (OAI21_X2)                    0.0212     0.5554 r
+  U1843/ZN (AOI21_X2)                    0.0184     0.5738 f
+  U1888/ZN (NOR2_X2)                     0.0142     0.5880 r
+  U1890/ZN (NOR2_X2)                     0.0118     0.5998 f
+  U1949/ZN (NOR2_X2)                     0.0158     0.6157 r
+  U1952/ZN (NOR2_X4)                     0.0109     0.6265 f
+  U2047/ZN (OAI21_X2)                    0.0214     0.6480 r
+  U2068/ZN (AOI21_X2)                    0.0174     0.6654 f
+  U2135/ZN (XNOR2_X1)                    0.0342     0.6995 f
+  d[31] (out)                            0.0000     0.6995 f
+  data arrival time                                 0.6995
+
+  max_delay                              0.7000     0.7000
+  output external delay                  0.0000     0.7000
+  data required time                                0.7000
+  -----------------------------------------------------------
+  data required time                                0.7000
+  data arrival time                                -0.6995
+  -----------------------------------------------------------
+  slack (MET)                                       0.0005
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:54:22 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: a[6] (input port clocked by clk)
+  Endpoint: d[31] (output port)
+  Path Group: non_priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  a[6] (in)                              0.0000     0.0000 r
+  U607/ZN (INV_X4)                       0.0085     0.0085 f
+  U970/ZN (NOR2_X1)                      0.0250     0.0335 r
+  U1681/CO (HA_X1)                       0.0471     0.0806 r
+  U1701/CO (FA_X1)                       0.0643     0.1449 r
+  U1708/CO (FA_X1)                       0.0597     0.2046 r
+  U1724/S (FA_X1)                        0.0969     0.3015 f
+  U240/ZN (XNOR2_X2)                     0.0404     0.3419 f
+  U1904/ZN (XNOR2_X1)                    0.0423     0.3841 f
+  U791/ZN (NOR2_X1)                      0.0259     0.4101 r
+  U1714/ZN (OAI21_X2)                    0.0255     0.4356 f
+  U1732/ZN (AOI21_X2)                    0.0211     0.4567 r
+  U1753/ZN (OAI21_X2)                    0.0195     0.4762 f
+  U1767/ZN (AOI21_X2)                    0.0206     0.4968 r
+  U1780/ZN (OAI21_X2)                    0.0195     0.5163 f
+  U1807/ZN (AOI21_X2)                    0.0206     0.5369 r
+  U1814/ZN (OAI21_X2)                    0.0195     0.5564 f
+  U1843/ZN (AOI21_X2)                    0.0197     0.5761 r
+  U1888/ZN (NOR2_X2)                     0.0123     0.5884 f
+  U1890/ZN (NOR2_X2)                     0.0139     0.6023 r
+  U1949/ZN (NOR2_X2)                     0.0136     0.6159 f
+  U1952/ZN (NOR2_X4)                     0.0126     0.6284 r
+  U2047/ZN (OAI21_X2)                    0.0189     0.6473 f
+  U2068/ZN (AOI21_X2)                    0.0190     0.6663 r
+  U2135/ZN (XNOR2_X1)                    0.0337     0.7000 r
+  d[31] (out)                            0.0000     0.7000 r
+  data arrival time                                 0.7000
+
+  max_delay                              0.7000     0.7000
+  output external delay                  0.0000     0.7000
+  data required time                                0.7000
+  -----------------------------------------------------------
+  data required time                                0.7000
+  data arrival time                                -0.7000
+  -----------------------------------------------------------
+  slack (MET)                                       0.0000
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:54:22 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: a_h[5] (input port clocked by clk)
+  Endpoint: d[31] (output port)
+  Path Group: priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  a_h[5] (in)                            0.0000     0.0000 r
+  U1845/Z (XOR2_X2)                      0.0390     0.0390 r
+  U1846/ZN (NAND2_X4)                    0.0279     0.0669 f
+  U1847/ZN (NOR2_X2)                     0.0161     0.0830 r
+  U1848/ZN (NOR2_X2)                     0.0155     0.0985 f
+  U882/ZN (INV_X1)                       0.0107     0.1092 r
+  U178/ZN (AND2_X2)                      0.0294     0.1386 r
+  U1046/Z (XOR2_X1)                      0.0421     0.1807 r
+  U1045/Z (XOR2_X1)                      0.0531     0.2339 r
+  U648/ZN (NAND2_X1)                     0.0181     0.2519 f
+  U1537/ZN (NAND3_X1)                    0.0243     0.2762 r
+  U34/ZN (NAND2_X1)                      0.0187     0.2949 f
+  U1921/ZN (NAND2_X2)                    0.0165     0.3114 r
+  U1942/S (FA_X1)                        0.0859     0.3972 f
+  U1622/ZN (XNOR2_X1)                    0.0466     0.4438 f
+  U248/ZN (XNOR2_X2)                     0.0418     0.4856 f
+  U1424/ZN (OR2_X4)                      0.0333     0.5189 f
+  U1923/ZN (NAND2_X2)                    0.0138     0.5327 r
+  U1924/ZN (INV_X2)                      0.0084     0.5411 f
+  U1948/ZN (NAND2_X2)                    0.0094     0.5504 r
+  U1949/ZN (NOR2_X2)                     0.0154     0.5658 f
+  U1952/ZN (NOR2_X4)                     0.0126     0.5784 r
+  U2047/ZN (OAI21_X2)                    0.0189     0.5973 f
+  U2068/ZN (AOI21_X2)                    0.0190     0.6162 r
+  U2135/ZN (XNOR2_X1)                    0.0337     0.6499 r
+  d[31] (out)                            0.0000     0.6499 r
+  data arrival time                                 0.6499
+
+  max_delay                              0.6500     0.6500
+  output external delay                  0.0000     0.6500
+  data required time                                0.6500
+  -----------------------------------------------------------
+  data required time                                0.6500
+  data arrival time                                -0.6499
+  -----------------------------------------------------------
+  slack (MET)                                       0.0001
+
+
+1
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:54:22 2017
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  =   2.8061 mW   (66%)
+  Net Switching Power  =   1.4537 mW   (34%)
+                         ---------
+Total Dynamic Power    =   4.2598 mW  (100%)
+
+Cell Leakage Power     =  11.7410 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      2.8061            1.4537           11.7410            4.2715  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              2.8061 mW         1.4537 mW        11.7410 uW         4.2715 mW
+1
+ 
+****************************************
+Report : area
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:54:22 2017
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db)
+
+Number of ports:                          194
+Number of nets:                          2431
+Number of cells:                         2167
+Number of combinational cells:           2167
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        206
+Number of references:                      33
+
+Combinational area:               2946.215986
+Buf/Inv area:                      114.380001
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  2946.215986
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8 2946.2160   100.0 2946.2160    0.0000 0.0000 conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 2946.2160     0.0000  0.0000
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:56:12 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: a[1] (input port clocked by clk)
+  Endpoint: d[31] (output port)
+  Path Group: non_priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  a[1] (in)                              0.0000     0.0000 r
+  U1868/ZN (INV_X2)                      0.0149     0.0149 f
+  U371/ZN (NOR2_X1)                      0.0311     0.0460 r
+  U1655/S (FA_X1)                        0.0942     0.1402 f
+  U1657/S (FA_X1)                        0.0864     0.2266 r
+  U409/ZN (XNOR2_X1)                     0.0403     0.2669 r
+  U428/ZN (NAND2_X1)                     0.0185     0.2855 f
+  U788/ZN (INV_X1)                       0.0148     0.3003 r
+  U1676/ZN (AOI21_X2)                    0.0211     0.3214 f
+  U1678/ZN (OAI21_X2)                    0.0236     0.3450 r
+  U1679/ZN (AOI21_X2)                    0.0216     0.3666 f
+  U1687/ZN (OAI21_X2)                    0.0234     0.3900 r
+  U1702/ZN (AOI21_X2)                    0.0212     0.4112 f
+  U1714/ZN (OAI21_X2)                    0.0237     0.4349 r
+  U1732/ZN (AOI21_X2)                    0.0193     0.4542 f
+  U1753/ZN (OAI21_X2)                    0.0210     0.4753 r
+  U1767/ZN (AOI21_X2)                    0.0190     0.4943 f
+  U1780/ZN (OAI21_X2)                    0.0208     0.5151 r
+  U1807/ZN (AOI21_X2)                    0.0191     0.5343 f
+  U1814/ZN (OAI21_X2)                    0.0212     0.5554 r
+  U1843/ZN (AOI21_X2)                    0.0184     0.5738 f
+  U1888/ZN (NOR2_X2)                     0.0142     0.5880 r
+  U1890/ZN (NOR2_X2)                     0.0118     0.5998 f
+  U1949/ZN (NOR2_X2)                     0.0158     0.6157 r
+  U1952/ZN (NOR2_X4)                     0.0109     0.6265 f
+  U2047/ZN (OAI21_X2)                    0.0214     0.6480 r
+  U2068/ZN (AOI21_X2)                    0.0174     0.6654 f
+  U2135/ZN (XNOR2_X1)                    0.0342     0.6995 f
+  d[31] (out)                            0.0000     0.6995 f
+  data arrival time                                 0.6995
+
+  max_delay                              0.7000     0.7000
+  output external delay                  0.0000     0.7000
+  data required time                                0.7000
+  -----------------------------------------------------------
+  data required time                                0.7000
+  data arrival time                                -0.6995
+  -----------------------------------------------------------
+  slack (MET)                                       0.0005
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:56:12 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: a[6] (input port clocked by clk)
+  Endpoint: d[31] (output port)
+  Path Group: non_priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  a[6] (in)                              0.0000     0.0000 r
+  U607/ZN (INV_X4)                       0.0085     0.0085 f
+  U970/ZN (NOR2_X1)                      0.0250     0.0335 r
+  U1681/CO (HA_X1)                       0.0471     0.0806 r
+  U1701/CO (FA_X1)                       0.0643     0.1449 r
+  U1708/CO (FA_X1)                       0.0597     0.2046 r
+  U1724/S (FA_X1)                        0.0969     0.3015 f
+  U240/ZN (XNOR2_X2)                     0.0404     0.3419 f
+  U1904/ZN (XNOR2_X1)                    0.0423     0.3841 f
+  U791/ZN (NOR2_X1)                      0.0259     0.4101 r
+  U1714/ZN (OAI21_X2)                    0.0255     0.4356 f
+  U1732/ZN (AOI21_X2)                    0.0211     0.4567 r
+  U1753/ZN (OAI21_X2)                    0.0195     0.4762 f
+  U1767/ZN (AOI21_X2)                    0.0206     0.4968 r
+  U1780/ZN (OAI21_X2)                    0.0195     0.5163 f
+  U1807/ZN (AOI21_X2)                    0.0206     0.5369 r
+  U1814/ZN (OAI21_X2)                    0.0195     0.5564 f
+  U1843/ZN (AOI21_X2)                    0.0197     0.5761 r
+  U1888/ZN (NOR2_X2)                     0.0123     0.5884 f
+  U1890/ZN (NOR2_X2)                     0.0139     0.6023 r
+  U1949/ZN (NOR2_X2)                     0.0136     0.6159 f
+  U1952/ZN (NOR2_X4)                     0.0126     0.6284 r
+  U2047/ZN (OAI21_X2)                    0.0189     0.6473 f
+  U2068/ZN (AOI21_X2)                    0.0190     0.6663 r
+  U2135/ZN (XNOR2_X1)                    0.0337     0.7000 r
+  d[31] (out)                            0.0000     0.7000 r
+  data arrival time                                 0.7000
+
+  max_delay                              0.7000     0.7000
+  output external delay                  0.0000     0.7000
+  data required time                                0.7000
+  -----------------------------------------------------------
+  data required time                                0.7000
+  data arrival time                                -0.7000
+  -----------------------------------------------------------
+  slack (MET)                                       0.0000
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:56:13 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: a_h[5] (input port clocked by clk)
+  Endpoint: d[31] (output port)
+  Path Group: priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  a_h[5] (in)                            0.0000     0.0000 r
+  U1845/Z (XOR2_X2)                      0.0390     0.0390 r
+  U1846/ZN (NAND2_X4)                    0.0279     0.0669 f
+  U1847/ZN (NOR2_X2)                     0.0161     0.0830 r
+  U1848/ZN (NOR2_X2)                     0.0155     0.0985 f
+  U882/ZN (INV_X1)                       0.0107     0.1092 r
+  U178/ZN (AND2_X2)                      0.0294     0.1386 r
+  U1046/Z (XOR2_X1)                      0.0421     0.1807 r
+  U1045/Z (XOR2_X1)                      0.0531     0.2339 r
+  U648/ZN (NAND2_X1)                     0.0181     0.2519 f
+  U1537/ZN (NAND3_X1)                    0.0243     0.2762 r
+  U34/ZN (NAND2_X1)                      0.0187     0.2949 f
+  U1921/ZN (NAND2_X2)                    0.0165     0.3114 r
+  U1942/S (FA_X1)                        0.0859     0.3972 f
+  U1622/ZN (XNOR2_X1)                    0.0466     0.4438 f
+  U248/ZN (XNOR2_X2)                     0.0418     0.4856 f
+  U1424/ZN (OR2_X4)                      0.0333     0.5189 f
+  U1923/ZN (NAND2_X2)                    0.0138     0.5327 r
+  U1924/ZN (INV_X2)                      0.0084     0.5411 f
+  U1948/ZN (NAND2_X2)                    0.0094     0.5504 r
+  U1949/ZN (NOR2_X2)                     0.0154     0.5658 f
+  U1952/ZN (NOR2_X4)                     0.0126     0.5784 r
+  U2047/ZN (OAI21_X2)                    0.0189     0.5973 f
+  U2068/ZN (AOI21_X2)                    0.0190     0.6162 r
+  U2135/ZN (XNOR2_X1)                    0.0337     0.6499 r
+  d[31] (out)                            0.0000     0.6499 r
+  data arrival time                                 0.6499
+
+  max_delay                              0.6500     0.6500
+  output external delay                  0.0000     0.6500
+  data required time                                0.6500
+  -----------------------------------------------------------
+  data required time                                0.6500
+  data arrival time                                -0.6499
+  -----------------------------------------------------------
+  slack (MET)                                       0.0001
+
+
+1
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:56:13 2017
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  =   2.8061 mW   (66%)
+  Net Switching Power  =   1.4537 mW   (34%)
+                         ---------
+Total Dynamic Power    =   4.2598 mW  (100%)
+
+Cell Leakage Power     =  11.7410 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      2.8061            1.4537           11.7410            4.2715  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              2.8061 mW         1.4537 mW        11.7410 uW         4.2715 mW
+1
+ 
+****************************************
+Report : area
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+Version: L-2016.03-SP5-3
+Date   : Wed Mar  8 19:56:13 2017
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db)
+
+Number of ports:                          194
+Number of nets:                          2431
+Number of cells:                         2167
+Number of combinational cells:           2167
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        206
+Number of references:                      33
+
+Combinational area:               2946.215986
+Buf/Inv area:                      114.380001
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  2946.215986
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8 2946.2160   100.0 2946.2160    0.0000 0.0000 conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn8
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 2946.2160     0.0000  0.0000
+
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar  9 20:09:28 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar  9 20:09:28 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d (out)                             0.01 f            0.00        -0.01
+
+1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar  9 20:09:28 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1

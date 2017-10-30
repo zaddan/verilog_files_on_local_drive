@@ -1,0 +1,5 @@
+*** F:DN I got this folder from Andreas. It is gonna be used as a usecase for the configurable operators.
+*** F: I have changed the idct_simple_add.v for two reasons:
+    1. to modulerize the multiplier 
+    2. so a 24 bit precision can have benefits, b/c 28 bit (shaving only 4 bit) doesn't have an appealing speed up(8 %), but 
+    that is the lowest we can go from the quality stand point

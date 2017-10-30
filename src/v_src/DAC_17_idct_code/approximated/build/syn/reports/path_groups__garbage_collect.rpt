@@ -1,0 +1,18 @@
+ 
+****************************************
+Report : path_group
+Design : idct_BitWidth31_BitWidth130
+Version: L-2016.03-SP5-3
+Date   : Wed Sep 13 19:38:28 2017
+****************************************
+
+                        Critical
+Group Name    Weight    Range
+--------------------------------------------------------------------------------
+**default**   1.00      0.00                 
+clk           1.00      0.00                 
+
+Path Group clk:
+	-to      clk
+
+1

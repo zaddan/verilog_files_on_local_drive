@@ -1,0 +1,41 @@
+ncverilog(64): 06.10-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+Recompiling... reason: file '../conf_int_mul__noFF__arch_agnos__tb.v' is newer than expected.
+	expected: Sun Apr  2 22:01:32 2017
+	actual:   Sun Apr  2 22:14:10 2017
+file: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_udp.v
+file: /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mul__noFF__arch_agnos__tb.v
+file: /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mul__noFF__arch_agnos__w_wrapper.v
+	module worklib.conf_int_mul__noFF__arch_agnos:v
+		errors: 0, warnings: 0
+ncvlog: *W,LIBNOU: Library "/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_N0P0.v" given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.conf_int_mul__noFF__arch_agnos:v <0x78aa083b>
+			streams:  13, words:  4448
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                74      74
+		UDPs:                   15       4
+		Primitives:            278       5
+		Registers:              13      17
+		Scalar wires:            9       -
+		Vectored wires:          4       -
+		Always blocks:           4       4
+		Initial blocks:          7       7
+		Cont. assignments:       1       4
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.AND2_X1_func:v
+Loading snapshot worklib.AND2_X1_func:v .................... Done
+ncsim> source /usr/local/packages/cadence_2007/ius61/tools/inca/files/ncsimrc
+ncsim> run
+$readmem error: open failed on file "../../build/functional/int_values_in_hex.txt"
+Open failed on file "../../build/functional/results.txt". No such file or directory
+Simulation complete via $finish(1) at time 2 US + 0
+../conf_int_mul__noFF__arch_agnos__tb.v:108     $finish;
+ncsim> exit

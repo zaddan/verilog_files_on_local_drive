@@ -1,0 +1,2 @@
+to_be_ignored mul__inst/U2 mul__inst/U5 mul__inst/U1 mul__inst/U4 U1 
+to_be_ignored mul__inst/U1 mul__inst/U4 U1 

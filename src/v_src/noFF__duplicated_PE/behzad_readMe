@@ -1,0 +1,7 @@
+// contains the setup where we have multiple PE (note that addition hasn't been done yet)
+
+direction on synthesis
+first synthesize the apx version.  (set params__hardwired to 24)
+dump the apx version in the acc file. fix the name of the module(this only need to be revised if the apx version has diff number of bits than 24)
+synthesize the accurate version (set params__hardwired to 32)
+

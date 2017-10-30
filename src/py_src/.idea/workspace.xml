@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4914d998-35ea-419e-99a7-d3871cb6a349" name="Default" comment="" />
+    <ignored path="py_src.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="py_src" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="search_for_best_delay.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search_for_best_delay.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1602">
+              <caret line="94" column="113" selection-start-line="94" selection-start-column="113" selection-end-line="94" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_delays_for_diff_libs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_delays_for_diff_libs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1782">
+              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+              <folding>
+                <marker date="1503071145823" expanded="true" signature="212:382" ph="import ..." />
+                <marker date="1503071145823" expanded="true" signature="517:6772" ph="..." />
+                <marker date="1503071145823" expanded="true" signature="1542:1696" ph="..." />
+                <marker date="1503071145823" expanded="true" signature="3406:3649" ph="..." />
+                <marker date="1503071145823" expanded="true" signature="4378:4440" ph="..." />
+                <marker date="1503071145823" expanded="true" signature="4722:4925" ph="..." />
+                <marker date="1503071145823" expanded="true" signature="4930:5352" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1503071145823" expanded="true" signature="5821:5967" ph="..." />
+                <marker date="1503071145823" expanded="true" signature="6178:6772" ph="..." />
+                <marker date="1503071145823" expanded="true" signature="6787:6907" ph="..." />
+                <marker date="1503071145823" expanded="true" signature="6917:7660" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_delays_for_diff_libs__helpers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_delays_for_diff_libs__helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9090">
+              <caret line="512" column="33" selection-start-line="512" selection-start-column="33" selection-end-line="512" selection-end-column="33" />
+              <folding>
+                <marker date="1503021434178" expanded="false" signature="339:397" ph="import ..." />
+                <marker date="1503021434178" expanded="true" signature="452:1209" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="639:826" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="673:744" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="828:1063" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="1349:2086" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="1712:1875" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="2231:2867" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="2610:2757" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="2870:3186" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="3290:3604" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="3706:4322" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="4382:4776" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="4878:5268" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="5328:5721" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="5724:5982" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="6048:8396" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="6511:6646" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="6980:7306" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="7655:7818" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="8156:8187" ph="&quot;...&quot;" />
+                <marker date="1503021434178" expanded="true" signature="8443:8815" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="8539:8671" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="8580:8651" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="8911:15561" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="8921:9028" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="9047:9450" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="9167:9271" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="10977:11191" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="11222:11793" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1503021434178" expanded="true" signature="12183:15561" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1503021434178" expanded="true" signature="15564:15664" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="15760:18794" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="16471:16858" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="17132:17291" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="17301:18749" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="17365:18749" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="17392:18431" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="17465:17585" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="18032:18300" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="18432:18749" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="18797:19084" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="19149:21033" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="20948:20979" ph="&quot;...&quot;" />
+                <marker date="1503021434178" expanded="true" signature="21116:23460" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="21711:21755" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="21829:21981" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="21991:22568" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="22034:22568" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="22165:22321" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="22367:22568" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="22603:22862" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="23612:26817" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="25886:26014" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="26407:26438" ph="&quot;...&quot;" />
+                <marker date="1503021434178" expanded="true" signature="26879:27132" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="26880:27073" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="27308:27417" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="27627:27736" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="27777:28691" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="27860:27977" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="27987:28691" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="28003:28691" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="28030:28691" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="28273:28691" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="28385:28691" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="28386:28492" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="28693:28824" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="28965:32704" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="28983:29109" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="29363:29480" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="29490:32653" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="29506:32653" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="29533:32653" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="29776:32504" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="30005:30856" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="30068:30856" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="30246:30373" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="30416:30856" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="30673:30856" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="30878:30954" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="30975:32504" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1503021434178" expanded="true" signature="32505:32653" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="32707:32854" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="33026:36991" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="34830:34883" ph="&quot;...&quot;" />
+                <marker date="1503021434178" expanded="true" signature="35029:35061" ph="&quot;...&quot;" />
+                <marker date="1503021434178" expanded="true" signature="35078:35119" ph="&quot;...&quot;" />
+                <marker date="1503021434178" expanded="true" signature="36008:36136" ph="..." />
+                <marker date="1503021434178" expanded="true" signature="36581:36612" ph="&quot;...&quot;" />
+                <marker date="1503021434178" expanded="true" signature="37397:38630" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params__hardwired.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/params__hardwired.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_for_delay_profile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search_for_delay_profile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2268">
+              <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+              <folding>
+                <element signature="e#211#220#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_for_delay_profile__helpers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search_for_delay_profile__helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12060">
+              <caret line="670" column="25" selection-start-line="670" selection-start-column="25" selection-end-line="670" selection-end-column="25" />
+              <folding>
+                <element signature="e#212#221#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input__file.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input__file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="846">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="e#57#79#0" expanded="true" />
+                <marker date="1503071271902" expanded="true" signature="220:313" ph="..." />
+                <marker date="1503071271902" expanded="true" signature="328:431" ph="..." />
+                <marker date="1503071271902" expanded="true" signature="1087:1426" ph="..." />
+                <marker date="1503071271902" expanded="true" signature="1780:1931" ph="..." />
+                <marker date="1503071271902" expanded="true" signature="4683:4892" ph="..." />
+                <marker date="1503071271902" expanded="true" signature="5544:5900" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parse_for_different_delay_and_plot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parse_for_different_delay_and_plot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1872">
+              <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+              <folding>
+                <marker date="1503851098609" expanded="true" signature="805:922" ph="..." />
+                <marker date="1503851098609" expanded="true" signature="1667:1800" ph="..." />
+                <marker date="1503851098609" expanded="true" signature="3030:3488" ph="..." />
+                <marker date="1503851098609" expanded="true" signature="3428:3488" ph="..." />
+                <marker date="1503851098609" expanded="true" signature="14289:14612" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/search_for_best_sub_delay.py" />
+        <option value="$PROJECT_DIR$/vars__tool_generated.py" />
+        <option value="$PROJECT_DIR$/scratch" />
+        <option value="$PROJECT_DIR$/bu__src.py" />
+        <option value="$PROJECT_DIR$/vars__hardwired.py" />
+        <option value="$PROJECT_DIR$/parse_for_different_delay_and_plot.py" />
+        <option value="$PROJECT_DIR$/get_delays_for_diff_libs__helpers.py" />
+        <option value="$PROJECT_DIR$/search_for_delay_profile.py" />
+        <option value="$PROJECT_DIR$/search_for_best_delay.py" />
+        <option value="$PROJECT_DIR$/search_for_delay_profile__helpers.py" />
+        <option value="$PROJECT_DIR$/get_delays_for_diff_libs.py" />
+        <option value="$PROJECT_DIR$/input__file.py" />
+        <option value="$PROJECT_DIR$/params__hardwired.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="77" />
+    <option name="width" value="1920" />
+    <option name="height" value="948" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType ProjectPane="true" />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py_src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py_src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="py_src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="py_src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../apx_tool_chain/test_operators/src/PySrc" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/py_src/search_for_delay_profile__helpers.py" />
+  </component>
+  <component name="RunManager" selected="Python.get_delays_for_diff_libs">
+    <configuration default="false" name="search_for_delay_profile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/search_for_delay_profile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="get_reg_info" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_reg_info.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="get_delays_for_diff_libs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_delays_for_diff_libs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="search_for_best_delay" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/search_for_best_delay.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="parse_for_different_delay_and_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parse_for_different_delay_and_plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="py_src" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.search_for_delay_profile" />
+      <item index="1" class="java.lang.String" itemvalue="Python.get_reg_info" />
+      <item index="2" class="java.lang.String" itemvalue="Python.get_delays_for_diff_libs" />
+      <item index="3" class="java.lang.String" itemvalue="Python.search_for_best_delay" />
+      <item index="4" class="java.lang.String" itemvalue="Python.parse_for_different_delay_and_plot" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.get_delays_for_diff_libs" />
+        <item index="1" class="java.lang.String" itemvalue="Python.search_for_best_delay" />
+        <item index="2" class="java.lang.String" itemvalue="Python.search_for_delay_profile" />
+        <item index="3" class="java.lang.String" itemvalue="Python.parse_for_different_delay_and_plot" />
+        <item index="4" class="java.lang.String" itemvalue="Python.get_reg_info" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED,ALPHA_COMPARATOR" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4914d998-35ea-419e-99a7-d3871cb6a349" name="Default" comment="" />
+      <created>1489965728061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1489965728061</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="77" width="1920" height="948" extended-state="1" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28988528" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28956228" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3522868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28956228" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18932606" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3522868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="438" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>1371</line>
+          <option name="timeStamp" value="457" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>958</line>
+          <option name="timeStamp" value="460" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>954</line>
+          <option name="timeStamp" value="462" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_best_delay.py</url>
+          <line>117</line>
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>1448</line>
+          <option name="timeStamp" value="468" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>473</line>
+          <option name="timeStamp" value="471" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>1465</line>
+          <option name="timeStamp" value="472" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>731</line>
+          <option name="timeStamp" value="484" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>668</line>
+          <option name="timeStamp" value="487" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>707</line>
+          <option name="timeStamp" value="489" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/search_for_delay_profile__helpers.py</url>
+          <line>717</line>
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/get_delays_for_diff_libs__helpers.py</url>
+          <line>1352</line>
+          <option name="timeStamp" value="498" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/get_delays_for_diff_libs__helpers.py</url>
+          <line>1364</line>
+          <option name="timeStamp" value="499" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="500" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="bestDesignsPrecision__delay__d" />
+        <watch expression="evol_log__addr" />
+        <watch expression="syn__file__na" />
+        <watch expression="input__obj.syn__module__na" />
+        <watch expression="syn__wrapper_module__na" />
+        <watch expression="tcl_parametrs" />
+        <watch expression="word_list" />
+        <watch expression="sub_module__n" />
+        <watch expression="precisions_covered_so_far__l" />
+        <watch expression="file_to_look_for_slack_in" />
+        <watch expression="src_file" />
+        <watch expression="src_file" />
+        <watch expression="src_file" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/search_for_best_delay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="94" column="113" selection-start-line="94" selection-start-column="113" selection-end-line="94" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_delays_for_diff_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <marker date="1503071145823" expanded="true" signature="212:382" ph="import ..." />
+            <marker date="1503071145823" expanded="true" signature="517:6772" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="1542:1696" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="3406:3649" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="4378:4440" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="4722:4925" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="4930:5352" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1503071145823" expanded="true" signature="5821:5967" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="6178:6772" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="6787:6907" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="6917:7660" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_delays_for_diff_libs__helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9162">
+          <caret line="509" column="33" selection-start-line="509" selection-start-column="33" selection-end-line="509" selection-end-column="33" />
+          <folding>
+            <marker date="1503021434178" expanded="false" signature="339:397" ph="import ..." />
+            <marker date="1503021434178" expanded="true" signature="452:1209" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="639:826" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="673:744" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="828:1063" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="1349:2086" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="1712:1875" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="2231:2867" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="2610:2757" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="2870:3186" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="3290:3604" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="3706:4322" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="4382:4776" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="4878:5268" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="5328:5721" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="5724:5982" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="6048:8396" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="6511:6646" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="6980:7306" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="7655:7818" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8156:8187" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="8443:8815" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8539:8671" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8580:8651" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8911:15561" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8921:9028" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="9047:9450" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="9167:9271" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="10977:11191" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="11222:11793" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1503021434178" expanded="true" signature="12183:15561" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1503021434178" expanded="true" signature="15564:15664" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="15760:18794" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="16471:16858" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17132:17291" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17301:18749" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17365:18749" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17392:18431" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17465:17585" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="18032:18300" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="18432:18749" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="18797:19084" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="19149:21033" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="20948:20979" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="21116:23460" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="21711:21755" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="21829:21981" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="21991:22568" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="22034:22568" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="22165:22321" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="22367:22568" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="22603:22862" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="23612:26817" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="25886:26014" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="26407:26438" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="26879:27132" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="26880:27073" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27308:27417" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27627:27736" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27777:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27860:27977" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27987:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28003:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28030:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28273:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28385:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28386:28492" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28693:28824" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28965:32704" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28983:29109" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29363:29480" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29490:32653" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29506:32653" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29533:32653" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29776:32504" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30005:30856" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30068:30856" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30246:30373" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30416:30856" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30673:30856" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30878:30954" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30975:32504" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1503021434178" expanded="true" signature="32505:32653" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="32707:32854" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="33026:36991" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="34830:34883" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="35029:35061" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="35078:35119" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="36008:36136" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="36581:36612" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="37397:38630" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params__hardwired.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+          <folding>
+            <element signature="e#211#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile__helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12060">
+          <caret line="670" column="25" selection-start-line="670" selection-start-column="25" selection-end-line="670" selection-end-column="25" />
+          <folding>
+            <element signature="e#212#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input__file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#57#79#0" expanded="true" />
+            <marker date="1503071271902" expanded="true" signature="220:313" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="328:431" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1087:1426" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1780:1931" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="4683:4892" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="5544:5900" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_for_different_delay_and_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+          <folding>
+            <marker date="1503851098609" expanded="true" signature="805:922" ph="..." />
+            <marker date="1503851098609" expanded="true" signature="1667:1800" ph="..." />
+            <marker date="1503851098609" expanded="true" signature="3030:3488" ph="..." />
+            <marker date="1503851098609" expanded="true" signature="3428:3488" ph="..." />
+            <marker date="1503851098609" expanded="true" signature="14289:14612" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_best_delay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="128" column="27" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params__hardwired.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+          <folding>
+            <element signature="e#211#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile__helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12042">
+          <caret line="670" column="25" selection-start-line="670" selection-start-column="25" selection-end-line="670" selection-end-column="25" />
+          <folding>
+            <element signature="e#212#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input__file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding>
+            <element signature="e#57#79#0" expanded="true" />
+            <marker date="1503071271902" expanded="true" signature="220:313" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="328:431" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1087:1426" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1780:1931" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="4683:4892" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="5544:5900" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_best_delay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1998">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params__hardwired.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile__helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#212#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="e#211#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars__hardwired.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input__file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="e#57#79#0" expanded="true" />
+            <marker date="1503071271902" expanded="true" signature="220:313" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="328:431" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1087:1426" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1780:1931" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="4683:4892" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="5544:5900" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_best_delay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1908">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile__helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#212#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params__hardwired.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="e#211#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars__hardwired.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input__file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="e#57#79#0" expanded="true" />
+            <marker date="1503071271902" expanded="true" signature="220:313" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="328:431" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1087:1426" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1780:1931" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="4683:4892" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="5544:5900" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#211#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_best_sub_delay.py" />
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile__helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4014">
+          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+          <folding>
+            <element signature="e#212#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_best_sub_delay.py" />
+    <entry file="file:///usr/lib/python2.7/site.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="385" column="25" selection-start-line="385" selection-start-column="25" selection-end-line="385" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/pymodules/python2.7/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_best_sub_delay.py" />
+    <entry file="file:///usr/lib/pymodules/python2.7/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="2372" column="0" selection-start-line="2372" selection-start-column="0" selection-end-line="2372" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/genericpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/stat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="104" column="31" selection-start-line="104" selection-start-column="31" selection-end-line="104" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bu__src.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="68" selection-start-line="0" selection-start-column="68" selection-end-line="0" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="963" column="0" selection-start-line="963" selection-start-column="0" selection-end-line="963" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars__tool_generated.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars__hardwired.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_best_delay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1602">
+          <caret line="94" column="113" selection-start-line="94" selection-start-column="113" selection-end-line="94" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_delays_for_diff_libs__helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9090">
+          <caret line="512" column="33" selection-start-line="512" selection-start-column="33" selection-end-line="512" selection-end-column="33" />
+          <folding>
+            <marker date="1503021434178" expanded="false" signature="339:397" ph="import ..." />
+            <marker date="1503021434178" expanded="true" signature="452:1209" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="639:826" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="673:744" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="828:1063" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="1349:2086" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="1712:1875" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="2231:2867" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="2610:2757" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="2870:3186" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="3290:3604" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="3706:4322" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="4382:4776" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="4878:5268" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="5328:5721" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="5724:5982" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="6048:8396" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="6511:6646" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="6980:7306" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="7655:7818" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8156:8187" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="8443:8815" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8539:8671" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8580:8651" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8911:15561" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="8921:9028" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="9047:9450" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="9167:9271" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="10977:11191" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="11222:11793" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1503021434178" expanded="true" signature="12183:15561" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1503021434178" expanded="true" signature="15564:15664" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="15760:18794" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="16471:16858" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17132:17291" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17301:18749" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17365:18749" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17392:18431" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="17465:17585" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="18032:18300" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="18432:18749" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="18797:19084" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="19149:21033" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="20948:20979" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="21116:23460" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="21711:21755" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="21829:21981" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="21991:22568" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="22034:22568" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="22165:22321" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="22367:22568" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="22603:22862" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="23612:26817" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="25886:26014" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="26407:26438" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="26879:27132" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="26880:27073" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27308:27417" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27627:27736" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27777:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27860:27977" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="27987:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28003:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28030:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28273:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28385:28691" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28386:28492" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28693:28824" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28965:32704" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="28983:29109" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29363:29480" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29490:32653" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29506:32653" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29533:32653" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="29776:32504" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30005:30856" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30068:30856" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30246:30373" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30416:30856" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30673:30856" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30878:30954" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="30975:32504" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1503021434178" expanded="true" signature="32505:32653" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="32707:32854" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="33026:36991" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="34830:34883" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="35029:35061" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="35078:35119" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="36008:36136" ph="..." />
+            <marker date="1503021434178" expanded="true" signature="36581:36612" ph="&quot;...&quot;" />
+            <marker date="1503021434178" expanded="true" signature="37397:38630" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_delays_for_diff_libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding>
+            <marker date="1503071145823" expanded="true" signature="212:382" ph="import ..." />
+            <marker date="1503071145823" expanded="true" signature="517:6772" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="1542:1696" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="3406:3649" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="4378:4440" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="4722:4925" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="4930:5352" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1503071145823" expanded="true" signature="5821:5967" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="6178:6772" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="6787:6907" ph="..." />
+            <marker date="1503071145823" expanded="true" signature="6917:7660" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile__helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12060">
+          <caret line="670" column="25" selection-start-line="670" selection-start-column="25" selection-end-line="670" selection-end-column="25" />
+          <folding>
+            <element signature="e#212#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_for_different_delay_and_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1872">
+          <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+          <folding>
+            <marker date="1503851098609" expanded="true" signature="805:922" ph="..." />
+            <marker date="1503851098609" expanded="true" signature="1667:1800" ph="..." />
+            <marker date="1503851098609" expanded="true" signature="3030:3488" ph="..." />
+            <marker date="1503851098609" expanded="true" signature="3428:3488" ph="..." />
+            <marker date="1503851098609" expanded="true" signature="14289:14612" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input__file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#57#79#0" expanded="true" />
+            <marker date="1503071271902" expanded="true" signature="220:313" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="328:431" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1087:1426" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="1780:1931" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="4683:4892" ph="..." />
+            <marker date="1503071271902" expanded="true" signature="5544:5900" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_for_delay_profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+          <folding>
+            <element signature="e#211#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params__hardwired.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

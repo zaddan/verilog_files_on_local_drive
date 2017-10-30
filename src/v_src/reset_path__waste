@@ -1,0 +1,194 @@
+2.  Synopsys Commands                                        Command Reference
+                                  reset_path
+
+NAME
+       reset_path
+              Resets the specified paths to single cycle timing.
+
+SYNTAX
+       status reset_path
+               [-setup | -hold]
+               [-rise | -fall]
+               [-from from_list
+                | -rise_from rise_from_list
+                | -fall_from fall_from_list]
+               [-through through_list]
+               [-rise_through rise_through_list]
+               [-fall_through fall_through_list]
+               [-to to_list
+                | -rise_to rise_to_list
+                | -fall_to fall_to_list]
+
+   Data Types
+       from_list             list
+       rise_from_list        list
+       fall_from_list        list
+       through_list          list
+       rise_through_list     list
+       fall_through_list     list
+       to_list               list
+       rise_to_list          list
+       fall_to_list          list
+
+ARGUMENTS
+       -setup Specifies  that  the  setup checking (maximum delay) is reset to
+              single cycle behavior.
+
+       -hold  Specifies that the hold checking (minimum  delay)  is  reset  to
+              single cycle behavior.
+
+       -rise  Specifies  that the rising path delays are reset to single cycle
+              behavior.  The default is that both rising  and  falling  delays
+              are affected.
+
+       -fall  Specifies  that  falling  path  delays  are  set to single cycle
+              behavior.  The default is that both rising  and  falling  delays
+              are affected.
+
+       -from from_list
+              Specifies  the  names  of  clocks, pins, or cells to use to find
+              path startpoints.  If a specified object is a clock,  all  flip-
+              flops,  latches,  and  primary  inputs related to that clock are
+              used as path startpoints.
+
+       -rise_from rise_from_list
+              Specifies the names of clocks, pins, or cells  to  use  to  find
+              path  startpoints.   This option is similar to the -from option,
+              except that the path must rise from the objects specified.  If a
+              clock  object  is  specified,  this  option  selects startpoints
+              clocked by the named clock, but only the paths launched by  ris-
+              ing  edge  of the clock at the clock source, taking into account
+              any logical inversions along the clock path.  You can  use  only
+              one of -from, -rise_from, and -fall_from.
+
+       -fall_from fall_from_list
+              Specifies  the  names  of  clocks, pins, or cells to use to find
+              path startpoints.  This option is similar to the  -from  option,
+              except that the path must fall from the objects specified.  If a
+              clock object  is  specified,  this  option  selects  startpoints
+              clocked  by  the  named  clock,  but  only the paths launched by
+              falling edge of the clock  at  the  clock  source,  taking  into
+              account  any  logical  inversions along the clock path.  You can
+              use only one of -from, -rise_from, and -fall_from.
+
+       -through through_list
+              Specifies a list of path throughpoints (port, pin, or leaf  cell
+              names)  of  the  current design.  The reset_path applies only to
+              paths that pass through one of the points in  the  through_list.
+              If  more  than  one  object  is  included,  the  objects must be
+              enclosed either in quotation marks ("") or in braces  ({}).   If
+              you  specify  the -through option multiple times, the reset_path
+              applies to paths that pass through a member of each through_list
+              in the order the lists are given.  In other words, the path must
+              first pass through a member  of  the  first  through_list,  then
+              through a member of the second list, and so on for every through
+              list specified.  If you use the -through option  in  combination
+              with  the  -from  or -to options, the reset_path applies only if
+              the -from or -to conditions are satisfied and the -through  con-
+              ditions are satisfied.
+
+       -rise_through rise_through_list
+              Specifies  a list of path throughpoints (port, pin, or leaf cell
+              names) of the current design.  This option  is  similar  to  the
+              -through option, but applies only to paths with a rising transi-
+              tion at the specified objects.  You  can  specify  -rise_through
+              more  than  once  in  a  single  command  invocation as with the
+              -through option.
+
+       -fall_through fall_through_list
+              Specifies a list of path throughpoints (port, pin, or leaf  cell
+              names)  of  the  current  design.  This option is similar to the
+              -through option, but applies only to paths with a falling  tran-
+              sition  at the specified objects.  You can specify -fall_through
+              more than once in  a  single  command  invocation  as  with  the
+              -through option.
+
+       -to to_list
+              Specifies  the  names  of  clocks, pins, or cells to use to find
+              path endpoints.  If a specified object is  a  clock,  all  flip-
+              flops,  latches,  and  primary outputs related to that clock are
+              used as path endpoints.
+
+       -rise_to rise_to_list
+              Specifies the names of clocks, pins, or cells  to  use  to  find
+              path  endpoints.   This option is similar to the -to option, but
+              applies only to paths rising at the endpoint.  If a clock object
+              is specified, this option selects endpoints clocked by the named
+              clock, but only the paths captured by rising edge of  the  clock
+              at  clock  source,  taking  into  account any logical inversions
+              along the clock path.  You can use only one  of  -to,  -rise_to,
+              and -fall_to.
+
+       -fall_to fall_to_list
+              Specifies  the  names  of  clocks, pins, or cells to use to find
+              path endpoints.  This option is similar to the -to  option,  but
+              applies  only  to  paths  falling  at  the endpoint.  If a clock
+              object is specified, this option selects  endpoints  clocked  by
+              the  named clock, but only the paths launched by falling edge of
+              the clock at the clock source, taking into account  any  logical
+              inversions  along  the clock path.  You can use only one of -to,
+              -rise_to, and -fall_to.
+
+DESCRIPTION
+       This command specifies that designated  timing  paths  in  the  current
+       design  are  restored  to  the  default  single  cycle  behavior.   The
+       reset_path command is used to  undo  the  effect  of  the  set_multicy-
+       cle_path,  set_false_path,  set_max_delay,  and set_min_delay commands.
+       Remove the attributes set by those commands with reset_path.  Note that
+       a  general reset_path command removes the effect of matching general or
+       specific point-to-point exception commands.
+
+       If you do not specify -setup or -hold, both are restored to the default
+       behavior.   The  default  is  a  setup relation of one cycle and a hold
+       relation of 0 cycles.  A hold value of 0 means that hold is checked one
+       active edge before the setup data at the destination register.
+
+       If  you specify -setup, only setup (maximum delay) checking is reset to
+       the default behavior.  If you specify -hold, only hold (minimum  delay)
+       checking is reset to the default behavior.
+
+       There  is  separate  setup  and hold information for rise and fall.  In
+       most cases, these are reset together.  The -rise or -fall  options  are
+       used to reset only one or the other.
+
+       To disable setup or hold calculations for paths, use the set_false_path
+       command.
+
+       To see  the  nondefault  path  requirements  on  the  design,  use  the
+       report_timing_requirements command.
+
+   Multicorner-Multimode Support
+       This command uses information from the current scenario only.
+
+EXAMPLES
+       The  following  example  resets  the timing relation between ff1/CP and
+       ff2/D to the default single cycle:
+
+         prompt> reset_path -from {ff1/CP} -to {ff2/D}
+
+       This example resets the rising delay to single cycle for all paths end-
+       ing at latch2d:
+
+         prompt> reset_path -rise -to {latch2d}
+
+       This  example shows how a specific and general point-to-point exception
+       is set and then removed:
+
+         prompt> set_false_path 2 -from A -to Z
+
+         prompt> set_max_delay 15 -to Z
+
+         prompt> reset_path -to Z /* removes all exceptions to Z */
+
+SEE ALSO
+       current_design(2)
+       report_constraint(2)
+       report_timing_requirements(2)
+       reset_design(2)
+       set_false_path(2)
+       set_max_delay(2)
+       set_min_delay(2)
+       set_multicycle_path(2)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

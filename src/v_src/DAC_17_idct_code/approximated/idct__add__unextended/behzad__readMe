@@ -1,0 +1,1 @@
+The adder is wider than 32 bit, however, once all the additions are done, we actually get rid of the msbs

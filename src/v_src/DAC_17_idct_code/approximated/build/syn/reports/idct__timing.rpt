@@ -1,0 +1,84 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'idct_BitWidth31_BitWidth130_4' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : idct_BitWidth31_BitWidth130_4
+Version: L-2016.03-SP5-3
+Date   : Sat Sep  2 19:00:28 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: mul__inst/b_reg_reg[13]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mul__inst/c_reg_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  mul__inst/b_reg_reg[13]/CK (DFFR_X2)                  0.0000 #   0.0000 r
+  mul__inst/b_reg_reg[13]/QN (DFFR_X2)                  0.0836     0.0836 r
+  mul__inst/U444/ZN (INV_X8)                            0.0201     0.1037 f
+  mul__inst/mul__inst__acc/b[13] (conf_int_mul__noFF__arch_agnos__acc_OP_BITWIDTH18_DATA_PATH_BITWIDTH26)
+                                                        0.0000     0.1037 f
+  mul__inst/mul__inst__acc/U399/ZN (INV_X2)             0.0167     0.1204 r
+  mul__inst/mul__inst__acc/U398/ZN (NAND2_X2)           0.0193     0.1397 f
+  mul__inst/mul__inst__acc/U1692/ZN (NOR2_X4)           0.0192     0.1589 r
+  mul__inst/mul__inst__acc/U2203/ZN (INV_X8)            0.0136     0.1725 f
+  mul__inst/mul__inst__acc/U2202/ZN (NOR2_X2)           0.0123     0.1848 r
+  mul__inst/mul__inst__acc/U3811/ZN (AOI21_X2)          0.0202     0.2051 f
+  mul__inst/mul__inst__acc/U3210/ZN (NOR2_X2)           0.0164     0.2214 r
+  mul__inst/mul__inst__acc/U2908/ZN (INV_X4)            0.0105     0.2320 f
+  mul__inst/mul__inst__acc/U2453/ZN (NAND3_X2)          0.0184     0.2504 r
+  mul__inst/mul__inst__acc/U3639/ZN (NAND2_X4)          0.0171     0.2675 f
+  mul__inst/mul__inst__acc/U22/ZN (NOR2_X2)             0.0171     0.2846 r
+  mul__inst/mul__inst__acc/U1278/ZN (NOR2_X2)           0.0116     0.2962 f
+  mul__inst/mul__inst__acc/U1277/ZN (NOR2_X2)           0.0135     0.3097 r
+  mul__inst/mul__inst__acc/U1939/ZN (NAND3_X2)          0.0130     0.3227 f
+  mul__inst/mul__inst__acc/U899/ZN (NAND2_X2)           0.0164     0.3391 r
+  mul__inst/mul__inst__acc/U895/ZN (NOR2_X2)            0.0150     0.3541 f
+  mul__inst/mul__inst__acc/U3644/ZN (INV_X4)            0.0100     0.3641 r
+  mul__inst/mul__inst__acc/U1763/ZN (NAND3_X2)          0.0125     0.3767 f
+  mul__inst/mul__inst__acc/U1162/ZN (NAND3_X2)          0.0179     0.3946 r
+  mul__inst/mul__inst__acc/U366/ZN (NAND2_X1)           0.0207     0.4153 f
+  mul__inst/mul__inst__acc/U2287/ZN (NAND2_X2)          0.0174     0.4327 r
+  mul__inst/mul__inst__acc/U1146/ZN (NAND2_X4)          0.0157     0.4485 f
+  mul__inst/mul__inst__acc/U1101/ZN (NAND2_X2)          0.0185     0.4669 r
+  mul__inst/mul__inst__acc/U207/ZN (INV_X4)             0.0138     0.4807 f
+  mul__inst/mul__inst__acc/U1099/ZN (OAI22_X2)          0.0233     0.5040 r
+  mul__inst/mul__inst__acc/U2119/ZN (AOI21_X2)          0.0221     0.5260 f
+  mul__inst/mul__inst__acc/U3604/ZN (NAND3_X2)          0.0146     0.5406 r
+  mul__inst/mul__inst__acc/d[39] (conf_int_mul__noFF__arch_agnos__acc_OP_BITWIDTH18_DATA_PATH_BITWIDTH26)
+                                                        0.0000     0.5406 r
+  mul__inst/U441/ZN (NAND2_X2)                          0.0120     0.5526 f
+  mul__inst/U315/ZN (NAND2_X2)                          0.0107     0.5633 r
+  mul__inst/U311/ZN (AOI21_X2)                          0.0172     0.5804 f
+  mul__inst/U309/ZN (NAND2_X2)                          0.0121     0.5925 r
+  mul__inst/c_reg_reg[31]/D (DFFR_X1)                   0.0000     0.5925 r
+  data arrival time                                                0.5925
+
+  clock clk (rise edge)                                 0.5380     0.5380
+  clock network delay (ideal)                           0.0000     0.5380
+  mul__inst/c_reg_reg[31]/CK (DFFR_X1)                  0.0000     0.5380 r
+  library setup time                                   -0.0275     0.5105
+  data required time                                               0.5105
+  --------------------------------------------------------------------------
+  data required time                                               0.5105
+  data arrival time                                               -0.5925
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0820
+
+
+1

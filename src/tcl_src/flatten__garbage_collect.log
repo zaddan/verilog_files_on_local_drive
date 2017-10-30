@@ -1,0 +1,121 @@
+2.  Synopsys Commands                                        Command Reference
+                                  set_flatten
+
+NAME
+       set_flatten
+              Sets or removes the flatten attribute on specified designs or on
+              the current design, to enable or disable  the  flattening  opti-
+              mization step during compile.
+
+SYNTAX
+       int set_flatten
+               [true | false]
+               [-effort low | medium | high]
+               [-minimize single_output | multiple_output | none]
+               [-phase true | false]  [-design design_list] [-quiet]
+
+   Data Types
+       design_list     list
+
+ARGUMENTS
+       true | false
+              When  true,  sets  the  flatten  attribute  on  the  designs  in
+              design_list and enables  flattening  for  those  designs.   When
+              false  (the default value), the flatten attribute is removed and
+              flattening is turned off for those designs.
+
+       -effort low | medium | high
+              Indicates the level of CPU effort that compile uses to flatten a
+              design.  The default is low.
+
+       -minimize single_output | multiple_output | none
+              Indicates the minimization strategy to be used after a design is
+              flattened.  If single_output (the default  value),  Design  Com-
+              piler independently minimizes the equations for each output in a
+              design.  If multiple_output, Design Compiler minimizes all logic
+              for  a  design.  If none, Design Compiler does not perform mini-
+              mization.
+
+       -phase true | false
+              When true, allows logic flattening to invert the phase  of  out-
+              puts  during  compile.   When  false  (the default value), logic
+              flattening does not invert the phase of outputs.  This option is
+              used only if the flatten attribute is set.
+
+       -design design_list
+              Specifies a list of designs to be flattened.  The default is the
+              current design.
+
+       -quiet Indicates that warning messages are not to be displayed.
+
+DESCRIPTION
+       Sets or removes the flatten attribute on specified designs  or  on  the
+       current  design, enabling or disabling the flattening optimization step
+       during compile.  If no options are specified, the flatten attribute  is
+       set on the current design.
+
+       To enable flattening during optimization across the entire design hier-
+       archy, issue the set_flatten command on the top design and each  subde-
+       sign.  To display the values of all flatten attributes, use report_com-
+       pile_options.
+
+       This optimization step reduces a logic network to a  two-level  sum-of-
+       products  (AND/OR)  representation  by  removing all intermediate vari-
+       ables.  Full flattening eliminates all existing  logic  structure.   By
+       removing  sub-optimal  intermediate  variables,  compile is able to use
+       other intermediate variables that otherwise might not have been  found.
+
+       If  phase  assignment has been enabled by invoking the set_flatten com-
+       mand with -phase true, then the flattening optimization step in compile
+       will  compare  the  implementation  of  each logic equation in both its
+       original and complemented form and choose the form  with  the  smallest
+       estimated area.
+
+       When the minimization strategy is set to single_output, Design Compiler
+       minimizes the equations for each output individually.  This results  in
+       the  smallest implementation for each output, but the design as a whole
+       might not be the most efficient because product  (AND  terms)  are  not
+       well  shared  between  outputs.   When the strategy is multiple_output,
+       Design Compiler minimizes all the logic for a  design,  and  shares  as
+       many product terms between outputs as possible.
+
+       NOTE:   Setting  the flatten attribute can potentially cause compile to
+       have long run times or to run out of memory, because  logic  flattening
+       and and equation minimization is a potentially exponential process.  If
+       you encounter an "out of memory" error or excessive run time,  you  can
+       modify  the  options  one at a time and re-run after each modification.
+       Here is the recommended order for modifying the options:
+
+       1.  Use single_output instead of multiple_output minimization strategy.
+       2.  Use the -phase false option instead of the default -phase true option.
+       3.  Use a lower effort setting.
+
+       To remove  the  flatten  attribute,  use  remove_attribute  or  execute
+       set_flatten  false.   reset_design  removes  all  attributes, including
+       flatten.
+
+       For more details on flattening during optimization, refer to the Design
+       Compiler Reference Manual: Optimization and Timing Analysis.
+
+EXAMPLES
+       In this example, flatten is enabled on the design "TEST".
+
+              prompt> set_flatten -design TEST
+
+       In  this  example,  flatten  is  enabled on the current design with the
+       effort and minimize options specified, and flatten is disabled  on  the
+       design "OLD."
+
+              prompt> read TEST
+              prompt> set_flatten -effort high -minimize multiple_output
+              prompt> set_flatten -design OLD false
+
+SEE ALSO
+       compile(2)
+       current_design(2)
+       remove_attribute(2)
+       reset_design(2)
+       attributes(3)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

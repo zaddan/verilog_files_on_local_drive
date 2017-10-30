@@ -1,0 +1,70 @@
+2.  Synopsys Commands                                        Command Reference
+                              set_critical_range
+
+NAME
+       set_critical_range
+              Sets the critical_range attribute to a specified value on a list
+              of designs.
+
+SYNTAX
+       status set_critical_range
+               range_value
+               designs
+
+   Data Types
+       range_value     float
+       designs         list
+
+ARGUMENTS
+       range_value
+              Specifies the value to which the critical_range attribute is  to
+              be set.
+
+       designs
+              Indicates  the  list  of  designs  to  which  the critical_range
+              attribute applies.
+
+DESCRIPTION
+       This command sets the critical_range attribute to the  specified  value
+       on the specified designs.
+
+       The  tool  uses the critical_range attribute of the top-level design as
+       the default critical range for path groups that do not have a  critical
+       range  set.   If you do not set the critical_range attribute, such path
+       groups get a critical range of 0.0.  You can assign critical range val-
+       ues  to individual path groups with the group_path -critical_range com-
+       mand.
+
+       Critical range specifies a margin of delay for path groups in optimiza-
+       tion.   This  must be a positive float number or 0.0.  A critical range
+       of 0.0 means that only the most critical paths (the ones with the worst
+       violation)  are  optimized.   If  you specify a nonzero critical range,
+       near-critical paths within that amount of the worst path will  also  be
+       optimized, if possible.
+
+       To  undo  set_critical_range,  use the remove_attribute or reset_design
+       command.
+
+       To show the  critical  range  values  for  each  path  group,  use  the
+       report_path_group  command.   To  show  the  critical range cost of the
+       design, use the report_constraint command.
+
+   Multicorner-Multimode Support
+       This command applies to the current scenario only.
+
+EXAMPLES
+       The following example sets the  default  critical  range  for  the  top
+       design to 10.0:
+
+         prompt> set_critical_range 10.0 top
+
+SEE ALSO
+       compile(2)
+       group_path(2)
+       remove_attribute(2)
+       report_constraint(2)
+       report_path_group(2)
+       reset_design(2)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

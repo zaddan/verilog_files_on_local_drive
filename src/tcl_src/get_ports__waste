@@ -1,0 +1,174 @@
+2.  Synopsys Commands                                        Command Reference
+                                   get_ports
+
+NAME
+       get_ports
+              Creates a collection of ports from the current design that match
+              the specified criteria.
+
+SYNTAX
+       collection get_ports
+               [-quiet]
+               [-regexp | -exact]
+               [-nocase]
+               [-filter expression]
+               [-hierarchical]
+               [patterns | -of_objects objects]
+
+   Data Types
+       expression     string
+       patterns       list
+       objects        collection
+
+ARGUMENTS
+       -quiet Suppresses warning and error messages if no objects match.  Syn-
+              tax error messages are not suppressed.
+
+       -regexp
+              Views  the patterns argument as a regular expression rather than
+              a simple wildcard pattern.
+
+              This option also modifies the behavior of the =~ and  !~  filter
+              operators to use regular expressions rather than simple wildcard
+              patterns.
+
+              The regular expression matching is similar  to  the  Tcl  regexp
+              command.   When  using  the  -regexp  option, be careful how you
+              quote the patterns argument and filter expression.  Using  rigid
+              quoting  with  curly braces around regular expressions is recom-
+              mended. Note that regular expressions are always anchored;  that
+              is, the expression is assumed to begin matching at the beginning
+              of an object name and end matching at the end of an object name.
+              You  can widen the search by adding ".*" to the beginning or end
+              of the expressions, as needed.
+
+              The -regexp and -exact options are mutually exclusive;  you  can
+              use only one.
+
+       -exact Considers  wildcards to be plain characters, and does not inter-
+              pret their meaning as wildcards.
+
+              The -regexp and -exact options are mutually exclusive;  you  can
+              use only one.
+
+       -nocase
+              Makes  matches  case-insensitive, both for the patterns argument
+              and for the ==, =~, and !~ filter operators.
+
+       -filter expression
+              Filters the collection with the specified expression.  For  each
+              port in the collection, the expression is evaluated based on the
+              port's attributes. If the expression evaluates to true, the port
+              is included in the result.
+
+              To  see  the  list  of  port  attributes that you can use in the
+              expression, use the  list_attributes  -application  -class  port
+              command.
+
+              For  more  information  about how to use the -filter option, see
+              the filter_collection man page.
+
+       -hierarchical
+              Searches for  ports  level-by-level,  relative  to  the  current
+              instance.   The  full  name  of the object at a particular level
+              must match the patterns.  The search is similar to that  of  the
+              UNIX  find  command.   For  example,  if  there  is a port named
+              block1/adder/D[0], a  hierarchical  search  finds  it  by  using
+              adder/D[0].
+
+              The  -hierarchical  option  is  mutually  exclusive with use the
+              -of_objects option; you can use only one.
+
+       patterns
+              Creates a collection of ports whose names  match  the  specified
+              patterns.  Patterns can include the * (asterisk) and ? (question
+              mark) wildcard characters. For more information about using  and
+              escaping  wildcards, see the wildcards man page.  Pattern match-
+              ing is case sensitive unless you use the -nocase option.
+
+              The patterns and -of_objects arguments are  mutually  exclusive;
+              you  can  specify  only one.  If you do not specify any of these
+              arguments, the command uses * (asterisk) as the default pattern.
+
+       -of_objects objects
+              Creates  a  collection  of  ports  connected  to  the  specified
+              objects.  Each object can be a  net,  terminal,  bound,  or  via
+              region.
+
+              The  patterns  and -of_objects arguments are mutually exclusive;
+              you can specify only one.  If you do not specify  any  of  these
+              arguments, the command uses * (asterisk) as the default pattern.
+
+DESCRIPTION
+       This command creates a collection of ports by selecting ports from  the
+       current design that match the specified criteria.
+
+       The  command  returns a collection if any ports match the criteria.  If
+       no objects match the criteria, the command returns an empty string.
+
+       You can use this command at the command prompt or you can nest it as an
+       argument  to  another command, such as query_objects.  In addition, you
+       can assign the result to a variable.
+
+       When issued from the command prompt, the command behaves as though  you
+       have called the query_objects command to report the objects in the col-
+       lection.  By default, it displays a maximum of 100  objects.   You  can
+       change  this maximum by using the collection_result_display_limit vari-
+       able.
+
+       For information about collections and the querying of objects, see  the
+       collections man page.
+
+       In  addition, see the man pages for the all_inputs and all_outputs com-
+       mands, which also create collections of ports.
+
+   Multicorner-Multimode Support
+       This command has no dependency on scenario-specific information.
+
+EXAMPLES
+       The following example queries all input ports  beginning  with  "mode".
+       Although the output looks like a list, it is only a display.
+
+         prompt> get_ports mode* -filter {@port_direction == in}
+         {mode[0] mode[1] mode[2]}
+
+       The  following  example  sets the driving cell for ports beginning with
+       "in" to an FD2 library cell.
+
+         prompt> set_driving_cell -lib_cell FD2 -library my_lib \
+            [get_ports in*]
+
+       The following example reports ports connected to nets  that  match  the
+       pattern "bidir*".
+
+         prompt> report_port [get_ports -of_objects [get_nets bidir*]]
+
+       The  following  example get the ports connected to terminals that match
+       the pattern "CC*".
+
+         prompt> get_ports -of_objects [get_terminals CC*]]
+         {CC CCEN}
+
+       The following example shows you can get bus ports by their  base  name.
+       A[0],  A[1], and A[2] are bus ports with the base name A; A[3] is not a
+       bus port.
+
+         prompt> get_ports A
+         {A[0] A[1] A[2]}
+
+         prompt> get_ports A[3]
+         {A[3]}
+
+SEE ALSO
+       all_inputs(2)
+       all_outputs(2)
+       collections(2)
+       filter_collection(2)
+       list_attributes(2)
+       query_objects(2)
+       collection_result_display_limit(3)
+       find_allow_only_non_hier_ports(3)
+       wildcards(3)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

@@ -1,0 +1,927 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version L-2016.03-SP5-3 for linux64 - Jan 23, 2017 
+
+                    Copyright (c) 1988 - 2017 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/polaris/behzad/.synopsys_dv_prefs.tcl
+#----------------------------------------------------
+#*** F:DN this file syntheizes an arch agnos design for a mac 
+#         where the only contraint is the clk itself.
+#----------------------------------------------------
+#----------------------------------------------------
+#*** F:DN Parameters
+#----------------------------------------------------
+#---- N: the following should be commented out if the tcl file is invoked by 
+#-----   a python function
+#set DATA_PATH_WIDTH 32;
+#set CLKGATED_BITWIDTH 4; #numebr of apx bits
+#set clk_period .7;#.63;#.68;#.7
+#----------------------------------------------------
+set OP_BITWIDTH $DATA_PATH_WIDTH; #operator bitwidth
+32
+puts $clk_period
+0.7
+#----------------------------------------------------
+#*** F:DN Variables
+#----------------------------------------------------
+set WDIR "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn
+#~/behzad_local/verilog_files/synthesis
+set RTLDIR  "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+#~/behzad_local/verilog_files/apx_operators/int_ops_apx
+set REPORTS_DIR ${WDIR}/reports
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/reports
+set DESIGN_NAME conf_int_mac__noFF__arch_agnos__w_wrapper
+conf_int_mac__noFF__arch_agnos__w_wrapper
+set RESULTS_DIR ${WDIR}/results
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results
+set DCRM_FINAL_TIMING_REPORT timing.rpt
+timing.rpt
+set DCRM_FINAL_AREA_REPORT area.rpt
+area.rpt
+set DCRM_FINAL_POWER_REPORT power.rpt
+power.rpt
+set search_path "${RTLDIR}"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+set my_toplevel ${DESIGN_NAME}
+conf_int_mac__noFF__arch_agnos__w_wrapper
+#--- design dir
+set design_dir_addr "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+#--- libraries
+set lib_dir_1 "/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib"
+/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib
+set lib_dir_2 "/home/polaris/behzad/behzad_local/verilog_files/libraries"
+/home/polaris/behzad/behzad_local/verilog_files/libraries
+set lib_dir_3 "/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db"
+/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db
+set search_path [concat  $search_path $lib_dir_3]
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db
+set  std_library  "noAging.db" 
+noAging.db
+set target_library $std_library; #$std_library_2" 
+noAging.db
+set link_library $std_library; #$std_library_2"
+noAging.db
+#...   ...    ..  ...  ..    ..    ...      ..
+#*** F:AN deleting is necessary otherwise the synthesized design might be renamed
+#         which results in problems while reading it (the synth design)
+file delete -force WORK_1 ;#deleting so I won't have to deal with renaming
+define_design_lib WORK -path ./WORK_1
+1
+set verilogout_show_unconnected_pins "true"
+true
+#*** F:DN read the design
+analyze -format verilog [list  ${design_dir_addr}/${DESIGN_NAME}.v]
+Running PRESTO HDLC
+Compiling source file /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__arch_agnos__w_wrapper.v
+Presto compilation completed successfully.
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+1
+elaborate $my_toplevel -parameters $OP_BITWIDTH,$DATA_PATH_WIDTH
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/gtech.db'
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/standard.sldb'
+  Loading link library 'typical'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'.
+Information: Building the design 'conf_int_mac__noFF__arch_agnos' instantiated from design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32' with
+	the parameters "32,32". (HDL-193)
+Presto compilation completed successfully.
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP5-3
+Date:        Sun Mar 12 10:33:01 2017
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Unconnected ports (LINT-28)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'rst' is not connected to any nets. (LINT-28)
+1
+link
+
+  Linking design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  typical (library)           /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db
+
+1
+#*** F:DN  set the optimization constraints 
+create_clock -name clk -period $clk_period [get_ports clk]
+1
+set_ideal_network -no_propagate [get_ports clk]
+1
+set_input_delay -max 0 -clock clk [get_ports b*]     
+1
+set_input_delay -max 0 -clock clk [get_ports a*]     
+1
+set_dont_touch_network [get_clocks clk]
+1
+#set hdlin_keep_signal_name user
+#set enable_keep_signal_dt_net true
+#set enable_keep_signal true
+set compile_delete_unloaded_sequential_cells false
+false
+set compile_seqmap_propagate_constants false
+false
+set compile_enable_register_merging false
+false
+set compile_seqmap_enable_output_inversion false
+false
+set AC_NAME $DESIGN_NAME
+conf_int_mac__noFF__arch_agnos__w_wrapper
+#...   ...    ..  ...  ..    ..    ...      ..
+set_max_delay $clk_period -to [all_outputs]
+1
+group_path -name clk -from clk
+1
+#*** F:DN compile
+set_dp_smartgen_options -mult_arch nand
+1
+compile_ultra -timing_high_effort_script -no_autoungroup 
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | L-2016.03-DWBB_201603.5.1
+                                                               |     *     |
+| Licensed DW Building Blocks        | L-2016.03-DWBB_201603.5.1
+                                                               |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+
+Loaded alib file './alib-52/noAging.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+  Processing 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+ Implement Synthetic for 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'LOGIC1_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The library cell 'LOGIC0_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    2915.4      0.23       1.2       0.0                              9.9064
+  Mapping 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_DP_OP_3J1_122_8867_3'
+Information: Added key list 'DesignWare' to design 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'. (DDB-72)
+    0:00:10    3135.6      0.00       0.0       0.0                             10.2921
+    0:00:10    3135.6      0.00       0.0       0.0                             10.2921
+    0:00:10    3135.6      0.00       0.0       0.0                             10.2921
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2732
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2732
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2732
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2732
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2732
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:12    3130.0      0.00       0.0       0.0                             10.2723
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:13    3127.4      0.00       0.0       0.0                             10.2293
+    0:00:13    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:13    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:13    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:13    3123.4      0.00       0.0       0.0                             10.2256
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:14    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:14    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:14    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:14    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:14    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:14    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:14    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:14    3123.4      0.00       0.0       0.0                             10.2256
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+compile_ultra -timing_high_effort_script -incremental -no_autoungroup
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/noAging.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'LOGIC1_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The library cell 'LOGIC0_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:02    3123.4      0.00       0.0       0.0                             10.2256
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:02    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:02    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:02    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:02    3123.4      0.00       0.0       0.0                             10.2256
+    0:00:03    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:03    3120.7      0.00       0.0       0.0                             10.2151
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+compile_ultra -timing_high_effort_script -incremental -no_autoungroup
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'LOGIC1_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The library cell 'LOGIC0_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:00    3120.7      0.00       0.0       0.0                             10.2151
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:00    3120.7      0.00       0.0       0.0                             10.2151
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:00    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+Loaded alib file './alib-52/noAging.db.alib'
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+compile_ultra -timing_high_effort_script -incremental -no_autoungroup
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'LOGIC1_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The library cell 'LOGIC0_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:01    3120.7      0.00       0.0       0.0                             10.2151
+Loaded alib file './alib-52/noAging.db.alib'
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:02    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:03    3120.7      0.00       0.0       0.0                             10.2151
+    0:00:03    3120.7      0.00       0.0       0.0                             10.2151
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#read_saif -auto_map_names -input ~/behzad_local/verilog_files/apx_operators/int_ops_apx/DUT.saif -instance test_bench_tb/acc_adder_u -verbose 
+#*** F:DN report the results
+set report_file__prefix  ${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit__only_clk_cons
+conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons
+report_timing -sort_by slack -nworst 1000 -significant_digits 4 >  ${REPORTS_DIR}/${report_file__prefix}__timing.rpt
+report_area -hierarchy -nosplit > ${REPORTS_DIR}/${report_file__prefix}__area.rpt
+report_power > ${REPORTS_DIR}/${report_file__prefix}__power.rpt
+report_constraint -all_violators > ${REPORTS_DIR}/${report_file__prefix}__constraint_violators.rpt
+#report_path_group > ${REPORTS_DIR}/path_groups__garbage_collect.rpt
+#report_constraint > ${REPORTS_DIR}/constraint__garbage_collect.rpt
+report_cell > ${REPORTS_DIR}/${report_file__prefix}__cells.rpt
+report_resources -hierarchy > ${REPORTS_DIR}/${report_file__prefix}__resources.rpt
+report_net
+ 
+****************************************
+Report : net
+Design : conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Sun Mar 12 10:33:27 2017
+****************************************
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Attributes:
+   dr - drc disabled
+    d - dont_touch
+    I - ideal_network
+
+Net                 Fanout     Fanin      Load   Resistance    Pins   Attributes
+--------------------------------------------------------------------------------
+a[0]                    32         1      0.02         0.00      33   
+a[1]                    31         1      0.02         0.00      32   
+a[2]                    30         1      0.02         0.00      31   
+a[3]                    29         1      0.02         0.00      30   
+a[4]                    28         1      0.02         0.00      29   
+a[5]                    27         1      0.01         0.00      28   
+a[6]                    26         1      0.01         0.00      27   
+a[7]                    25         1      0.01         0.00      26   
+a[8]                    24         1      0.01         0.00      25   
+a[9]                    23         1      0.01         0.00      24   
+a[10]                   22         1      0.01         0.00      23   
+a[11]                   21         1      0.01         0.00      22   
+a[12]                   20         1      0.01         0.00      21   
+a[13]                   19         1      0.01         0.00      20   
+a[14]                   18         1      0.01         0.00      19   
+a[15]                   17         1      0.01         0.00      18   
+a[16]                   16         1      0.01         0.00      17   
+a[17]                   15         1      0.01         0.00      16   
+a[18]                   14         1      0.01         0.00      15   
+a[19]                   13         1      0.01         0.00      14   
+a[20]                   12         1      0.01         0.00      13   
+a[21]                   11         1      0.01         0.00      12   
+a[22]                   10         1      0.01         0.00      11   
+a[23]                    9         1      0.00         0.00      10   
+a[24]                    8         1      0.00         0.00       9   
+a[25]                    7         1      0.00         0.00       8   
+a[26]                    6         1      0.00         0.00       7   
+a[27]                    5         1      0.00         0.00       6   
+a[28]                    4         1      0.00         0.00       5   
+a[29]                    3         1      0.00         0.00       4   
+a[30]                    2         1      0.00         0.00       3   
+a[31]                    1         1      0.00         0.00       2   
+b[0]                    32         1      0.02         0.00      33   
+b[1]                    31         1      0.02         0.00      32   
+b[2]                    30         1      0.02         0.00      31   
+b[3]                    29         1      0.02         0.00      30   
+b[4]                    28         1      0.02         0.00      29   
+b[5]                    27         1      0.02         0.00      28   
+b[6]                    26         1      0.01         0.00      27   
+b[7]                    25         1      0.01         0.00      26   
+b[8]                    24         1      0.01         0.00      25   
+b[9]                    23         1      0.01         0.00      24   
+b[10]                   22         1      0.01         0.00      23   
+b[11]                   21         1      0.01         0.00      22   
+b[12]                   20         1      0.01         0.00      21   
+b[13]                   19         1      0.01         0.00      20   
+b[14]                   18         1      0.01         0.00      19   
+b[15]                   17         1      0.01         0.00      18   
+b[16]                   16         1      0.01         0.00      17   
+b[17]                   15         1      0.01         0.00      16   
+b[18]                   14         1      0.01         0.00      15   
+b[19]                   13         1      0.01         0.00      14   
+b[20]                   12         1      0.01         0.00      13   
+b[21]                   11         1      0.01         0.00      12   
+b[22]                   10         1      0.01         0.00      11   
+b[23]                    9         1      0.01         0.00      10   
+b[24]                    8         1      0.00         0.00       9   
+b[25]                    7         1      0.00         0.00       8   
+b[26]                    6         1      0.00         0.00       7   
+b[27]                    5         1      0.00         0.00       6   
+b[28]                    4         1      0.00         0.00       5   
+b[29]                    3         1      0.00         0.00       4   
+b[30]                    2         1      0.00         0.00       3   
+b[31]                    1         1      0.00         0.00       2   
+c[0]                     1         1      0.00         0.00       2   
+c[1]                     1         1      0.00         0.00       2   
+c[2]                     1         1      0.00         0.00       2   
+c[3]                     1         1      0.00         0.00       2   
+c[4]                     1         1      0.00         0.00       2   
+c[5]                     1         1      0.00         0.00       2   
+c[6]                     1         1      0.00         0.00       2   
+c[7]                     1         1      0.00         0.00       2   
+c[8]                     1         1      0.00         0.00       2   
+c[9]                     1         1      0.00         0.00       2   
+c[10]                    1         1      0.00         0.00       2   
+c[11]                    1         1      0.00         0.00       2   
+c[12]                    1         1      0.00         0.00       2   
+c[13]                    2         1      0.00         0.00       3   
+c[14]                    1         1      0.00         0.00       2   
+c[15]                    1         1      0.00         0.00       2   
+c[16]                    1         1      0.00         0.00       2   
+c[17]                    1         1      0.00         0.00       2   
+c[18]                    1         1      0.00         0.00       2   
+c[19]                    2         1      0.00         0.00       3   
+c[20]                    1         1      0.00         0.00       2   
+c[21]                    1         1      0.00         0.00       2   
+c[22]                    2         1      0.00         0.00       3   
+c[23]                    1         1      0.00         0.00       2   
+c[24]                    1         1      0.00         0.00       2   
+c[25]                    1         1      0.00         0.00       2   
+c[26]                    1         1      0.00         0.00       2   
+c[27]                    1         1      0.00         0.00       2   
+c[28]                    2         1      0.00         0.00       3   
+c[29]                    1         1      0.00         0.00       2   
+c[30]                    2         1      0.00         0.00       3   
+c[31]                    1         1      0.00         0.00       2   
+clk                      0         1      0.00         0.00       1   d, I
+d[0]                     1         1      0.00         0.00       2   
+d[1]                     1         1      0.00         0.00       2   
+d[2]                     1         1      0.00         0.00       2   
+d[3]                     1         1      0.00         0.00       2   
+d[4]                     1         1      0.00         0.00       2   
+d[5]                     1         1      0.00         0.00       2   
+d[6]                     1         1      0.00         0.00       2   
+d[7]                     1         1      0.00         0.00       2   
+d[8]                     1         1      0.00         0.00       2   
+d[9]                     1         1      0.00         0.00       2   
+d[10]                    1         1      0.00         0.00       2   
+d[11]                    1         1      0.00         0.00       2   
+d[12]                    1         1      0.00         0.00       2   
+d[13]                    1         1      0.00         0.00       2   
+d[14]                    1         1      0.00         0.00       2   
+d[15]                    1         1      0.00         0.00       2   
+d[16]                    1         1      0.00         0.00       2   
+d[17]                    1         1      0.00         0.00       2   
+d[18]                    1         1      0.00         0.00       2   
+d[19]                    1         1      0.00         0.00       2   
+d[20]                    1         1      0.00         0.00       2   
+d[21]                    1         1      0.00         0.00       2   
+d[22]                    1         1      0.00         0.00       2   
+d[23]                    1         1      0.00         0.00       2   
+d[24]                    1         1      0.00         0.00       2   
+d[25]                    1         1      0.00         0.00       2   
+d[26]                    1         1      0.00         0.00       2   
+d[27]                    1         1      0.00         0.00       2   
+d[28]                    1         1      0.00         0.00       2   
+d[29]                    1         1      0.00         0.00       2   
+d[30]                    1         1      0.00         0.00       2   
+d[31]                    1         1      0.00         0.00       2   
+n1                       0         1      0.00         0.00       1   dr
+--------------------------------------------------------------------------------
+Total 130 nets        1125       130      0.61         0.00    1255
+Maximum                 32         1      0.02         0.00      33
+Average               8.65      1.00      0.00         0.00    9.65
+1
+#*** F:DN save the design
+set syn_name ${report_file__prefix} ;#syntheiszed file name
+conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons
+write -format ddc -hierarchy -output ${RESULTS_DIR}/${syn_name}_synthesized.ddc
+Writing ddc file '/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons_synthesized.ddc'.
+1
+write -f verilog -hierarchy -output ${RESULTS_DIR}/${syn_name}_synthesized.v
+Writing verilog file '/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons_synthesized.v'.
+1
+write_sdc ${RESULTS_DIR}/${syn_name}_synthesized.sdc
+1
+write_sdf ${RESULTS_DIR}/${syn_name}_synthesized.mapped.sdf; #switching activity file
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons_synthesized.mapped.sdf'. (WT-3)
+1
+remove_design -hierarchy
+Removing design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+Removing design 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+1
+exit
+
+Thank you...

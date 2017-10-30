@@ -1,0 +1,43 @@
+# do runms.tcl 
+# Model Technology ModelSim SE vlog 6.3f Compiler 2008.02 Feb 28 2008
+# -- Compiling module conf_int_mul__noFF__arch_agnos
+# -- Compiling module conf_int_mul__noFF__arch_agnos__w_wrapper
+# -- Compiling module dct
+# -- Compiling module idct
+# -- Compiling module topdct_idct
+# 
+# Top level modules:
+# 	topdct_idct
+# vsim -sdfnoerror -novopt work.topdct_idct 
+# //  ModelSim SE 6.3f Feb 28 2008 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2008 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing /home/local/bulkhead/behzad/usr/local/verilog_files/apx_operators/int_ops_apx/src/v_src/DAC_17_idct_code/approximate__3/work.topdct_idct
+# Loading work.topdct_idct
+# Refreshing /home/local/bulkhead/behzad/usr/local/verilog_files/apx_operators/int_ops_apx/src/v_src/DAC_17_idct_code/approximate__3/work.dct
+# Loading work.dct
+# Refreshing /home/local/bulkhead/behzad/usr/local/verilog_files/apx_operators/int_ops_apx/src/v_src/DAC_17_idct_code/approximate__3/work.idct
+# Loading work.idct
+# Refreshing /home/local/bulkhead/behzad/usr/local/verilog_files/apx_operators/int_ops_apx/src/v_src/DAC_17_idct_code/approximate__3/work.conf_int_mul__noFF__arch_agnos__w_wrapper
+# Loading work.conf_int_mul__noFF__arch_agnos__w_wrapper
+# ** Warning: (vsim-3009) [TSCALE] - Module 'conf_int_mul__noFF__arch_agnos__w_wrapper' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /topdct_idct/idctblock/mult
+# Refreshing /home/local/bulkhead/behzad/usr/local/verilog_files/apx_operators/int_ops_apx/src/v_src/DAC_17_idct_code/approximate__3/work.conf_int_mul__noFF__arch_agnos
+# Loading work.conf_int_mul__noFF__arch_agnos
+# ** Warning: (vsim-3009) [TSCALE] - Module 'conf_int_mul__noFF__arch_agnos' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /topdct_idct/idctblock/mult/mul__inst
+# ** Warning: (vsim-PLI-3691) topdct_idct.v(74): Expected a system task, not a system function '$fscanf'.
+#         Region: /topdct_idct
+# ** Warning: (vsim-3015) topdct_idct.v(182): [PCDPC] - Port size (3 or 3) does not match connection size (5) for port 'state_out'.
+#         Region: /topdct_idct/dctblock
+# ** Warning: (vsim-3015) topdct_idct.v(183): [PCDPC] - Port size (3 or 3) does not match connection size (5) for port 'state_out'.
+#         Region: /topdct_idct/idctblock
+# ** Note: $finish    : topdct_idct.v(111)
+#    Time: 2396154 ns  Iteration: 0  Instance: /topdct_idct

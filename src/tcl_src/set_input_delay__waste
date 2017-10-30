@@ -1,0 +1,238 @@
+2.  Synopsys Commands                                        Command Reference
+                                set_input_delay
+
+NAME
+       set_input_delay
+              Sets input delay on pins or input ports relative to a clock sig-
+              nal.
+
+SYNTAX
+       status set_input_delay
+               delay_value
+               [-reference_pin pin_port_name]
+               [-clock clock_name]
+               [-clock_fall]
+               [-level_sensitive]
+               [-network_latency_included]
+               [-source_latency_included]
+               [-rise]
+               [-fall]
+               [-max]
+               [-min]
+               [-add_delay]
+               port_pin_list
+
+   Data Types
+       delay_value       float
+       clock_name        collection of 1 object
+       port_pin_list     collection
+
+ARGUMENTS
+       delay_value
+              Specifies the path delay.  The delay_value must be in units con-
+              sistent  with  the  technology library used during optimization.
+              The delay_value represents the amount  of  time  the  signal  is
+              available  after  a clock edge.  This represents a combinational
+              path delay from the clock pin of a register.
+
+       -reference_pin pin_port_name
+              Specifies the clock pin or port to which the specified delay  is
+              related.  If you use this option, and if propagated clocking  is
+              being  used,  the  delay value is related to the arrival time at
+              the specified reference pin, which is clock source latency  plus
+              its network latency from the clock source to this reference pin.
+              The         options         -network_latency_included        and
+              -source_latency_included  cannot be used at the same time as the
+              -reference_pin  option.  For  ideal  clock  network, only source
+              latency is applied.
+
+              The  pin  specified  with  the -reference_pin option should be a
+              leaf pin or port in a clock network, in the direct or transitive
+              fanout  of  a  clock source specified with the -clock option. If
+              multiple clocks reach the port or pin where you are setting  the
+              input  delay,  and if the -clock option is not used, the command
+              considers all of the clocks.
+
+       -clock clock_name
+              Specifies the clock to which the specified delay is related.  If
+              -clock_fall is used, -clock clock_name must  be  specified.   If
+              -clock  is not specified, the delay is relative to time zero for
+              combinational designs.  For sequential  designs,  the  delay  is
+              considered relative to a new clock with the period determined by
+              considering the sequential cells in  the  transitive  fanout  of
+              each port.
+
+              The  clock_name  can  be  either  a  string or collection of one
+              object.
+
+       -clock_fall
+              Specifies that the delay is relative to the falling edge of  the
+              clock.  The default is the rising edge.
+
+       -level_sensitive
+              Specifies  that  the  source  of  the delay is a level-sensitive
+              latch.  This allows the tool to derive the setup and hold  rela-
+              tionship for paths from this port as if the port is a level-sen-
+              sitive latch.  If -level_sensitive is not used, the input  delay
+              is treated as if it is a path from a flip-flop.
+
+       -network_latency_included
+              Specifies  that  the  clock  network latency is not added to the
+              input delay value.  If this option is not specified,  the  clock
+              network latency of the related clock is added to the input delay
+              value.  It has no effect if the clock is propagated or the input
+              delay is not specified with respect to any clock.
+
+       -source_latency_included
+              Specifies  that  the  clock  source  latency is not added to the
+              input delay value.  If this option is not specified,  the  clock
+              source  latency  of the related clock will be added to the input
+              delay value.  It has no effect if the input delay is not  speci-
+              fied with respect to any clock.
+
+       -rise  Specifies  that  delay_value  refers  to  a rising transition on
+              specified ports of the current design.   If  neither  -rise  nor
+              -fall  is specified, rising and falling delays are assumed to be
+              equal.
+
+       -fall  Specifies that delay_value refers to  a  falling  transition  on
+              specified  ports  of  the  current design.  If neither -rise nor
+              -fall is specified, rising and falling delays are assumed equal.
+
+       -max   Specifies  that delay_value refers to the longest path.  If nei-
+              ther -max nor -min  is  specified,  maximum  and  minimum  input
+              delays are assumed equal.
+
+       -min   Specifies that delay_value refers to the shortest path.  If nei-
+              ther -max nor -min  is  specified,  maximum  and  minimum  input
+              delays are assumed equal.
+
+       -add_delay
+              Specifies whether to add delay information to the existing input
+              delay or to overwrite.  The -add_delay  option  enables  you  to
+              capture  information  about  multiple  paths leading to an input
+              port that are relative to different clocks or clock edges.
+
+              For example, the following command  removes  all  other  maximum
+              rise  input  delay  from  A,  since -add_delay is not specified.
+              Other input delay with a different clock or with -clock_fall  is
+              removed.
+
+                set_input_delay 5.0 -max -rise -clock phi1 {A}
+
+              In  the following example, -add_delay is specified.  If there is
+              an input maximum rise delay for A relative to clock phi1  rising
+              edge,  the  larger  value  is  used.  The smaller value will not
+              result in critical timing for maximum delay.  For minimum delay,
+              the smaller value is used.  If there is maximum rise input delay
+              relative to a different clock or  different  edge  of  the  same
+              clock, it remains with the new delay.
+
+                prompt> set_input_delay 5.0 -max -rise -clock phi1 -add_delay {A}
+
+       port_pin_list
+              Specifies a list of input port or internal pin names in the cur-
+              rent design to which delay_value is assigned.  If more than  one
+              object  is specified, the objects are enclosed in quotes ("") or
+              in braces ({}).  If input delay is specified on a pin, the  cell
+              of  the pin is set to size only to leave room for compile apply-
+              ing sizing on it.
+
+DESCRIPTION
+       The set_input_delay command sets input path delay values for  the  cur-
+       rent  design.   Used  with set_load and set_driving_cell, the input and
+       output delays characterize the operating  environment  of  the  current
+       design.
+
+       A  path  starts from a primary input or clock of sequential element and
+       ends at a sequential element or primary output.  The delay_value to  be
+       specified  is  the delay between the startpoint and the object on which
+       the set_input_delay is being set, relative to the clock edge.
+
+       The set_input_delay command sets input path delays on input ports rela-
+       tive  to  a  clock  edge.   Input  ports are assumed to have zero input
+       delay, unless specified.  For  inout  (bidirectional)  ports,  you  can
+       specify the path delays for both input and output modes.
+
+       To  describe  a  path  delay  from  a  level-sensitive  latch,  use the
+       -level_sensitive option.  If the latch  is  positive-enabled,  set  the
+       input  delay  relative  to  the  rising  clock edge; if it is negative-
+       enabled, set the input delay relative to the falling  clock  edge.   If
+       time  is  being  borrowed  at that latch, add that time borrowed to the
+       path delay from the latch when determining input delay.
+
+       The characterize command automatically sets  input  and  output  delay,
+       drive, and load values based on the environment of a cell instance.
+
+       The  timer adds input delay to path delay for paths starting at primary
+       inputs and output delay for paths ending at primary outputs.
+
+       Use the report_port command to list input delays associated with ports.
+
+       To list input delays of internal pins, use report_design.
+
+       Use remove_input_delay or reset_design to remove input delay values.
+
+   Multicorner-Multimode Support
+       This command applies to the current scenario only.
+
+EXAMPLES
+       The  following example sets an input delay of 2.3 for ports IN1 and IN2
+       on a combinational design.  Because the  design  is  combinational,  no
+       clock is needed.
+
+         prompt> set_input_delay 2.3 {IN1 IN2}
+
+       The  following  example uses a clock collection and sets an input delay
+       of 1.2 relative to the rising edge of CLK1 for all input ports  in  the
+       design:
+
+         prompt> set_input_delay 1.2 -clock [get_clocks CLK1] [all_inputs]
+
+       The following example sets the input and output delays for the bidirec-
+       tional port INOUT1.  The input signal arrives at INOUT1 2.5 units after
+       the  falling  edge of CLK1.  The output signal is required at INOUT1 at
+       1.4 units before the rising edge of CLK2.
+
+         prompt> set_input_delay 2.5 -clock CLK1 -clock_fall {INOUT1}
+         prompt> set_output_delay 1.4 -clock CLK2 {INOUT1}
+
+       The following example has three paths to the IN1 input  port.   One  of
+       the paths is relative to the rising edge of CLK1.  Another path is rel-
+       ative to the falling edge of CLK1.  The third path is relative  to  the
+       falling  edge  of CLK2.  The -add_delay option is used to indicate that
+       new input delay information  will  not  cause  old  information  to  be
+       removed.
+
+         prompt> set_input_delay 2.2 -max -clock CLK1 -add_delay {IN1}
+         prompt> set_input_delay 1.7 -max -clock CLK1 -clock_fall \
+            -add_delay {IN1}
+         prompt> set_input_delay 4.3 -max -clock CLK2 -clock_fall \
+            -add_delay {IN1}
+
+       In  this  example,  two different maximum delays and two minimum delays
+       for port A are specified using  the  -add_delay  option.   Because  the
+       information  is  relative  to  the  same clock and clock edge, only the
+       largest of the maximum values and the smallest of  the  minimum  values
+       are  maintained,  in this 5.0 and 1.1.  If the -add_delay option is not
+       used, the new information overwrites the old information.
+
+         prompt> set_input_delay 3.4 -max -clock CLK1 -add_delay {A}
+         prompt> set_input_delay 5.0 -max -clock CLK1 -add_delay {A}
+         prompt> set_input_delay 1.1 -min -clock CLK1 -add_delay {A}
+         prompt> set_input_delay 1.3 -min -clock CLK1 -add_delay {A}
+
+SEE ALSO
+       all_inputs(2)
+       characterize(2)
+       create_clock(2)
+       remove_input_delay(2)
+       report_design(2)
+       report_port(2)
+       reset_design(2)
+       set_driving_cell(2)
+       set_load(2)
+       set_output_delay(2)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

@@ -1,0 +1,632 @@
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:0
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4558}
+clk__aqcuired:0.5851
+bestDesignPrecision__delay__d:{16: 0.4558} precision_best_delay__d{16: 0.4558} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:1
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4548}
+clk__aqcuired:0.6036
+bestDesignPrecision__delay__d:{16: 0.4548} precision_best_delay__d{16: 0.4548} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:2
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4506}
+clk__aqcuired:0.6134
+bestDesignPrecision__delay__d:{16: 0.4506} precision_best_delay__d{16: 0.4506} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:3
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4402}
+clk__aqcuired:0.6054
+bestDesignPrecision__delay__d:{16: 0.4402} precision_best_delay__d{16: 0.4402} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:4
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4452}
+clk__aqcuired:0.6184
+bestDesignPrecision__delay__d:{16: 0.4402} precision_best_delay__d{16: 0.4402} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:5
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4396}
+clk__aqcuired:0.6125
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:6
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4502}
+clk__aqcuired:0.6202
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:7
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4541}
+clk__aqcuired:0.6304
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:8
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4492}
+clk__aqcuired:0.6253
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.33} attempt:9
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4432}
+clk__aqcuired:0.6183
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:0
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4487}
+clk__aqcuired:0.5734
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:1
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4538}
+clk__aqcuired:0.5764
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:2
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4757}
+clk__aqcuired:0.5991
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:3
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4664}
+clk__aqcuired:0.5905
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:4
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4594}
+clk__aqcuired:0.5836
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:5
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4649}
+clk__aqcuired:0.589
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:6
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4621}
+clk__aqcuired:0.5861
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:7
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4716}
+clk__aqcuired:0.5941
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:8
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4609}
+clk__aqcuired:0.5871
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.385} attempt:9
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4614}
+clk__aqcuired:0.5857
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:0
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4515}
+clk__aqcuired:0.5487
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:1
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4692}
+clk__aqcuired:0.5669
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:2
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4782}
+clk__aqcuired:0.5764
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:3
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4643}
+clk__aqcuired:0.5677
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:4
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4768}
+clk__aqcuired:0.5749
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:5
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4748}
+clk__aqcuired:0.5754
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:6
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4808}
+clk__aqcuired:0.5806
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:7
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4876}
+clk__aqcuired:0.5873
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:8
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4731}
+clk__aqcuired:0.5793
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.412} attempt:9
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4926}
+clk__aqcuired:0.591
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:0
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4779}
+clk__aqcuired:0.5632
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:1
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4649}
+clk__aqcuired:0.5509
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:2
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4765}
+clk__aqcuired:0.5609
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:3
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4716}
+clk__aqcuired:0.5555
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:4
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4714}
+clk__aqcuired:0.5569
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:5
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4788}
+clk__aqcuired:0.5633
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:6
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4752}
+clk__aqcuired:0.5615
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:7
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4825}
+clk__aqcuired:0.5673
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:8
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4913}
+clk__aqcuired:0.5786
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.426} attempt:9
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4823}
+clk__aqcuired:0.5689
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:0
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4727}
+clk__aqcuired:0.5543
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:1
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4776}
+clk__aqcuired:0.5605
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:2
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4755}
+clk__aqcuired:0.5624
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:3
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4868}
+clk__aqcuired:0.5684
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:4
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4855}
+clk__aqcuired:0.5743
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:5
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4934}
+clk__aqcuired:0.575
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:6
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4907}
+clk__aqcuired:0.5732
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:7
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.5155}
+clk__aqcuired:0.5948
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:8
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4956}
+clk__aqcuired:0.5805
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.433} attempt:9
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.499}
+clk__aqcuired:0.5807
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:0
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4785}
+clk__aqcuired:0.555
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:1
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4894}
+clk__aqcuired:0.5627
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:2
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4879}
+clk__aqcuired:0.5617
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:3
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4781}
+clk__aqcuired:0.5552
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:4
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4853}
+clk__aqcuired:0.5614
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:5
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4907}
+clk__aqcuired:0.5699
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:6
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4892}
+clk__aqcuired:0.5682
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:7
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4918}
+clk__aqcuired:0.5689
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:8
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.487}
+clk__aqcuired:0.5651
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.436} attempt:9
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4905}
+clk__aqcuired:0.5713
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:0
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4857}
+clk__aqcuired:0.5599
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:1
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.48}
+clk__aqcuired:0.5583
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:2
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4777}
+clk__aqcuired:0.5501
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:3
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4912}
+clk__aqcuired:0.565
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:4
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4858}
+clk__aqcuired:0.5591
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:5
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4849}
+clk__aqcuired:0.562
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:6
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4978}
+clk__aqcuired:0.5711
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:7
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4975}
+clk__aqcuired:0.5687
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:8
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.491}
+clk__aqcuired:0.5633
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.438} attempt:9
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4979}
+clk__aqcuired:0.5718
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.439} attempt:0
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4747}
+clk__aqcuired:0.5454
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.439} attempt:1
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4738}
+clk__aqcuired:0.5483
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.439} attempt:2
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4794}
+clk__aqcuired:0.5562
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.439} attempt:3
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4793}
+clk__aqcuired:0.5525
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.439} attempt:4
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.484}
+clk__aqcuired:0.5584
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.439} attempt:5
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4875}
+clk__aqcuired:0.5602
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.439} attempt:6
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4869}
+clk__aqcuired:0.5626
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.439} attempt:7
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4891}
+clk__aqcuired:0.5606
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------
+--------------------------------------------------
+*** F:DN goal:
+clk:0.51 Pn:16 delays_striving_for__d:{16: 0.439} attempt:8
+*** F:DN results:
+currentDesignsPrecision_delay__d:{16: 0.4829}
+clk__aqcuired:0.5647
+bestDesignPrecision__delay__d:{16: 0.4396} precision_best_delay__d{16: 0.4396} 
+--------------------------------------------------

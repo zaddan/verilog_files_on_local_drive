@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : area
+Design : idct_BitWidth31_BitWidth130_4
+Version: L-2016.03-SP5-3
+Date   : Sat Sep  2 19:00:28 2017
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/various_temps__db__all_values/1.2V_25T.db)
+
+Number of ports:                          321
+Number of nets:                         31493
+Number of cells:                        31186
+Number of combinational cells:          24858
+Number of sequential cells:              6325
+Number of macros/black boxes:               0
+Number of buf/inv:                       5650
+Number of references:                      47
+
+Combinational area:              24189.508116
+Buf/Inv area:                     3410.917988
+Noncombinational area:           35331.449783
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 59520.957899
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------------
+idct_BitWidth31_BitWidth130_4     59520.9579    100.0  19119.0162  34906.9138  0.0000  idct_BitWidth31_BitWidth130_4
+mul__inst                          5495.0280      9.2    286.4820    424.5360  0.0000  conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+mul__inst/mul__inst__acc           3380.8600      5.7   3380.8600      0.0000  0.0000  conf_int_mul__noFF__arch_agnos__acc_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+mul__inst/mul__inst__apx           1403.1500      2.4   1403.1500      0.0000  0.0000  conf_int_mul__noFF__arch_agnos__apx_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+--------------------------------  ----------  -------  ----------  ----------  ------  ----------------------------------------------------------------------------
+Total                                                  24189.5081  35331.4498  0.0000
+
+1

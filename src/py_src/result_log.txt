@@ -1,0 +1,820 @@
+--- TCL'S PARAMETER INFO
+DATA_PATH_WIDTH: 32
+clk_period : 0.65
+apx_optimal: 1
+apx_optimal_mode(first): 1
+msb_max_delay: 0.43
+Pn: 27
+slow_down:
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | L-2016.03-DWBB_201603.5.1
+                                                               |     *     |
+| Licensed DW Building Blocks        | L-2016.03-DWBB_201603.5.1
+                                                               |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 34 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5'
+
+Loaded alib file './alib-52/noAging.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5'
+ Implement Synthetic for 'conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'LOGIC1_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The library cell 'LOGIC0_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:08    2575.9      0.36     793.0       0.0                             13.6941
+  Mapping 'conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5_DP_OP_19J1_122_786_2'
+Information: Added key list 'DesignWare' to design 'conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5'. (DDB-72)
+    0:00:16    2886.4      0.21     406.6       0.1                             17.9934
+    0:00:16    2886.4      0.21     406.6       0.1                             17.9934
+    0:00:16    2886.4      0.21     406.6       0.1                             17.9934
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:17    2846.7      0.20     395.5       0.1                             17.3153
+    0:00:17    2846.7      0.20     395.5       0.1                             17.1943
+    0:00:17    2846.7      0.20     395.5       0.1                             17.1943
+    0:00:28    2989.8      0.15     236.3       0.1                             18.5840
+    0:00:28    2989.8      0.15     236.3       0.1                             18.5840
+    0:00:28    2990.9      0.15     236.4       0.1                             18.6022
+    0:00:28    2990.9      0.15     236.4       0.1                             18.6022
+    0:00:38    3144.4      0.13     240.3       0.1                             19.6052
+    0:00:38    3144.4      0.13     240.3       0.1                             19.6052
+    0:00:41    3173.9      0.12     226.3       0.1                             19.9141
+    0:00:41    3173.9      0.12     226.3       0.1                             19.9141
+    0:00:44    3180.3      0.12     223.8       0.1                             19.9166
+    0:00:44    3180.3      0.12     223.8       0.1                             19.9166
+    0:00:45    3183.2      0.12     220.6       0.1                             19.9396
+    0:00:45    3183.2      0.12     220.6       0.1                             19.9396
+    0:00:45    3183.2      0.12     220.6       0.1                             19.9396
+    0:00:45    3183.2      0.12     220.6       0.1                             19.9396
+    0:00:45    3183.2      0.12     220.6       0.1                             19.9396
+    0:00:45    3183.2      0.12     220.6       0.1                             19.9396
+    0:00:46    3183.2      0.12     220.6       0.1                             19.9396
+
+
+  Beginning Design Rule Fixing  (min_capacitance)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:46    3183.2      0.12     220.6       0.1                             19.9396
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:47    3241.5      0.11     208.6       0.0 d[28]                       19.4882
+    0:00:47    3248.9      0.11     205.9       0.0                             19.4577
+    0:01:04    3417.6      0.09     160.0       0.0                             20.4481
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:04    3417.6      0.09     160.0       0.0                             20.4481
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+    0:01:06    3358.2      0.08     154.1       0.0 d[28]                       17.6700
+    0:01:06    3373.1      0.08     151.2       0.0                             17.6904
+    0:01:17    3412.0      0.07     142.1       0.0                             18.1473
+    0:01:17    3412.0      0.07     142.1       0.0                             18.1473
+    0:01:17    3412.0      0.07     142.0       0.0                             18.1448
+    0:01:17    3412.0      0.07     142.0       0.0                             18.1448
+    0:01:17    3412.0      0.07     142.0       0.0                             18.1448
+    0:01:17    3412.0      0.07     142.0       0.0                             18.1448
+    0:01:17    3412.0      0.07     142.0       0.0                             18.1448
+    0:01:17    3412.0      0.07     142.0       0.0                             18.1448
+    0:01:18    3412.0      0.07     142.0       0.0                             18.1448
+    0:01:18    3412.0      0.07     142.0       0.0                             18.1448
+    0:01:19    3418.6      0.07     141.1       0.0                             18.2558
+    0:01:19    3418.6      0.07     141.1       0.0                             18.2558
+    0:01:29    3450.3      0.07     134.3       0.0                             18.4695
+    0:01:29    3450.3      0.07     134.3       0.0                             18.4695
+    0:01:32    3458.5      0.06     119.8       0.0                             18.6158
+    0:01:32    3458.5      0.06     119.8       0.0                             18.6158
+    0:01:35    3460.7      0.06     119.5       0.0                             18.6196
+    0:01:35    3460.7      0.06     119.5       0.0                             18.6196
+    0:01:36    3460.9      0.06     119.2       0.0                             18.6413
+    0:01:36    3460.9      0.06     119.2       0.0                             18.6413
+    0:01:44    3491.0      0.06     117.7       0.0                             18.8027
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:44    3491.0      0.06     117.7       0.0                             18.8027
+    0:01:44    3445.0      0.06     112.2       0.0                             18.0131
+    0:01:45    3429.3      0.06     109.6       0.0                             17.9193
+    0:01:45    3429.3      0.06     109.6       0.0                             17.9193
+    0:01:45    3430.3      0.06     109.6       0.0                             17.9769
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:01:45    3430.3      0.06     109.6       0.0                             17.9769
+    0:01:45    3430.3      0.06     109.6       0.0                             17.9769
+    0:01:45    3430.3      0.06     109.6       0.0                             17.9769
+    0:01:53    3435.1      0.06     108.6       0.0                             18.0116
+    0:01:54    3408.5      0.06     105.1       0.0                             17.6466
+    0:01:56    3411.4      0.06     105.0       0.0                             17.6779
+    0:01:56    3411.4      0.06     104.1       0.0                             17.6731
+    0:01:56    3411.4      0.06     104.1       0.0                             17.6731
+    0:01:57    3401.1      0.06     104.1       0.0                             17.5568
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+
+Information: There are 34 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/noAging.db.alib'
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'LOGIC1_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The library cell 'LOGIC0_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3401.1      0.06     104.1       0.0                             17.5568
+    0:00:01    3401.1      0.06     104.1       0.0                             17.5568
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:01    3400.8      0.06     104.1       0.0                             17.5568
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3400.8      0.06     104.1       0.0                             17.5568
+    0:00:01    3400.8      0.06     104.1       0.0                             17.5568
+    0:00:01    3401.3      0.06     104.1       0.0                             17.5923
+    0:00:01    3401.3      0.06     104.1       0.0                             17.5923
+    0:00:01    3401.3      0.06     104.1       0.0                             17.5923
+    0:00:01    3401.3      0.06     104.1       0.0                             17.5923
+    0:00:03    3401.9      0.06     104.1       0.0                             17.6020
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:03    3401.9      0.06     104.1       0.0                             17.6020
+    0:00:03    3401.9      0.06     104.1       0.0                             17.6020
+    0:00:03    3401.9      0.06     104.1       0.0                             17.6020
+    0:00:03    3401.9      0.06     104.1       0.0                             17.6020
+    0:00:03    3401.9      0.06     104.1       0.0                             17.6020
+    0:00:03    3401.9      0.06     104.1       0.0                             17.6020
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03    3401.9      0.06     104.1       0.0                             17.6020
+    0:00:04    3445.2      0.06      94.9       0.0 d[31]                       17.5682
+    0:00:05    3474.2      0.06      93.6       0.0 d[31]                       17.6196
+    0:00:06    3491.5      0.05      92.6       0.0 d[31]                       17.6670
+    0:00:07    3512.5      0.05      87.4       0.0 d[28]                       17.7232
+    0:00:07    3545.2      0.05      86.8       0.0 d[31]                       17.8953
+    0:00:08    3564.9      0.05      85.1       0.0 d[28]                       17.9719
+    0:00:09    3578.8      0.05      83.6       0.0 d[28]                       18.0348
+    0:00:09    3580.6      0.05      83.5       0.0                             18.0534
+    0:00:09    3580.1      0.05      85.2       0.0                             18.0692
+    0:00:10    3580.1      0.05      85.2       0.0                             18.0692
+    0:00:10    3580.6      0.05      85.1       0.0                             18.0895
+    0:00:10    3580.6      0.05      85.1       0.0                             18.0895
+    0:00:12    3582.0      0.05      83.7       0.0                             18.2287
+    0:00:12    3582.0      0.05      83.7       0.0                             18.2287
+    0:00:12    3582.0      0.05      83.7       0.0                             18.2287
+    0:00:12    3582.0      0.05      83.7       0.0                             18.2287
+    0:00:13    3582.0      0.05      83.7       0.0                             18.2287
+
+
+  Beginning Critical Range Optimization
+  -------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:13    3582.0      0.05      83.7       0.0                             18.2287
+    0:00:13    3586.2      0.05      73.3       0.0                             18.2688
+    0:00:14    3586.2      0.05      73.4       0.0                             18.2697
+    0:00:14    3586.2      0.05      73.4       0.0                             18.2697
+    0:00:14    3586.2      0.05      73.4       0.0                             18.2697
+    0:00:14    3586.2      0.05      73.4       0.0                             18.2697
+    0:00:15    3590.5      0.05      74.7       0.0                             18.3410
+    0:00:15    3590.5      0.05      74.7       0.0                             18.3410
+    0:00:15    3590.5      0.05      74.7       0.0                             18.3410
+    0:00:15    3590.5      0.05      74.7       0.0                             18.3410
+    0:00:16    3590.5      0.05      74.7       0.0                             18.3410
+    0:00:16    3590.5      0.05      74.7       0.0                             18.3410
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:16    3590.5      0.05      74.7       0.0                             18.3410
+    0:00:16    3590.5      0.05      74.7       0.0                             18.3380
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:16    3590.5      0.05      74.7       0.0                             18.3380
+    0:00:16    3590.5      0.05      74.7       0.0                             18.3380
+    0:00:16    3590.5      0.05      74.7       0.0                             18.3380
+    0:00:17    3590.5      0.05      74.7       0.0                             18.3380
+    0:00:18    3559.6      0.05      74.7       0.0                             17.8975
+    0:00:18    3545.2      0.05      73.7       0.0                             17.7330
+    0:00:18    3538.9      0.05      73.4       0.0                             17.6910
+    0:00:18    3538.9      0.05      71.0       0.0                             17.6839
+    0:00:19    3539.9      0.05      71.0       0.0                             17.6928
+    0:00:19    3536.5      0.05      71.0       0.0                             17.6371
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+
+Information: There are 34 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'LOGIC1_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The library cell 'LOGIC0_X1' in the library 'typical' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:00    3536.5      0.05      71.0       0.0                             17.6371
+    0:00:00    3536.5      0.05      71.0       0.0                             17.6371
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+    0:00:01    3534.9      0.05      71.0       0.0                             17.6263
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:01    3534.9      0.05      71.0       0.0                             17.6263
+    0:00:01    3534.9      0.05      71.0       0.0                             17.6263
+    0:00:01    3536.2      0.05      71.1       0.0                             17.6700
+    0:00:01    3536.2      0.05      71.1       0.0                             17.6700
+    0:00:01    3536.2      0.05      71.1       0.0                             17.6700
+    0:00:01    3536.2      0.05      71.1       0.0                             17.6700
+    0:00:02    3536.5      0.05      71.1       0.0                             17.6963
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:02    3536.5      0.05      71.1       0.0                             17.6963
+    0:00:02    3536.5      0.05      71.1       0.0                             17.6963
+    0:00:02    3536.5      0.05      71.1       0.0                             17.6963
+    0:00:02    3536.5      0.05      71.1       0.0                             17.6963
+    0:00:02    3536.5      0.05      71.1       0.0                             17.6963
+    0:00:02    3536.5      0.05      71.1       0.0                             17.6963
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02    3536.5      0.05      71.1       0.0                             17.6963
+    0:00:03    3551.6      0.04      70.2       0.0 d[28]                       17.7424
+    0:00:04    3581.4      0.04      70.8       0.0 d[28]                       17.9118
+    0:00:04    3587.0      0.04      70.6       0.0                             17.9424
+    0:00:05    3586.5      0.04      70.6       0.0                             17.9294
+    0:00:05    3586.5      0.04      70.6       0.0                             17.9294
+    0:00:05    3587.0      0.04      70.6       0.0                             17.9370
+    0:00:05    3587.0      0.04      70.6       0.0                             17.9370
+    0:00:09    3589.1      0.04      70.0       0.0                             18.0169
+    0:00:09    3589.1      0.04      70.0       0.0                             18.0169
+    0:00:09    3589.1      0.04      70.0       0.0                             18.0169
+    0:00:09    3589.1      0.04      70.0       0.0                             18.0169
+    0:00:10    3589.1      0.04      70.0       0.0                             18.0169
+
+
+  Beginning Critical Range Optimization
+  -------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:10    3589.1      0.04      70.0       0.0                             18.0169
+    0:00:10    3596.1      0.04      60.7       0.0                             18.0506
+    0:00:10    3596.1      0.04      60.8       0.0                             18.0430
+    0:00:10    3596.1      0.04      60.8       0.0                             18.0430
+    0:00:10    3596.1      0.04      60.9       0.0                             18.0486
+    0:00:10    3596.1      0.04      60.9       0.0                             18.0486
+    0:00:14    3601.6      0.04      58.3       0.0                             18.1851
+    0:00:14    3601.6      0.04      58.3       0.0                             18.1851
+    0:00:14    3601.6      0.04      58.3       0.0                             18.1851
+    0:00:14    3601.6      0.04      58.3       0.0                             18.1851
+    0:00:15    3601.6      0.04      58.3       0.0                             18.1851
+    0:00:15    3601.6      0.04      58.3       0.0                             18.1851
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:15    3601.6      0.04      58.3       0.0                             18.1851
+    0:00:15    3601.9      0.04      58.3       0.0                             18.1849
+Loaded alib file './alib-52/noAging.db.alib'
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:16    3601.9      0.04      58.3       0.0                             18.1849
+    0:00:16    3601.9      0.04      58.3       0.0                             18.1849
+    0:00:16    3601.9      0.04      58.3       0.0                             18.1849
+    0:00:16    3601.9      0.04      58.3       0.0                             18.1849
+    0:00:17    3590.2      0.04      58.3       0.0                             17.9181
+    0:00:17    3581.7      0.04      59.9       0.0                             17.7796
+    0:00:18    3574.2      0.04      59.0       0.0                             17.7354
+    0:00:18    3574.2      0.04      58.8       0.0                             17.7318
+    0:00:18    3574.2      0.04      59.1       0.0                             17.7461
+    0:00:18    3567.9      0.04      59.1       0.0                             17.6720
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5
+Version: L-2016.03-SP5-3
+Date   : Fri Mar 10 00:40:20 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: a[1] (input port clocked by clk)
+  Endpoint: d[29] (output port)
+  Path Group: non_priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 f
+  a[1] (in)                              0.0000     0.0000 f
+  U744/ZN (INV_X2)                       0.0054     0.0054 r
+  U214/ZN (NAND2_X2)                     0.0149     0.0203 f
+  U1793/ZN (NAND2_X1)                    0.0154     0.0357 r
+  U1792/ZN (NAND2_X2)                    0.0311     0.0668 f
+  U2169/ZN (OAI22_X1)                    0.0510     0.1178 r
+  U3171/S (FA_X1)                        0.0902     0.2079 f
+  U332/ZN (XNOR2_X1)                     0.0433     0.2512 f
+  U636/ZN (XNOR2_X1)                     0.0559     0.3071 f
+  U2777/ZN (XNOR2_X2)                    0.0466     0.3538 f
+  U566/ZN (XNOR2_X2)                     0.0459     0.3997 f
+  U565/ZN (NAND2_X4)                     0.0162     0.4159 r
+  U564/ZN (NAND2_X2)                     0.0119     0.4278 f
+  U563/ZN (NAND2_X2)                     0.0106     0.4384 r
+  U1405/ZN (NAND2_X2)                    0.0113     0.4497 f
+  U584/ZN (AOI21_X2)                     0.0194     0.4691 r
+  U2423/ZN (OAI21_X2)                    0.0233     0.4924 f
+  U1019/ZN (AOI21_X2)                    0.0213     0.5137 r
+  U1016/ZN (OAI21_X2)                    0.0181     0.5318 f
+  U1595/ZN (AOI21_X2)                    0.0218     0.5536 r
+  U1574/ZN (OAI21_X1)                    0.0223     0.5760 f
+  U3215/ZN (AOI21_X2)                    0.0195     0.5955 r
+  U2625/ZN (OAI21_X2)                    0.0182     0.6137 f
+  U3496/ZN (INV_X2)                      0.0112     0.6249 r
+  U3494/ZN (NAND2_X2)                    0.0090     0.6339 f
+  U3495/ZN (NAND2_X1)                    0.0083     0.6422 r
+  d[29] (out)                            0.0000     0.6422 r
+  data arrival time                                 0.6422
+
+  max_delay                              0.6500     0.6500
+  output external delay                  0.0000     0.6500
+  data required time                                0.6500
+  -----------------------------------------------------------
+  data required time                                0.6500
+  data arrival time                                -0.6422
+  -----------------------------------------------------------
+  slack (MET)                                       0.0078
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5
+Version: L-2016.03-SP5-3
+Date   : Fri Mar 10 00:40:20 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: c[11] (input port)
+  Endpoint: d[29] (output port)
+  Path Group: priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 f
+  c[11] (in)                             0.0000     0.0000 f
+  U385/ZN (INV_X4)                       0.0056     0.0056 r
+  U112/ZN (OR2_X4)                       0.0276     0.0333 r
+  U576/ZN (OAI22_X2)                     0.0214     0.0547 f
+  U690/ZN (OAI21_X2)                     0.0198     0.0745 r
+  U688/ZN (NAND2_X2)                     0.0193     0.0938 f
+  U2352/ZN (XNOR2_X2)                    0.0386     0.1324 f
+  U2892/Z (XOR2_X2)                      0.0449     0.1773 f
+  U1543/Z (XOR2_X2)                      0.0446     0.2219 f
+  U3438/ZN (INV_X2)                      0.0109     0.2328 r
+  U3437/ZN (NAND2_X2)                    0.0104     0.2432 f
+  U1361/ZN (NAND2_X2)                    0.0118     0.2550 r
+  U846/ZN (NOR2_X2)                      0.0123     0.2673 f
+  U1490/ZN (AOI21_X2)                    0.0158     0.2830 r
+  U2423/ZN (OAI21_X2)                    0.0291     0.3122 f
+  U1019/ZN (AOI21_X2)                    0.0213     0.3335 r
+  U1016/ZN (OAI21_X2)                    0.0181     0.3516 f
+  U1595/ZN (AOI21_X2)                    0.0218     0.3734 r
+  U1574/ZN (OAI21_X1)                    0.0223     0.3957 f
+  U3215/ZN (AOI21_X2)                    0.0195     0.4153 r
+  U2625/ZN (OAI21_X2)                    0.0182     0.4335 f
+  U3496/ZN (INV_X2)                      0.0112     0.4447 r
+  U3494/ZN (NAND2_X2)                    0.0090     0.4537 f
+  U3495/ZN (NAND2_X1)                    0.0083     0.4620 r
+  d[29] (out)                            0.0000     0.4620 r
+  data arrival time                                 0.4620
+
+  max_delay                              0.4300     0.4300
+  output external delay                  0.0000     0.4300
+  data required time                                0.4300
+  -----------------------------------------------------------
+  data required time                                0.4300
+  data arrival time                                -0.4620
+  -----------------------------------------------------------
+  slack (VIOLATED)                                 -0.0320
+
+
+  Startpoint: a[4] (input port clocked by clk)
+  Endpoint: d[29] (output port)
+  Path Group: non_priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 f
+  a[4] (in)                              0.0000     0.0000 f
+  U473/ZN (OR2_X2)                       0.0238     0.0238 f
+  U984/ZN (AND2_X4)                      0.0265     0.0502 f
+  U78/ZN (INV_X4)                        0.0245     0.0747 r
+  U2666/ZN (OAI22_X1)                    0.0374     0.1122 f
+  U398/ZN (XNOR2_X1)                     0.0464     0.1586 f
+  U916/ZN (XNOR2_X1)                     0.0541     0.2126 f
+  U89/ZN (NAND2_X1)                      0.0193     0.2319 r
+  U628/ZN (OAI21_X1)                     0.0380     0.2699 f
+  U2756/ZN (XNOR2_X2)                    0.0455     0.3154 f
+  U2738/ZN (XNOR2_X2)                    0.0446     0.3600 f
+  U566/ZN (XNOR2_X2)                     0.0447     0.4048 f
+  U565/ZN (NAND2_X4)                     0.0162     0.4210 r
+  U564/ZN (NAND2_X2)                     0.0119     0.4329 f
+  U563/ZN (NAND2_X2)                     0.0106     0.4435 r
+  U1405/ZN (NAND2_X2)                    0.0113     0.4548 f
+  U584/ZN (AOI21_X2)                     0.0194     0.4742 r
+  U2423/ZN (OAI21_X2)                    0.0233     0.4974 f
+  U1019/ZN (AOI21_X2)                    0.0213     0.5188 r
+  U1016/ZN (OAI21_X2)                    0.0181     0.5369 f
+  U1595/ZN (AOI21_X2)                    0.0218     0.5587 r
+  U1574/ZN (OAI21_X1)                    0.0223     0.5810 f
+  U3215/ZN (AOI21_X2)                    0.0195     0.6006 r
+  U2625/ZN (OAI21_X2)                    0.0182     0.6188 f
+  U3496/ZN (INV_X2)                      0.0112     0.6300 r
+  U3494/ZN (NAND2_X2)                    0.0090     0.6390 f
+  U3495/ZN (NAND2_X1)                    0.0083     0.6473 r
+  d[29] (out)                            0.0000     0.6473 r
+  data arrival time                                 0.6473
+
+  max_delay                              0.6500     0.6500
+  output external delay                  0.0000     0.6500
+  data required time                                0.6500
+  -----------------------------------------------------------
+  data required time                                0.6500
+  data arrival time                                -0.6473
+  -----------------------------------------------------------
+  slack (MET)                                       0.0027
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5
+Version: L-2016.03-SP5-3
+Date   : Fri Mar 10 00:40:20 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: b_h[2] (input port clocked by clk)
+  Endpoint: d[28] (output port)
+  Path Group: priority
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  b_h[2] (in)                            0.0000     0.0000 r
+  U3048/ZN (XNOR2_X2)                    0.0387     0.0387 r
+  U1243/ZN (OAI22_X2)                    0.0359     0.0746 f
+  U1241/ZN (XNOR2_X2)                    0.0423     0.1169 f
+  U1510/ZN (XNOR2_X2)                    0.0418     0.1587 f
+  U3354/ZN (INV_X4)                      0.0127     0.1714 r
+  U1372/ZN (OAI21_X2)                    0.0170     0.1885 f
+  U1371/ZN (NAND2_X2)                    0.0188     0.2073 r
+  U1220/Z (BUF_X4)                       0.0228     0.2301 r
+  U1307/ZN (NAND2_X2)                    0.0119     0.2420 f
+  U1306/ZN (NAND2_X2)                    0.0122     0.2542 r
+  U1222/ZN (NAND2_X2)                    0.0119     0.2661 f
+  U1218/ZN (NAND2_X2)                    0.0106     0.2767 r
+  U1118/ZN (NAND2_X2)                    0.0172     0.2940 f
+  U658/ZN (INV_X4)                       0.0091     0.3031 r
+  U2263/ZN (NAND3_X2)                    0.0116     0.3147 f
+  U2249/ZN (NAND2_X2)                    0.0174     0.3321 r
+  U695/ZN (NAND2_X4)                     0.0149     0.3470 f
+  U662/ZN (NAND2_X2)                     0.0154     0.3624 r
+  U2807/ZN (AOI21_X2)                    0.0156     0.3780 f
+  U660/ZN (OAI21_X2)                     0.0214     0.3994 r
+  U1383/ZN (AOI21_X2)                    0.0239     0.4233 f
+  U1472/ZN (OAI21_X2)                    0.0207     0.4440 r
+  U2626/ZN (NAND2_X1)                    0.0149     0.4589 f
+  U2628/ZN (NAND2_X1)                    0.0129     0.4718 r
+  d[28] (out)                            0.0000     0.4718 r
+  data arrival time                                 0.4718
+
+  max_delay                              0.4300     0.4300
+  output external delay                  0.0000     0.4300
+  data required time                                0.4300
+  -----------------------------------------------------------
+  data required time                                0.4300
+  data arrival time                                -0.4718
+  -----------------------------------------------------------
+  slack (VIOLATED)                                 -0.0418
+
+
+1
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5
+Version: L-2016.03-SP5-3
+Date   : Fri Mar 10 00:40:20 2017
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  =   4.0360 mW   (62%)
+  Net Switching Power  =   2.4683 mW   (38%)
+                         ---------
+Total Dynamic Power    =   6.5044 mW  (100%)
+
+Cell Leakage Power     =  17.6720 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      4.0360            2.4683           17.6720            6.5220  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              4.0360 mW         2.4683 mW        17.6720 uW         6.5220 mW
+1
+ 
+****************************************
+Report : area
+Design : conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5
+Version: L-2016.03-SP5-3
+Date   : Fri Mar 10 00:40:20 2017
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db)
+
+Number of ports:                          206
+Number of nets:                          3751
+Number of cells:                         3562
+Number of combinational cells:           3562
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        787
+Number of references:                      37
+
+Combinational area:               3567.857971
+Buf/Inv area:                      437.304002
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  3567.857971
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5 3567.8580   100.0 3567.8580    0.0000 0.0000 conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn5
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 3567.8580     0.0000  0.0000
+
+1

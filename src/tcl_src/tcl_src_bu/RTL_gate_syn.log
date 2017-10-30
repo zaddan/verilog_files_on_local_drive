@@ -1,0 +1,377 @@
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+          Version H-2013.03-SP5 for RHEL64 -- Oct 18, 2013
+               Copyright (c) 1988-2013 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Initializing...
+#set WDIR /home/unga/sglee/Share/ac_hw_syn
+#--- variables
+set WDIR "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn
+#~/behzad_local/verilog_files/synthesis
+set RTLDIR  "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+#~/behzad_local/verilog_files/apx_operators/int_ops_apx
+set REPORTS_DIR ${WDIR}/reports
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/reports
+set DESIGN_NAME unconfig_int_add
+unconfig_int_add
+set RESULTS_DIR ${WDIR}/results
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results
+set DCRM_FINAL_TIMING_REPORT timing.rpt
+timing.rpt
+set DCRM_FINAL_AREA_REPORT area.rpt
+area.rpt
+set DCRM_FINAL_POWER_REPORT power.rpt
+power.rpt
+set search_path "${RTLDIR}"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+set my_toplevel ${DESIGN_NAME}
+unconfig_int_add
+#--- libraries
+set lib_dir_1 "/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib"
+/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib
+#set lib_dir "/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db"
+set lib_dir_2 "/home/polaris/behzad/behzad_local/verilog_files/libraries"
+/home/polaris/behzad/behzad_local/verilog_files/libraries
+set lib_dir_3 "/home/polaris/behzad/behzad_local/verilog_files/libraries/FreePDK45/osu_soc/lib/files"
+/home/polaris/behzad/behzad_local/verilog_files/libraries/FreePDK45/osu_soc/lib/files
+#--- NOTE: I had to include *_rvt as well, cause ow the compiler was erroring out
+set search_path [concat  $search_path $lib_dir_1/stdcell_rvt/db_nldm $lib_dir_1/stdcell_lvt/db_nldm $lib_dir_2/germany_NanGate/db $lib_dir_3]
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src /usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_rvt/db_nldm /usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_lvt/db_nldm /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db /home/polaris/behzad/behzad_local/verilog_files/libraries/FreePDK45/osu_soc/lib/files
+#--- design dir
+set design_dir_addr "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+#--- library
+#set std_library "saed32rvt_tt1p05v25c.db"
+set std_library "saed32lvt_tt1p05v25c.db"; #the best(amon lvts)
+saed32lvt_tt1p05v25c.db
+#set std_library "saed32lvt_tt1p05vn40c.db"; #did the same as 25c 
+#set std_library "saed32lvt_tt0p85v25c.db"; #did worst that 1.05
+#set  std_library  "saed32lvt_ulvl_ff1p16v25c_i0p85v.db" 
+#set  std_library  "noAging.db" 
+#set std_library "gscl45nm.db"; #PDK45 themselves
+set target_library $std_library; #$std_library_2" 
+saed32lvt_tt1p05v25c.db
+set link_library $std_library; #$std_library_2"
+saed32lvt_tt1p05v25c.db
+set compile_delete_unloaded_sequential_cells false
+false
+set compile_seqmap_propagate_constants false
+false
+set compile_enable_register_merging false
+false
+set compile_seqmap_enable_output_inversion false
+false
+set AC_NAME unconfig_int_add
+unconfig_int_add
+#--- specifying libraries 
+define_design_lib WORK -path ./WORK
+1
+set verilogout_show_unconnected_pins "true"
+true
+#--- parameters
+set OP_BITWIDTH 32; #operator bitwidth
+32
+set DATA_PATH_BITWIDTH 32; #flipflop bitwidth
+32
+#for { set NAB 0}  {$NAB < 1} {incr NAB 1} {
+#--- read the design 
+analyze -format verilog [list ${design_dir_addr}/unconfig_int_add.v ${design_dir_addr}/acc_int_add.v]
+Running PRESTO HDLC
+Compiling source file /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/unconfig_int_add.v
+Compiling source file /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/acc_int_add.v
+Presto compilation completed successfully.
+Loading db file '/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_lvt/db_nldm/saed32lvt_tt1p05v25c.db'
+1
+elaborate $my_toplevel -parameters $OP_BITWIDTH,$DATA_PATH_BITWIDTH
+Loading db file '/usr/local/packages/synopsys_2013/synH/libraries/syn/gtech.db'
+Loading db file '/usr/local/packages/synopsys_2013/synH/libraries/syn/standard.sldb'
+  Loading link library 'saed32lvt_tt1p05v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine unconfig_int_add_OP_BITWIDTH32_DATA_PATH_BITWIDTH32 line 37 in file
+		'/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/unconfig_int_add.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      reg_a_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      reg_b_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine unconfig_int_add_OP_BITWIDTH32_DATA_PATH_BITWIDTH32 line 51 in file
+		'/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/unconfig_int_add.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      reg_c_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'unconfig_int_add_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'.
+Information: Building the design 'acc_int_add' instantiated from design 'unconfig_int_add_OP_BITWIDTH32_DATA_PATH_BITWIDTH32' with
+	the parameters "32". (HDL-193)
+Presto compilation completed successfully.
+1
+check_design
+1
+#--- define design environement (setting up the design environment such as external operating conditions (manufacturing process, temperature, and voltage), loads, drives, fanouts, and wire load models)
+set endpoints [add_to_collection [all_outputs] [all_registers -data_pins]]
+Information: Changed wire load model for 'acc_int_add_BWOP32' from '(none)' to 'ForQA'. (OPT-170)
+Loading db file '/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+{c[31] c[30] c[29] c[28] c[27] c[26] c[25] c[24] c[23] c[22] c[21] c[20] c[19] c[18] c[17] c[16] c[15] c[14] c[13] c[12] c[11] c[10] c[9] c[8] c[7] c[6] c[5] c[4] c[3] c[2] c[1] c[0] reg_c_reg[0]/next_state reg_c_reg[1]/next_state reg_c_reg[2]/next_state reg_c_reg[3]/next_state reg_c_reg[4]/next_state reg_c_reg[5]/next_state reg_c_reg[6]/next_state reg_c_reg[7]/next_state reg_c_reg[8]/next_state reg_c_reg[9]/next_state reg_c_reg[10]/next_state reg_c_reg[11]/next_state reg_c_reg[12]/next_state reg_c_reg[13]/next_state reg_c_reg[14]/next_state reg_c_reg[15]/next_state reg_c_reg[16]/next_state reg_c_reg[17]/next_state reg_c_reg[18]/next_state reg_c_reg[19]/next_state reg_c_reg[20]/next_state reg_c_reg[21]/next_state reg_c_reg[22]/next_state reg_c_reg[23]/next_state reg_c_reg[24]/next_state reg_c_reg[25]/next_state reg_c_reg[26]/next_state reg_c_reg[27]/next_state reg_c_reg[28]/next_state reg_c_reg[29]/next_state reg_c_reg[30]/next_state reg_c_reg[31]/next_state reg_b_reg[0]/next_state reg_b_reg[1]/next_state reg_b_reg[2]/next_state reg_b_reg[3]/next_state reg_b_reg[4]/next_state reg_b_reg[5]/next_state reg_b_reg[6]/next_state reg_b_reg[7]/next_state reg_b_reg[8]/next_state reg_b_reg[9]/next_state reg_b_reg[10]/next_state reg_b_reg[11]/next_state reg_b_reg[12]/next_state reg_b_reg[13]/next_state reg_b_reg[14]/next_state reg_b_reg[15]/next_state reg_b_reg[16]/next_state reg_b_reg[17]/next_state reg_b_reg[18]/next_state reg_b_reg[19]/next_state reg_b_reg[20]/next_state reg_b_reg[21]/next_state reg_b_reg[22]/next_state reg_b_reg[23]/next_state reg_b_reg[24]/next_state reg_b_reg[25]/next_state reg_b_reg[26]/next_state reg_b_reg[27]/next_state reg_b_reg[28]/next_state reg_b_reg[29]/next_state reg_b_reg[30]/next_state reg_b_reg[31]/next_state reg_a_reg[0]/next_state reg_a_reg[1]/next_state reg_a_reg[2]/next_state reg_a_reg[3]/next_state ...}
+#--- linking to libraries
+link
+
+  Linking design 'unconfig_int_add_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed32lvt_tt1p05v25c (library)
+                              /usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_lvt/db_nldm/saed32lvt_tt1p05v25c.db
+
+1
+#saif_map -start 
+#--- set the optimization constraints 
+create_clock -name clk -period .65 [get_ports clk]
+1
+set_ideal_network -no_propagate [get_ports clk]
+1
+set_input_delay -max 0 -clock clk [get_ports b*]     
+1
+set_input_delay -max 0 -clock clk [get_ports a*]     
+1
+set_dont_touch_network [get_clocks clk]
+1
+#--- design rule constraints 
+#set_max_area 0
+foreach_in_collection endpt $endpoints { set pin [get_object_name $endpt] 
+    group_path -name $pin -to $pin
+}
+#set_max_delay .40 -from {b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31]} -to {reg_c_reg[16] reg_c_reg[17] reg_c_reg[18] reg_c_reg[19] reg_c_reg[20] reg_c_reg[21] reg_c_reg[22] reg_c_reg[23] reg_c_reg[24] reg_c_reg[25] reg_c_reg[26] reg_c_reg[27] reg_c_reg[28] reg_c_reg[29] reg_c_reg[30] reg_c_reg[31]}
+#--- compile (symthesize  to gate level and optimize design)
+#compile
+#compile -area_effort high -power_effort high 
+#compile -power_effort high
+compile_ultra
+Alib files are up-to-date.
+Loading db file '/usr/local/packages/synopsys_2013/synH/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | H-2013.03-DWBB_201303.5 |     *     |
+| Licensed DW Building Blocks        | H-2013.03-DWBB_201303.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Loaded alib file './alib-52/saed32lvt_tt1p05v25c.db.alib'
+Information: Ungrouping hierarchy u0_ac before Pass 1 (OPT-776)
+Information: Ungrouping 1 of 2 hierarchies before Pass 1 (OPT-775)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'unconfig_int_add_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+ Implement Synthetic for 'unconfig_int_add_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    1497.0      0.18       0.4       0.0                          
+    0:00:02    1497.0      0.18       0.4       0.0                          
+    0:00:02    1497.0      0.18       0.4       0.0                          
+    0:00:03    1491.7      0.18       0.4       0.0                          
+  Re-synthesis Optimization (Phase 1)
+  Re-synthesis Optimization (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+Information: Added key list 'DesignWare' to design 'unconfig_int_add_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'. (DDB-72)
+    0:00:03    1534.9      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:03    1534.9      0.00       0.0       0.0                          
+    0:00:04    1534.6      0.00       0.0       0.0                          
+    0:00:04    1534.6      0.00       0.0       0.0                          
+    0:00:04    1534.6      0.00       0.0       0.0                          
+    0:00:04    1534.6      0.00       0.0       0.0                          
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04    1534.6      0.00       0.0       0.0                          
+    0:00:05    1534.6      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05    1534.6      0.00       0.0       0.0                          
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+    0:00:05    1493.2      0.00       0.0       0.0                          
+Loading db file '/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_lvt/db_nldm/saed32lvt_tt1p05v25c.db'
+Loading db file '/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db'
+
+  Optimization Complete
+  ---------------------
+1
+#compile_ultra
+#read_saif -auto_map_names -input ~/behzad_local/verilog_files/apx_operators/int_ops_apx/DUT.saif -instance test_bench_tb/acc_adder_u -verbose 
+#--- analyze adn resolve design problems
+#report_timing -sort_by slack -input_pins -capacitance -transition_time -nets -significant_digits 4 -nosplit -nworst 1 -max_paths 1 > ${REPORTS_DIR}/int_${DESIGN_NAME}_${NAB}_timing.rpt
+report_timing -path full -sort_by slack -nworst 1000000 -max_paths 1000000 >  ${REPORTS_DIR}/${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_BITWIDTH}Bit_timing.rpt
+#report_timing -path full -sort_by slack -from  $input_list -max_path 100 -nworst 2 >  ${REPORTS_DIR}/int_${DESIGN_NAME}_${NAB}_timing1.rpt
+report_area -hierarchy -nosplit > ${REPORTS_DIR}/${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_BITWIDTH}Bit_area.rpt
+report_power > ${REPORTS_DIR}/${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_BITWIDTH}Bit_power.rpt
+report_constraint -all_violators > ${REPORTS_DIR}/${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_BITWIDTH}Bit_constrain_violators.rpt
+#report_qor > ${REPORTS_DIR}/int_${DESIGN_NAME}_${NAB}_qor.rpt
+#report 
+#--- save the design
+#the following generates ddc files 
+write -format ddc -hierarchy -output ${RESULTS_DIR}/${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_BITWIDTH}Bit_synthesized.ddc 
+Writing ddc file '/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/unconfig_int_add_32Bit_32Bit_synthesized.ddc'.
+1
+#the following generates the gatelevel netlist 
+write -f verilog -hierarchy -output ${RESULTS_DIR}/${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_BITWIDTH}Bit_synthesized.v
+Writing verilog file '/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/unconfig_int_add_32Bit_32Bit_synthesized.v'.
+1
+write_sdc ${RESULTS_DIR}/${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_BITWIDTH}Bit_synthesized.sdc; #constraint file
+1
+write_sdf ${RESULTS_DIR}/${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_BITWIDTH}Bit_synthesized.mapped.sdf; #switching activity file
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/unconfig_int_add_32Bit_32Bit_synthesized.mapped.sdf'. (WT-3)
+1
+remove_design -hierarchy
+Removing design 'unconfig_int_add_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+1
+exit
+
+Thank you...

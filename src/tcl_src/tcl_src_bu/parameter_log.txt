@@ -1,0 +1,12 @@
+--- TCL'S PARAMETER INFO
+DATA_PATH_WIDTH: 32
+clk_period : 10
+apx_optimal: 1
+apx_optimal_mode(first): 1
+apx_optimal_mode(second): 1
+apx_optimal_mode(third): 1
+apx_optimal_mode(fourth): 0
+msb_1_max_delay: 10
+msb_2_max_delay: 10
+msb_3_max_delay: 0
+msb_4_max_delay: .42

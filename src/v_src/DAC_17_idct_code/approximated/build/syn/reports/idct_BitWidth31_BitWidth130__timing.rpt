@@ -1,0 +1,65 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'idct_BitWidth31_BitWidth130' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : idct_BitWidth31_BitWidth130
+Version: L-2016.03-SP5-3
+Date   : Wed Sep 13 19:38:24 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: count0_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mul__inst/a_reg_reg_12_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  count0_reg_2_/CK (DFFR_X2)                            0.0000 #   0.0000 r
+  count0_reg_2_/Q (DFFR_X2)                             0.1712     0.1712 f
+  U20277/ZN (NOR2_X2)                                   0.0353     0.2065 r
+  U20573/ZN (NAND2_X1)                                  0.0469     0.2533 f
+  U17079/ZN (OR2_X4)                                    0.0611     0.3145 f
+  U20657/ZN (NOR2_X2)                                   0.0999     0.4144 r
+  U25679/ZN (AOI22_X1)                                  0.0566     0.4710 f
+  U19985/ZN (AND4_X1)                                   0.0565     0.5274 f
+  U20124/ZN (NAND2_X1)                                  0.0190     0.5464 r
+  U25692/ZN (NOR3_X1)                                   0.0205     0.5669 f
+  U25693/ZN (OAI211_X1)                                 0.0425     0.6094 r
+  U25694/ZN (AOI21_X2)                                  0.0288     0.6382 f
+  U25695/ZN (NAND4_X1)                                  0.0483     0.6866 r
+  U16801/ZN (INV_X2)                                    0.0146     0.7012 f
+  U25738/ZN (OAI21_X2)                                  0.0257     0.7269 r
+  mul__inst/A_in_to_wrapper[12] (conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26)
+                                                        0.0000     0.7269 r
+  mul__inst/U415/ZN (INV_X1)                            0.0174     0.7443 f
+  mul__inst/U416/ZN (OAI222_X1)                         0.0390     0.7833 r
+  mul__inst/a_reg_reg_12_/D (DFFR_X2)                   0.0000     0.7833 r
+  data arrival time                                                0.7833
+
+  clock clk (rise edge)                                 0.9000     0.9000
+  clock network delay (ideal)                           0.0000     0.9000
+  mul__inst/a_reg_reg_12_/CK (DFFR_X2)                  0.0000     0.9000 r
+  library setup time                                   -0.0507     0.8493
+  data required time                                               0.8493
+  --------------------------------------------------------------------------
+  data required time                                               0.8493
+  data arrival time                                               -0.7833
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0660
+
+
+1

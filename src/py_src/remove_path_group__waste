@@ -1,0 +1,47 @@
+2.  Synopsys Commands                                        Command Reference
+                               remove_path_group
+
+NAME
+       remove_path_group
+              Removes a list of path groups from the current design.
+
+SYNTAX
+       string remove_path_group
+               group_list
+
+   Data Types
+       group_list     list
+
+ARGUMENTS
+       group_list
+              Specifies the path groups to remove.
+
+DESCRIPTION
+       The  remove_path_group  command  removes a list of path groups from the
+       current design.
+
+       Path groups control the optimization cost function and timing  reports.
+       You  can  see  what  path  groups  remain  in  the  design by using the
+       get_path_groups command.
+
+       To create other path groups, use the group_path command.
+
+EXAMPLES
+       The command set below first creates two  path  groups  named  grp1  and
+       grp2, and then removes the groups:
+
+         prompt> group_path -name grp1 -to data_out
+         1
+
+         prompt> group_path -name grp2 -from input3 -to data_out
+         1
+
+         prompt> remove_path_group {grp1 grp2}
+         1
+
+SEE ALSO
+       group_path(2)
+       report_path_group(2)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

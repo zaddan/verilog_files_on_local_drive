@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : idct_BitWidth31_BitWidth130_4
+Version: L-2016.03-SP5-3
+Date   : Sat Sep  2 19:00:29 2017
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/various_temps__db__all_values/1.2V_25T.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  = 120.7120 mW   (97%)
+  Net Switching Power  =   3.4957 mW    (3%)
+                         ---------
+Total Dynamic Power    = 124.2077 mW  (100%)
+
+Cell Leakage Power     = 213.2021 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         119.7268        2.8254e-02          119.9154          119.8750  (  96.35%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.9822            3.4674           93.2862            4.5430  (   3.65%)
+--------------------------------------------------------------------------------------------------
+Total            120.7090 mW         3.4957 mW       213.2015 uW       124.4180 mW
+1

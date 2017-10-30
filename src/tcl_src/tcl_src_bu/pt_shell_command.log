@@ -1,0 +1,134 @@
+#@ # 
+#@ # Running pt_shell Version H-2012.12-SP3-1 for linux -- May 15, 2013
+#@ # Date:   Fri Feb 10 08:49:10 2017
+#@ # Run by: behzad@bulkhead
+#@ 
+
+source /usr/local/packages/synopsys_2013/primetime/admin/setup/.synopsys_pt.setup
+#@ # -- Starting source /usr/local/packages/synopsys_2013/primetime/admin/setup/.synopsys_pt.setup
+
+#@ #
+#@ # .synopsys_pt.setup: Initialization File for PrimeTime
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparcOS5" || $sh_arch == "hpux10" ||      $sh_arch == "hp32" || $sh_arch == "linux" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you use new variable message
+#@ # tracing for debugging purposes only.
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ alias report_constraints	report_constraint
+#@ alias report_clocks		report_clock
+#@ 
+#@ #
+#@ # The alias for get_clock was added when get_clock_network_objects
+#@ # was introduced, as it conflicts with get_clocks (and get_clock is a
+#@ # typical abbreviation for get_clocks)
+#@ #
+#@ alias get_clock get_clocks
+#@ 
+#@ 
+#@ #
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ 
+#@ # -- End source /usr/local/packages/synopsys_2013/primetime/admin/setup/.synopsys_pt.setup
+
+source -echo -verbose conf-int-add-clkGate__power.tcl
+#@ # -- Starting source conf-int-add-clkGate__power.tcl
+
+#@ #set WDIR /home/unga/sglee/Share/ac_hw_syn
+#@ set WDIR ~/behzad_local/verilog_files/synthesis
+#@ set RTLDIR ~/behzad_local/verilog_files/apx_operators/int_ops_apx
+#@ set REPORTS_DIR ${WDIR}/reports
+#@ set DESIGN_NAME config_int_add_clkGate_DATA_PATH_BITWIDTH32_CLKGATED_BITWIDTH16 
+#@ set saif_file_name config-int-add-clkGate__tb.saif
+#@ 
+#@ set RESULTS_DIR ${WDIR}/results
+#@ set DCRM_FINAL_TIMING_REPORT timing.rpt
+#@ set DCRM_FINAL_AREA_REPORT area.rpt
+#@ set DCRM_FINAL_POWER_REPORT power.rpt
+#@ set search_path "${RTLDIR}"
+#@ 
+#@ set syn_dir_addr "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results"
+#@ set synthesized_design_name "config_int_add_clkGate_16clkGatedBits_synthesized" 
+#@ set synthesized_design_file ${synthesized_design_name}.v 
+#@ set sim-res_dir "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/gate_level_sim"
+#@ 
+#@ #/* Top-level Module     */
+#@ set my_toplevel ${DESIGN_NAME}
+#@ #set lib_dir_1 "/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib"
+#@ #set lib_dir "/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db"
+#@ set lib_dir_2 "/home/polaris/behzad/behzad_local/verilog_files/libraries"
+#@ #set lib_dir_3 "/home/polaris/behzad/behzad_local/verilog_files/libraries/FreePDK45/osu_soc/lib/files"
+#@ 
+#@ 
+#@ set CLKGATED_BITWIDTH 16; #operator bitwidth
+#@ set DATA_PATH_BITWIDTH 32; #flipflop bitwidth
+#@ 
+#@ 
+#@ 
+#@ #--- NOTE: I had to include *_rvt as well, cause ow the compiler was erroring out
+#@ #set search_path [concat  $search_path $lib_dir_1/stdcell_rvt/db_nldm $lib_dir_1/stdcell_lvt/db_nldm $lib_dir_2/germany_NanGate/db $lib_dir_3]
+#@ set search_path [concat  $search_path $lib_dir_2/germany_NanGate/db]
+#@ 
+#@ 
+#@ #source ${WDIR}/lib_list.txt
+#@ 
+#@ #set std_library "saed32rvt_tt1p05v25c.db"
+#@ #set std_library "saed32lvt_tt1p05v25c.db"; #the best(amon lvts)
+#@ #set std_library "saed32lvt_tt1p05vn40c.db"; #did the same as 25c 
+#@ #set std_library "saed32lvt_tt0p85v25c.db"; #did worst that 1.05
+#@ #set  std_library  "saed32lvt_ulvl_ff1p16v25c_i0p85v.db" 
+#@ set  std_library  "noAging.db" 
+#@ #set std_library "gscl45nm.db"; #PDK45 themselves
+#@ 
+#@ set target_library $std_library; #$std_library_2" 
+#@ set link_library $std_library; #$std_library_2"
+#@ 
+#@ 
+#@ #--- specifying libraries 
+#@ #define_design_lib WORK -path ./WORK
+#@ set power_enable_analysis "true"
+#@ read_verilog  ${syn_dir_addr}/blah.v 
+#@ read_verilog ${syn_dir_addr}/${synthesized_design_file}
+#@ #"/home/polaris/behzad/behzad_local/verilog_files/synthesis/results/unconfig_int_add_32Bit_32Bit_synthesized.v"
+#@ 
+#@ current_design ${my_toplevel}
+#@ link
+#@ # Averaged mode power analysis uses the saif format. Read the parasitics # generated by IC Compiler before you run report_power.
+#@ set power_analysis_mode "averaged" 
+#@ read_saif ${sim-res_dir}/${saif_file_name} -strip_path test_bench_tb/apx_add_clkGate 
+#@ # -- End source conf-int-add-clkGate__power.tcl
+
+gui_start

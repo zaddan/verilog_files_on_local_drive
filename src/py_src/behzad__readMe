@@ -1,0 +1,26 @@
+to run the dupilcate scenario:
+    NOTE: we can not be runing the second half (steps 3 and on) in parallel modes (b/c activation of no_touch affects everything) 
+    1. cpy over the apx version to conf_int_mul__ ... 
+    2. run search_for_best_delay.v (normally to completion)
+    3. cpy over the acc version to conf_int_mul__  (make sure the bits are set up properly)
+    4. pick the optimal .v from search_for_best.v dot.v and dump it in the acc version
+    5. in  read_resyn_and_report.tcl and  conf_int_mul__noFF__arch_agnos__w_wrapper_only_clk_cons__RTL_to_gate (for both mul and add)
+        uncomment set_dont_touch mul__inst__apx (for mul) and add__inst__apx (for add)
+    6. run search_for_best_delay.v (to completion)
+    7. return back the two change tcl file
+
+
+to run the idct__duplicated
+    you don't have to set the DATA_BITWIDTH to the apx value (the .v automatically does that)
+    follow the instructions above, but make sure that you add __1 to both of the modules (of the approximate version since the names will be the same for both apx and accurte and the acc will be
+    overwritten) 
+
+
+
+
+
+
+
+
+
+

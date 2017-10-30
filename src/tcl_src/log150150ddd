@@ -1,0 +1,41 @@
+ncverilog(64): 06.10-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+Recompiling... reason: file '../v_src/conf_int_mac__noFF__arch_agnos__tb.v' is newer than expected.
+	expected: Wed Apr  5 14:01:36 2017
+	actual:   Wed Apr  5 14:02:16 2017
+file: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_udp.v
+file: /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__arch_agnos__tb.v
+	module worklib.test_bench_tb:v
+		errors: 0, warnings: 0
+file: /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/mac_to_test.v
+file: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_N0P0.v
+		Caching library 'verilog_N0P0' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test_bench_tb:v <0x44ea81a1>
+			streams:  13, words:  7140
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:               13304     120
+		UDPs:                    180       4
+		Primitives:            18768       5
+		Timing outputs:         6732       7
+		Registers:                10      14
+		Scalar wires:           6771       -
+		Expanded wires:           64       2
+		Initial blocks:            7       7
+		Cont. assignments:        30      32
+		Timing checks:          1018     100
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.AND4_X1_func:v
+Loading snapshot worklib.AND4_X1_func:v .................... Done
+ncsim> source /usr/local/packages/cadence_2007/ius61/tools/inca/files/ncsimrc
+ncsim> run
+$readmem warning: address incremented out of range. Too many data words read
+	at line 1 of file "../../build/functional/int_values_in_hex.txt". Current address: 1000, address range: [0:999].
+Simulation complete via $finish(1) at time 2 US + 0
+../v_src/conf_int_mac__noFF__arch_agnos__tb.v:109     $finish;
+ncsim> exit

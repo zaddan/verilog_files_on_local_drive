@@ -1,0 +1,285 @@
+**************** 
+*** F:DN before resyntheis 
+**************** 
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by slack
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+Version: L-2016.03-SP5-3
+Date   : Sun Jun 25 11:29:28 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: mul__inst__apx/b_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: mul__inst__apx/c_reg_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  mul__inst__apx/b_reg_reg[2]/CK (DFFR_X1)              0.0000     0.0000 r
+  mul__inst__apx/b_reg_reg[2]/Q (DFFR_X1)               0.1149     0.1149 f
+  mul__inst__apx/B_out[2] (conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26__1)
+                                                        0.0000     0.1149 f
+  mul__inst__acc/b[2] (conf_int_mul__noFF__arch_agnos_OP_BITWIDTH18_DATA_PATH_BITWIDTH26)
+                                                        0.0000     0.1149 f
+  mul__inst__acc/U1584/ZN (INV_X2)                      0.0138     0.1287 r
+  mul__inst__acc/U2126/ZN (XNOR2_X2)                    0.0352     0.1640 r
+  mul__inst__acc/U979/ZN (NAND2_X2)                     0.0148     0.1787 f
+  mul__inst__acc/U1197/ZN (INV_X4)                      0.0141     0.1929 r
+  mul__inst__acc/U2649/ZN (INV_X2)                      0.0090     0.2019 f
+  mul__inst__acc/U2437/ZN (OAI22_X2)                    0.0242     0.2261 r
+  mul__inst__acc/U2436/ZN (XNOR2_X2)                    0.0412     0.2673 r
+  mul__inst__acc/U2142/ZN (XNOR2_X2)                    0.0405     0.3078 r
+  mul__inst__acc/U2261/ZN (XNOR2_X2)                    0.0394     0.3472 r
+  mul__inst__acc/U2082/ZN (INV_X4)                      0.0118     0.3591 f
+  mul__inst__acc/U104/ZN (XNOR2_X2)                     0.0375     0.3966 f
+  mul__inst__acc/U1346/ZN (NOR2_X2)                     0.0156     0.4121 r
+  mul__inst__acc/U691/ZN (AOI21_X2)                     0.0186     0.4307 f
+  mul__inst__acc/U687/ZN (OAI21_X2)                     0.0187     0.4494 r
+  mul__inst__acc/U1100/ZN (AOI21_X2)                    0.0171     0.4665 f
+  mul__inst__acc/U1788/ZN (OAI21_X2)                    0.0191     0.4856 r
+  mul__inst__acc/U2339/ZN (AOI21_X2)                    0.0171     0.5027 f
+  mul__inst__acc/U2337/ZN (OAI21_X2)                    0.0183     0.5210 r
+  mul__inst__acc/U2335/ZN (NAND2_X2)                    0.0164     0.5374 f
+  mul__inst__acc/U2331/ZN (NAND2_X4)                    0.0159     0.5533 r
+  mul__inst__acc/U2713/ZN (INV_X8)                      0.0103     0.5636 f
+  mul__inst__acc/U2767/ZN (OAI21_X2)                    0.0164     0.5799 r
+  mul__inst__acc/U2770/ZN (XNOR2_X1)                    0.0373     0.6172 r
+  mul__inst__acc/d[36] (conf_int_mul__noFF__arch_agnos_OP_BITWIDTH18_DATA_PATH_BITWIDTH26)
+                                                        0.0000     0.6172 r
+  mul__inst__apx/d_internal__acc[36] (conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26__1)
+                                                        0.0000     0.6172 r
+  mul__inst__apx/U332/ZN (AOI22_X1)                     0.0279     0.6451 f
+  mul__inst__apx/U261/ZN (INV_X1)                       0.0169     0.6620 r
+  mul__inst__apx/U364/ZN (AOI21_X2)                     0.0182     0.6802 f
+  mul__inst__apx/U365/ZN (OAI21_X2)                     0.0188     0.6991 r
+  mul__inst__apx/c_reg_reg[28]/D (DFFR_X1)              0.0000     0.6991 r
+  data arrival time                                                0.6991
+
+  clock clk (rise edge)                                 0.6450     0.6450
+  clock network delay (ideal)                           0.0000     0.6450
+  mul__inst__apx/c_reg_reg[28]/CK (DFFR_X1)             0.0000     0.6450 r
+  library setup time                                   -0.0288     0.6162
+  data required time                                               0.6162
+  --------------------------------------------------------------------------
+  data required time                                               0.6162
+  data arrival time                                               -0.6991
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                -0.0828
+
+
+1
+*** F:DN power report
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+Version: L-2016.03-SP5-3
+Date   : Sun Jun 25 11:29:28 2017
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/various_temps__db__all_values/1.2V_25T.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  =   1.9517 mW   (79%)
+  Net Switching Power  = 530.5097 uW   (21%)
+                         ---------
+Total Dynamic Power    =   2.4822 mW  (100%)
+
+Cell Leakage Power     =  23.9592 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           1.2613        1.6151e-02            1.4911            1.2789  (  51.03%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.6904            0.5144           22.4679            1.2273  (  48.97%)
+--------------------------------------------------------------------------------------------------
+Total              1.9517 mW         0.5305 mW        23.9590 uW         2.5062 mW
+1
+ 
+****************************************
+Report : area
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+Version: L-2016.03-SP5-3
+Date   : Sun Jun 25 11:29:28 2017
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/various_temps__db__all_values/1.2V_25T.db)
+
+Number of ports:                          422
+Number of nets:                          4843
+Number of cells:                         4458
+Number of combinational cells:           4379
+Number of sequential cells:                76
+Number of macros/black boxes:               0
+Number of buf/inv:                       1210
+Number of references:                       6
+
+Combinational area:               3961.803966
+Buf/Inv area:                      693.728001
+Noncombinational area:             424.535997
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  4386.339963
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  -------------------------------------------------------------------------------
+conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26 4386.3400   100.0    6.9160    0.0000 0.0000 conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+mul__inst__acc                    2588.7120     59.0  2588.7120     0.0000  0.0000  conf_int_mul__noFF__arch_agnos_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+mul__inst__apx                    1790.7120     40.8   227.4300   424.5360  0.0000  conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26__1
+mul__inst__apx/mul__inst          1138.7460     26.0  1138.7460     0.0000  0.0000  conf_int_mul__noFF__arch_agnos_OP_BITWIDTH18_DATA_PATH_BITWIDTH26__1
+--------------------------------  ---------  -------  ---------  ---------  ------  -------------------------------------------------------------------------------
+Total                                                 3961.8040   424.5360  0.0000
+
+1
+**************** 
+*** F:DN after resynthesis 
+**************** 
+Error: Value for list '-exclude' must have 1 elements. (CMD-036)
+0
+Error: Value for list '-exclude' must have 1 elements. (CMD-036)
+0
+*** F:DN power report
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+Version: L-2016.03-SP5-3
+Date   : Sun Jun 25 11:35:39 2017
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/various_temps__db__all_values/1.2V_25T.db)
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  =   2.0176 mW   (76%)
+  Net Switching Power  = 626.2252 uW   (24%)
+                         ---------
+Total Dynamic Power    =   2.6439 mW  (100%)
+
+Cell Leakage Power     =  30.3092 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           1.2613        1.7697e-02            1.4911            1.2805  (  47.88%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.7564            0.6085           28.8179            1.3937  (  52.12%)
+--------------------------------------------------------------------------------------------------
+Total              2.0176 mW         0.6262 mW        30.3090 uW         2.6742 mW
+1
+ 
+****************************************
+Report : area
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+Version: L-2016.03-SP5-3
+Date   : Sun Jun 25 11:35:39 2017
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/various_temps__db__all_values/1.2V_25T.db)
+
+Number of ports:                          422
+Number of nets:                          6121
+Number of cells:                         5741
+Number of combinational cells:           5662
+Number of sequential cells:                76
+Number of macros/black boxes:               0
+Number of buf/inv:                       1569
+Number of references:                       6
+
+Combinational area:               4873.917965
+Buf/Inv area:                      903.336001
+Noncombinational area:             424.535997
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  5298.453962
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  -------------------------------------------------------------------------------
+conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26 5298.4540   100.0    2.9260    0.0000 0.0000 conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+mul__inst__acc                    3504.8160     66.1  3504.8160     0.0000  0.0000  conf_int_mul__noFF__arch_agnos_OP_BITWIDTH18_DATA_PATH_BITWIDTH26
+mul__inst__apx                    1790.7120     33.8   227.4300   424.5360  0.0000  conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH18_DATA_PATH_BITWIDTH26__1
+mul__inst__apx/mul__inst          1138.7460     21.5  1138.7460     0.0000  0.0000  conf_int_mul__noFF__arch_agnos_OP_BITWIDTH18_DATA_PATH_BITWIDTH26__1
+--------------------------------  ---------  -------  ---------  ---------  ------  -------------------------------------------------------------------------------
+Total                                                 4873.9180   424.5360  0.0000
+
+1

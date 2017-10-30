@@ -1,0 +1,230 @@
+cell_name U3Warning: Design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Wed Mar 15 16:42:54 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name macWarning: Design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Wed Mar 15 16:42:54 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+mac/clk (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[31] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[30] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[29] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[28] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[27] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[26] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[25] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[24] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[23] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[22] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[21] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[20] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[19] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[18] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[17] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[16] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[15] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[14] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[13] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[12] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[11] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[10] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[9] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[8] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[7] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[6] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[5] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[4] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[3] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[2] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[1] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/a[0] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[31] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[30] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[29] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[28] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[27] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[26] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[25] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[24] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[23] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[22] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[21] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[20] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[19] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[18] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[17] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[16] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[15] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[14] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[13] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[12] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[11] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[10] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[9] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[8] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[7] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[6] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[5] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[4] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[3] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[2] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[1] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/b[0] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[31] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[30] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[29] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[28] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[27] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[26] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[25] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[24] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[23] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[22] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[21] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[20] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[19] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[18] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[17] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[16] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[15] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[14] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[13] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[12] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[11] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[10] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[9] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[8] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[7] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[6] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[5] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[4] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[3] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[2] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[1] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+mac/c[0] (conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32)
+                                    0.00 r        infinity     infinity
+
+1
+

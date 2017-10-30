@@ -1,0 +1,310 @@
+2.  Synopsys Commands                                        Command Reference
+                                 set_max_delay
+
+NAME
+       set_max_delay
+              Specifies  a  maximum  delay  target  for  paths  in the current
+              design.
+
+SYNTAX
+       status set_max_delay
+               delay_value
+               [-rise | -fall]
+               [-from from_list
+                | -rise_from rise_from_list
+                | -fall_from fall_from_list]
+               [-through through_list]
+               [-rise_through rise_through_list]
+               [-fall_through fall_through_list]
+               [-to to_list
+                | -rise_to rise_to_list
+                | -fall_to fall_to_list]
+               [-group_path group_name]
+               [-reset_path]
+               [-comment comment_string]
+               [-ignore_clock_latency]
+
+   Data Types
+       delay_value           float
+       from_list             list
+       rise_from_list        list
+       fall_from_list        list
+       through_list          list
+       rise_through_list     list
+       fall_through_list     list
+       to_list               list
+       rise_to_list          list
+       fall_to_list          list
+       group_name            string
+       comment_string        string
+
+ARGUMENTS
+       delay_value
+              Specifies the value of  the  desired  maximum  delay  for  paths
+              between  start  and end points.  You must express delay_value in
+              the same units as the technology library used  during  optimiza-
+              tion.   If  a  path  startpoint is on a sequential device, clock
+              skew is included in the computed delay.  If  a  path  startpoint
+              has  an  input delay specified, that delay value is added to the
+              path delay.  If a path endpoint is on a sequential device, clock
+              skew  and library setup time are included in the computed delay.
+              If the endpoint has an output delay  specified,  that  delay  is
+              added into the path delay.
+
+       -rise | -fall
+              Specifies  whether  endpoint  rising  or falling delays are con-
+              strained.  If you don't specify either, both rising and  falling
+              delays are constrained.
+
+       -from from_list
+              Specifies  a list of path startpoints (port, pin, clock, or cell
+              names) of the current design.  If you specify a clock, all  path
+              startpoints  related to that clock are affected.  If you specify
+              a cell name, one path startpoint on that cell is affected.   All
+              paths from these startpoints to the endpoints in the to_list are
+              constrained to delay_value.  If you don't specify  to_list,  all
+              paths  from  from_list  are  affected.  This list cannot include
+              output ports.  If you include more than  one  object,  you  must
+              enclose the objects in quotation marks ("") or braces ({}).
+
+       -rise_from rise_from_list
+              Same  as  the  -from option, except that the path must rise from
+              the objects specified. If a  clock  object  is  specified,  this
+              option  selects startpoints clocked by the named clock, but only
+              the paths launched by rising edge of  the  clock  at  the  clock
+              source,  taking  into  account  any logical inversions along the
+              clock path.  You can use only  one  of  -from,  -rise_from,  and
+              -fall_from.
+
+       -fall_from fall_from_list
+              Same  as  the  -from option, except that the path must fall from
+              the objects specified. If a  clock  object  is  specified,  this
+              option  selects startpoints clocked by the named clock, but only
+              the paths launched by falling edge of the  clock  at  the  clock
+              source,  taking  into  account  any logical inversions along the
+              clock path.  You can use only  one  of  -from,  -rise_from,  and
+              -fall_from.
+
+       -through through_list
+              Determines a list of path throughpoints (port, pin, or leaf cell
+              names) of the current design.  The max delay value applies  only
+              to   paths   that   pass  through  one  of  the  points  in  the
+              through_list.  If you include more than  one  object,  you  must
+              enclose the objects in quotation marks ("") or braces ({})..  If
+              you specify the -through option multiple times,  the  max  delay
+              values  apply  to  paths  that  pass  through  a  member of each
+              through_list in the order in which the  lists  were  given.   In
+              other  words,  the  path must first pass through a member of the
+              first through_list, then through a member of  the  second  list,
+              and  so  on,  for  every through list specified.  If you use the
+              -through option in combination with the -from or -to option, max
+              delay  applies only if the -from or -to conditions are satisfied
+              and the -through conditions are satisfied.
+
+       -rise_through rise_through_list
+              Same as the -through option, but applies only to  paths  with  a
+              rising  transition  at  the  specified  objects. You can specify
+              -rise_through more than once in a single command  invocation  as
+              with the -through option.
+
+       -fall_through fall_through_list
+              Same  as  the  -through option, but applies only to paths with a
+              falling transition at the specified  objects.  You  can  specify
+              -fall_through  more  than once in a single command invocation as
+              with the -through option.
+
+       -to to_list
+              Specifies a list of path endpoints (port, clock,  cell,  or  pin
+              names) of the current design.  All paths to the endpoints in the
+              to_list are constrained to delay_value.  If you don't specify  a
+              from_list,  all paths to to_list are affected.  This list cannot
+              include input ports.  If you include more than one  object,  you
+              must enclose the objects in quotation marks ("") or braces ({}).
+              If you specify a  cell,  one  path  endpoint  on  that  cell  is
+              affected.  If you specify a clock, all path endpoints related to
+              that clock are affected.
+
+       -rise_to rise_to_list
+              Same as the -to option, but applies only to paths rising at  the
+              endpoint.  If  a  clock object is specified, this option selects
+              endpoints clocked by the named clock, but only  the  paths  cap-
+              tured  by  rising edge of the clock at clock source, taking into
+              account any logical inversions along the clock  path.   You  can
+              use only one of -to, -rise_to, and -fall_to.
+
+       -fall_to fall_to_list
+              Same as the -to option, but applies only to paths falling at the
+              endpoint. If a clock object is specified,  this  option  selects
+              endpoints  clocked  by  the  named  clock,  but  only  the paths
+              launched by falling edge of the clock at the clock source,  tak-
+              ing  into  account  any logical inversions along the clock path.
+              You can use only one of -to, -rise_to, and -fall_to.
+
+       -group_path group_name
+              Specifies the name of the group to which the  paths  are  to  be
+              added.   If  the  group  does  not already exist, it is created.
+              This is equivalent to separately specifying the  group_path com-
+              mand  with  the  -name  group_name  -from  from_list -to to_list
+              options in addition to specifying the set_max_delay command.  If
+              you  do  not  specify this option, the existing path grouping is
+              not changed.
+
+       -reset_path
+              Removes existing point-to-point  exception  information  on  the
+              specified   paths.   Only  information  of  the  same  rise/fall
+              setup/hold type is reset.   This  is  equivalent  to  using  the
+              reset_path  command  with  similar  options before executing the
+              set_max_delay command.
+
+       -comment comment_string
+              Allows the command to accept a comment string. The  tool  honors
+              the  annotation and preserves it with the SDC object so that the
+              exact string is written out when the constraint is  written  out
+              when  you use the write_sdc or write_script command. The comment
+              remains intact through the synthesis, place-and-route, and  tim-
+              ing-analysis flows.
+
+DESCRIPTION
+       Specifies  the  desired  maximum delay for paths in the current design.
+       This command specifies that the maximum path length for any  startpoint
+       in  from_list to any endpoint in to_list must be less than delay_value.
+
+       Individual maximum delay targets are automatically derived  from  clock
+       waveforms  and  port input or output delays.  For more information, see
+       the create_clock, set_input_delay, and set_output_delay man pages.
+
+       The optimization cost of the design depends on  how  path  groups  have
+       been specified.  For more information, see the group_path man page.
+
+       The set_max_delay command is a point-to-point timing exception command;
+       that is, it overrides the default single-cycle timing relationship  for
+       one  or  more timing paths.  Other point-to-point timing exception com-
+       mands   include    the    set_multicycle_path,    set_min_delay,    and
+       set_false_path commands.
+
+       If a path satisfies multiple timing exceptions, the following rules are
+       applied to determine which exceptions take effect.  Rules referring  to
+       -from apply equally to -rise_from and -fall_from, and similarly for the
+       rise and fall options of -through and -to.
+
+        1. Two group_path commands  can  conflict  with  each  other.   But  a
+         group_path exception by itself does not conflict with another type of
+         exception.  Thus, the remaining rules apply for two group_path excep-
+         tions or two non-group_path exceptions.
+
+        2. If both exceptions are set_false_paths, no conflict occurs.
+
+        3.   If   one  exception  is  a  set_max_delay  and  the  other  is  a
+         set_min_delay, no conflict occurs.
+
+        4. If one exception is a set_multicycle_path -hold and  the  other  is
+         set_multicycle_path -setup, no conflict occurs.
+
+        5.  If  one  exception  is  a set_false_path and the other is not, the
+         set_false_path takes precedence.
+
+        6. If one exception is a set_max_delay  and  the  other  is  not,  the
+         set_max_delay takes precedence.
+
+        7.  If  one  exception  is  a  set_min_delay and the other is not, the
+         set_min_delay takes precedence.
+
+        8. If one exception has a -from pin or -from cell and the  other  does
+         not, the former takes precedence.
+
+        9.  If one exception has a -to pin or -to cell and the other does not,
+         the former takes precedence.
+
+        10. If one exception has any -through points and the other  does  not,
+         the former takes precedence.
+
+        11.  If  one  exception  has a -from clock and the other does not, the
+         former takes precedence.
+
+        12. If one exception has a -to clock and the other does not, the  for-
+         mer takes precedence.
+
+        13.  The  exception  with  the  more restrictive constraint then takes
+         precedence.  For set_max_delay and set_multicycle_path  -setup,  this
+         is  the  constraint  with  the  lower  value.   For set_min_delay and
+         set_multicycle_path -hold, it  is  the  constraint  with  the  higher
+         value.
+
+       The  value  of a max_rise_delay attribute cannot be less than that of a
+       min_rise_delay attribute on the  same  path  (and  similarly  for  fall
+       attributes).  If this occurs, the old attribute is removed.
+
+       Note:  Specifying  a min_delay or max_delay to a pin that is not a path
+       endpoint places an implicit dont_touch attribute on that cell.
+
+       The -group_path option  modifies  the  path  grouping.   Path  grouping
+       affects  the  maximum  delay  cost function.  The worst violator within
+       each group adds to the cost.  For  optimization,  grouping  some  paths
+       separately  can  improve  their  delay cost, but it might also increase
+       design area, and compile time.
+
+       Use the  report_timing_requirements  command  to  list  the  max_delay,
+       min_delay,  multicycle_path, and false_path information for the design.
+       Use report_path_group to list the path groups which are defined.
+
+       To undo set_max_delay, use reset_path.
+
+       To modify paths grouped with the -group_path option, use the group_path
+       command to place the paths in another group or the default group.
+
+   Multicorner-Multimode Support
+       This command applies to the current scenario only.
+
+EXAMPLES
+       The  following  example  shows  how  to optimize the design so that any
+       delay path to a port named Y is less than 10 units.
+
+         prompt> set_max_delay 10.0 -to {Y}
+
+       This example shows how to specify that all paths from cell ff1a or ff1b
+       that  pass  through cell u1 and end at cell ff2e must be less than 15.0
+       units.
+
+         prompt> set_max_delay 15.0 -from {ff1a ff1b} -through {u1} -to {ff2e}
+
+       This example shows how to specify that all paths to  endpoints  clocked
+       by PHI2 must be less than 8.5 units.
+
+         prompt> set_max_delay 8.5 -to [get_clocks PHI2]
+
+       This  example  shows how to set a requirement that all paths leading to
+       ports named busA[*] have a delay of less than 5.0 and are  included  in
+       the path group named busA.
+
+         prompt> set_max_delay 5.0 -to "busA[*]" -group_path "busA"
+
+       This  example  shows  how to set a maximum delay requirement of 3.0 for
+       all paths that first pass through either pin u1/Z  or  u2/Z  then  pass
+       through pin u5/Z or u6/Z.
+
+         prompt> set_max_delay 3.0 -through {u1/Z u2/Z} -through {u5/Z u6/Z}
+
+       This  example  specifies  that  all timing paths from pin ff1/CP to pin
+       ff2/D that rise through at least one of pins U1/Z  and  U2/Z  and  fall
+       through  at  least one of pins U3/Z and U4/C must have delays less than
+       8.0 units.
+
+         prompt> set_max_delay 8.0 -from {ff1/CP} -to {ff2/D} \
+            -rise_through {U1/Z U2/Z} -fall_through {U3/Z U4/C}
+
+SEE ALSO
+       compile(2)
+       create_clock(2)
+       group_path(2)
+       report_constraint(2)
+       report_path_group(2)
+       reset_design(2)
+       reset_path(2)
+       set_false_path(2)
+       set_input_delay(2)
+       set_min_delay(2)
+       set_multicycle_path(2)
+       set_output_delay(2)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

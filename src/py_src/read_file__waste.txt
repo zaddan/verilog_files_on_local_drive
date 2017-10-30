@@ -1,0 +1,522 @@
+2.  Synopsys Commands                                        Command Reference
+                                   read_file
+
+NAME
+       read_file
+              Reads  designs or libraries into memory, or reads libraries into
+              the shell.
+
+SYNTAX for dc_shell
+       list read_file
+               file_list
+               [-define macro_names]
+               [-format format_name]
+               [-library library_name]
+               [-rtl]
+               [-single_file single_file_name]
+               [-work library_name]
+               [-scenarios scenario_list
+                  [-active_scenarios active_scenario_list]]
+               [-autoread
+                  -top top_design_name
+                  [-recursive]
+                  [-exclude exclude_list]
+                  [-param param_list]
+                  [-output_script file_name]
+                  [-verbose]
+                  [-rebuild]]
+
+   Data Types for dc_shell
+       file_list                list
+       macro_names              list
+       format_name              string
+       library_name             string
+       single_file_name         string
+       scenario_list            list
+       active_scenario_list     list
+       top_design_name          string
+       exclude_list             list
+       param_list               list
+       file_name                string
+
+SYNTAX for lc_shell
+       list read_file
+              file_list
+
+   Data Types for lc_shell
+       file_list                  list
+
+ARGUMENTS
+       file_list
+              Specifies a list of files or directories to read.  When specify-
+              ing  more  than one file or directory, separate the names with a
+              space and enclose the list of names in braces ({}).
+
+       -define macro_names
+              Specifies a list of top-level macros.  This option can  be  used
+              only with the Verilog and SystemVerilog formats.
+
+       -format format_name
+              Specifies the format in which a design is read.  The format_name
+              can be one of the following formats:
+
+                Format       Description
+                ddc          Synopsys internal database format (default)
+                db           Synopsys internal database format (libraries only)
+                verilog      IEEE Standard Verilog
+                sverilog     IEEE Standard SystemVerilog
+                vhdl         IEEE Standard VHDL
+                equation     Synopsys equation format
+                pla          Berkeley (Espresso) PLA format
+                st           Synopsys State Table format
+
+              If the -autoread option is used,  only  verilog,  sverilog,  and
+              vhdl formats are allowed. Using both -format and -autoread makes
+              the autoread flow look for files  in  the  given  language  that
+              match the extensions in the corresponding extensions list by the
+              hdlin_autoread_verilog_extensions,          hdlin_autoread_sver-
+              ilog_extensions,  or hdlin_autoread_vhdl_extensions variable. By
+              default, the -autoread option reads in all files it  finds  with
+              Verilog,  SystemVerilog,  and VHDL extensions, so specifying the
+              -format option is optional.
+
+       -library library_name
+              Remaps the work library to library_name. This option can be used
+              only with the VHDL format.
+
+              By  default,  the  analyze command stores all output in the work
+              library.  To store  design  elements  in  libraries  other  than
+              library  specified  by  using the -work option, use the -library
+              option.
+
+       -rtl   Specifies that an RTL design is being read. This option  can  be
+              used only with the Verilog or VHDL format.
+
+              When  used,  the read_file command invokes HDL Compiler directly
+              without attempting to determine if the specified files are gate-
+              level   netlists.   For  details,  see  the  man  page  for  the
+              hdlin_auto_netlist_reader variable.
+
+              You cannot use this option with the -autoread option.
+
+       -single_file single_file_name
+              Puts the designs in the file_list argument  into  the  specified
+              internal design file, regardless of the input format.
+
+              You cannot use this option with the -autoread option.
+
+       -work library_name
+              Remaps  the work library in the same way as the -library option.
+              It is an alias for the -library option for VHDL only.
+
+              You cannot use this option with the -autoread option.
+
+       -scenarios scenario_list
+              Specifies the scenarios whose constraints are to  be  read  from
+              the  .ddc  file.  This option can be used only with the ddc for-
+              mat.
+
+              Constraints for any scenarios that are not listed are not  read,
+              which  might  save  memory  and runtime if the file is large and
+              certain scenarios are not required in the current session.
+
+              If you do not use this option, all scenarios are read  from  the
+              file.   If you use this option with an empty scenario_list argu-
+              ment, no scenarios are read.
+
+              You cannot use this option with the -autoread option.
+
+       -active_scenarios active_scenario_list
+              Specifies a list of active scenarios when the file is read.  Any
+              scenarios  that  are  not  listed  are  restored in the inactive
+              state.  This option can be used only with the ddc format.
+
+              You can use this option only when you also specify the  -scenar-
+              ios  option.  The  scenarios  specified in the -active_scenarios
+              option must be in the list of scenarios specified in  the  -sce-
+              narios option.
+
+              If  you  do not use this option, the active or inactive state of
+              the scenarios are restored  according  to  the  state  that  was
+              recorded when the file was written (unless the scenarios already
+              exist).
+
+              You cannot use this option with the -autoread option.
+
+       -autoread
+              Enables the -autoread option for the read_file command, which is
+              supported only for the Verilog, SystemVerilog, and VHDL formats.
+
+              When the -autoread option is used, the RTL source  files  listed
+              in  list_files  (or  reachable  using the -recursive option) are
+              read in, their dependencies are inferred, the files are  ordered
+              for  a  proper  analyze  phase regarding their dependencies, the
+              files are analyzed (internally using the analyze  command),  and
+              then  the  top  design defined by -top is elaborated in top-down
+              mode.
+
+       -top top_design_name
+              Specifies the name of the top-level design.  Elaboration  starts
+              at the specified design and elaborates the entire design hierar-
+              chy under  the  top  design  using  the  elaboration  parameters
+              defined by the optional -param option.
+
+              The current design is set to the design defined as top.
+
+              Any  source  file provided in file_list that is not required for
+              top-down elaboration of the defined top module hierarchy is  not
+              analyzed.
+
+              This  option  is required when you specify the -autoread option.
+              It is not valid without the -autoread option.
+
+       -recursive
+              Specifies that the command looks into the subdirectories of  the
+              directories  specified by the file_list argument and recursively
+              collects source files from those locations.
+
+              By default, the command looks into  the  specified  directories,
+              but it does not look in their subdirectories.
+
+              This option is available only with the -autoread option.
+
+       -exclude exclude_list
+              Specifies  a  list  of  files and directories that are not to be
+              analyzed. If the command expands  an  item  from  the  file_list
+              argument, it checks the file or directory against all entries in
+              this list and ignores the file or directory if it is covered  by
+              at least one of the entries.
+
+              This option is available only with the -autoread option.
+
+       -param param_list
+              Specifies a list of design parameters enclosed in quotes for the
+              design's elaboration.
+
+              Parameters within the list must be separated by commas.  A spec-
+              ification can be based on parameter order (for example, "8,7,5")
+              or on parameter names (for example, "N=>8,M=>6").  You  can  mix
+              ordered  and  named  parameter  specifications  as  long  as the
+              ordered parameters are listed first.
+
+              The full param_list syntax is summarized in the DESCRIPTION sec-
+              tion of the elaborate command man page.
+
+              This option is available only with the -autoread option.
+
+       -output_script file_name
+              Creates a Tcl script that is compatible with Design Compiler and
+              Formality.  The file reading order for third-party tools  and  a
+              DOT language file-dependency graph are embedded in the script as
+              comments.
+
+              This option is available only with the -autoread option.
+
+       -verbose
+              Prints out more messages for the -autoread option.
+
+              This option is available only with the -autoread option.
+
+       -rebuild
+              Allows you to start a clean run with the -autoread  option  that
+              analyzes all required files whether they were analyze before.
+
+              The -autoread option runs by default in update mode.  This means
+              that if a file is changed, the file and all dependent files  are
+              reanalyzed.
+
+              This option is available only with the -autoread option.
+
+DESCRIPTION
+       This command reads the designs specified in the file_list argument into
+       memory.
+
+       The current design is automatically set to the  first  design  that  is
+       read,  unless  the -autoread option is used and the current_design will
+       be the design specified with the -top option.
+
+       The read_file command can also read the libraries in file_list into the
+       shell.  Libraries are the only .db files that can be read; user designs
+       can no longer be read from .db files.
+
+       While it is good practice to always specify the -format option, if  you
+       do not specify this option, the tool attempts to infer the format based
+       on the file name extensions, if any.   The  recognized  extensions  are
+       .ddc  for  ddc  format;  .db, .pdb, .sdb, or .sldb for db format; .v or
+       .verilog for Verilog format; .sv or .sverilog for SystemVerilog format;
+       and  .vhd or .vhdl for VHDL format.  Extensions are not case-sensitive.
+       If the file name ends in .gz, the preceding extension, if any, is used.
+       For  example,   an  extension of .v.gz is recognized as Verilog format.
+       (The .gz extension is not supported for .ddc  files.)  If  you  specify
+       multiple  files on the same command line, their formats must all be the
+       same.  If the format cannot  be  inferred  from  the  file  names,  the
+       default format, ddc, is used.
+
+       Internally,  designs  are  stored  in design files.  An internal design
+       file is a "container" of designs and has a complete, unique,  UNIX-type
+       file  name  associated with it.  The designs in a design file also have
+       unique names, but designs with the same name  can  exist  in  different
+       design  files.  For information about displaying design files and their
+       contents, see the list_designs man page.
+
+       By default, when the tool reads files in a format other than ddc or db,
+       it  places  each  design  in its own internal design file that uses the
+       following  naming  convention:  input_file_path/design_name.ddc.    The
+       names of files read in db or ddc format remain the same.
+
+       When the tool reads an HDL parameterized design file, the design is not
+       converted to a .ddc file, but instead is parsed and stored in an inter-
+       mediate  format.  Then, you can build the design by using the elaborate
+       command or by instantiating the design in another HDL design.
+
+       Because internal database files at lower levels of hierarchy are  auto-
+       matically read when they are linked, you do not need to read them sepa-
+       rately.  Designs are not automatically linked  at  the  time  they  are
+       read.   You  can  use  the  link command after the read_file command to
+       ensure that referenced designs are read correctly.  For information  on
+       automatic loading, see the link man page.
+
+       An  input file can have either a simple or a complex file name.  A sim-
+       ple file name has no directory specification,  which  means  (in  UNIX)
+       that  it  does  not  contain  a  slash (/).  Simple file names, such as
+       adder.ddc or library.db, must be found in a  directory  listed  in  the
+       search_path  variable.   A complex file name has a directory specifica-
+       tion in it, which means that it does contain one or more slashes.  Com-
+       plex    file    names,    such    as    ./test.ddc,   ../test.ddc,   or
+       ~john/test/test.ddc, are not searched for in the search_path  variable.
+
+       Internally, libraries are stored in library files.  An internal library
+       file is a "container" of libraries and has a  complete,  unique,  UNIX-
+       type  file  name  associated  with it.  The libraries in a library file
+       also have unique names, but libraries with the same name can  exist  in
+       different  library  files.   For  information  about displaying library
+       files and their contents, see the list_libs man page.
+
+       By default, when the tool reads non-database format files, each library
+       is placed in its own internal library file that uses the following nam-
+       ing convention: input_file_path/file_name.db:library_name.   The  names
+       of files read in db format remain the same.
+
+   Multicorner-Multimode Support
+       By default, this command uses information from both active and inactive
+       scenarios.  You can select different scenarios by using the  -scenarios
+       option.
+
+   -autoread Option Support
+       The  -autoread  option  reads in the source files of a design listed in
+       the file_list, determines the dependencies  between  them,  orders  the
+       files regarding its dependencies, analyzes them in the correct order to
+       avoid errors due missed or misplaced files and  elaborates  the  design
+       starting  at  the  specified top-level module. It retains the resulting
+       GTECH representation in memory.
+
+       The dependencies are calculated only  from  the  files  or  directories
+       present  in  file_list.  If file_list changes between consecutive calls
+       with the -autoread option, the dependency inference is  performed  over
+       the  latest  set of files provided. Based on this, all required sources
+       must be present in file_list option  (or reachable  if  the  -recursive
+       option is used) on each call with the -autoread option.
+
+       When  the  -autoread  option is enabled, the read_file command reads in
+       all files listed in file_list with  Verilog,  SystemVerilog,  and  VHDL
+       extensions, but only files required for the top design elaboration will
+       be analyzed. For analyzing all sources, see  the  analyze  command  man
+       page with the -autoread option support.
+
+       You  can specify the parameters required for elaborating the top design
+       by using the -param option.  Its  syntax  and  usage  is  the  same  as
+       described for the -parameters option of the elaborate command.  See the
+       elaborate man page for more information.
+
+       To locate the source files, the -autoread option uses  the  search_path
+       variable  to expand each item listed by the file_list command argument.
+       It then determines whether the  result  is  excluded  by  the  -exclude
+       option or the hdlin_autoread_exclude_extensions variable.  If it is not
+       excluded the language of the sources is inferred from the  file  exten-
+       sions  that  match  with  the  corresponding extensions list set by the
+       hdlin_autoread_verilog_extensions,  hdlin_autoread_sverilog_extensions,
+       or  hdlin_autoread_vhdl_extensions variable for Verilog, SystemVerilog,
+       or VHDL language respectively.
+
+       You can also use the -autoread option when you want to specify explicit
+       file  names  in the file_list argument that do not have one of the lan-
+       guage-specific extensions, but you have explicit say the language using
+       the -format option.
+
+       When  expanding  a  directory,  the command collects the files from the
+       directory and recursively from its  subdirectories  if  the  -recursive
+       option  is set. The command then performs all extension checks on these
+       files. If the -format option is set,  only  files  with  Verilog,  Sys-
+       temVerilog, or VHDL extensions are collected, based on the value of the
+       option.
+
+       After the -autoread option collects all of the source  files,  it  per-
+       forms the following dependency checks:
+
+        o Detects analyze dependencies: Order RTL files for analyzing them the
+         right order. For example, analyze  the  file  that  contains  a  VHDL
+         entity  before  analyzing  files  that  define  architectures of that
+         entity, or analyzes the file that contains a SV  package  declaration
+         before the files that imports that package.
+
+        o  Detects  Verilog  and  SystemVerilog compilation unit dependencies:
+         determines if a file needs to be analyzed  in  the  same  compilation
+         unit  with  other  files.   For example, if a file defines macros, SV
+         local parameter, SV enumerated values and the file is not  explicitly
+         included  by  the file that requires that definitions, then -autoread
+         option and groups them in the same compilation unit  in  the  correct
+         order.  This  might  not  always be possible, such as when a macro is
+         defined several times in different files  and  the  -autoread  cannot
+         determine which of those alternatives is the right choice.
+
+        o Detects link dependencies: Schedule analyze stage for files required
+         for elaboration of the design hierarchy. For example, if a (S)Verilog
+         design  that is instantiated in one source file is declared on a dif-
+         ferent source file provided in the file_list, the  second  file  also
+         requires to be analyzed for a complete top-down design elaboration.
+
+        o  Detects  include  dependencies: If a (S)Verilog file is included in
+         another source, and the file changes between two consecutive calls to
+         the -autoread option (in the same DCSHELL session), this file and all
+         files that include them will be scheduled for analyze to  update  the
+         design.
+
+        o  Infers  the target library for VHDL files. However, if the -library
+         option is specified, this step is skipped and VHDL files provided  in
+         file_list are analyzed into the specified design library.
+
+       After  the  dependency  inference,  all the required HDL files from the
+       file_list (regarding its dependencies and the -top design defined)  are
+       analyzed,  and then the design is elaborated from the top-level module.
+       If no elaboration is desired, you can use the  analyze  -autoread  com-
+       mand.  The resulting GTECH representation is retained in memory.
+
+       It is possible to save the design to disk by using the write command.
+
+       When  the  -autoread option is used again after a file is changed, only
+       the updated source files are analyzed and  the  design  is  elaborated.
+       The updated designs are replaced in the unmapped design.
+
+       The -autoread option executes the dependency analysis only based on the
+       current file_list information. Therefore, it is recommended to pass all
+       RTL  files that might have relevant dependency relationship in a single
+       read_file -autoread command.
+
+EXAMPLES
+       The following example uses simple and complex file names to read  in  a
+       file   of   equations.   This  is  a  complex  path  specification,  so
+       search_path is not used.
+
+         prompt> read_file -format equation /usr/test/test.fnc
+         Loading file '/usr/test/test.fnc'
+         {test}
+
+       The following example uses a simple file name to specify the same  file
+       as  shown  in the previous example.  Thus, its directory must appear in
+       the search_path.
+
+         prompt> search_path = {/usr/test}
+         {/usr/test}
+         prompt> read_file -format equation test.fnc
+         Loading file '/usr/test/test.fnc'
+         {test}
+
+       The following example reads a file that contains multiple  designs,  so
+       each  design is assigned its own internal design file name.  The aster-
+       isk (*) indicates the current design.  For more  information,  see  the
+       list_designs man page.
+
+         prompt> read_file -format verilog foo.v
+         Loading file '/usr/test/foo.v'
+         {A B C}
+
+         prompt> list_designs
+
+                 Design  File    Path
+                 ------  ----    ----
+            *    A       A.ddc    /usr/test/dc
+                 B       B.ddc    /usr/test/dc
+                 C       C.ddc    /usr/test/dc
+
+       The  following example shows that when you use the -single_file option,
+       all designs are assigned the same file name:
+
+         prompt> read_file -format verilog -single_file mylib.ddc foo.v
+         Loading file '/usr/test/foo.v'
+         {A B C}
+
+         prompt> list_designs
+
+                  Design  File        Path
+                  ------  ----        ----
+            *     A       mylib.ddc    /usr/bill/dc
+                  B       mylib.ddc    /usr/bill/dc
+                  C       mylib.ddc    /usr/bill/dc
+
+       The following example uses simple and complex file names  to  read  the
+       library .db file into the shell.  This is a complex path specification,
+       so the search_path variable is not used.
+
+         prompt> read_file -format db /usr/test/test.db
+         Loading db file '/usr/test/test.db'
+         {test}
+
+       The following example shows that in order to specify the same  file  as
+       shown  in  the  example above as a simple file name, its directory must
+       appear in the search_path variable.
+
+         prompt> search_path = {/usr/test}
+         {/usr/test}
+
+         prompt> read_file -format db test.db
+         Loading db file '/usr/test/test.db'
+         {test}
+
+       The following example assumes that the current directory is the  source
+       directory.  It  specifies  the source file list at the command line and
+       calls the command with the name of the top-level entity.
+
+         prompt> read_file {.} -autoread -recursive -top E1
+
+       The next example specifies extensions for Verilog files that  are  dif-
+       ferent  than  the  default ({.v}), sets the source list and the exclude
+       list, and calls the command with the name of the top-level module name,
+       forcing it to only collect files with Verilog extensions.
+
+         prompt> set hdlin_autoread_verilog_extensions {.ve .VE}
+         prompt> set my_sources {mod1/src mod2/src}
+         prompt> set my_excludes {mod1/src/incl mod2/src/incl}
+         prompt> read_file $my_sources -exclude $my_excludes \
+            -autoread -format verilog -top TOP
+
+       Note that excluding include directories explicitly is only necessary if
+       include files have the same extensions as  source  files  and  not  all
+       include files are included in the source.
+
+SEE ALSO
+       analyze(2)
+       all_scenarios(2)
+       all_active_scenarios(2)
+       change_names(2)
+       create_scenario(2)
+       elaborate(2)
+       link(2)
+       list_designs(2)
+       list_files(2)
+       list_libs(2)
+       set_active_scenarios(2)
+       which(2)
+       write(2)
+       hdl_variables(3)
+       search_path(3)
+       view_read_file_suffix(3)
+       UID-1033(n)
+       UID-1034(n)
+       UID-1328(n)
+       hdlin_autoread_exclude_extensions(3)
+       hdlin_autoread_verilog_extensions(3)
+       hdlin_autoread_sverilog_extensions(3)
+       hdlin_autoread_vhdl_extensions(3)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

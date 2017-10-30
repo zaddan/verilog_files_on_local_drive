@@ -1,0 +1,4 @@
+*** F:DN I have backuped the noFF ones, and changed the noFF (in the v_src dir) .v contents
+to have FF (but havn't changed the name for the sake of time)
+*** noFF are updated to use 2*DATAPATH for output, but FF has not
+         

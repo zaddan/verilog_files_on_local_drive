@@ -1,0 +1,4894 @@
+cell_name:  add/U150
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U190
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U191
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U192
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U193
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U194
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U195
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U196
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U197
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U198
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U199
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U200
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U201
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U202
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U203
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U204
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U205
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U206
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U207
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U208
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U209
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U210
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U211
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U212
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U213
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U214
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U215
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U216
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U217
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U173
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U10
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U12
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U13
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U14
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U15
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U16
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U17
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U18
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U19
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U20
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U21
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U22
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U23
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U24
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U25
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U26
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U27
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U28
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U29
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U30
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U31
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U32
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U33
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U34
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U35
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U36
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/intadd_1/U4
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[11] (out)                         0.21 f            0.60         0.39
+d[10] (out)                         0.20 r            0.60         0.40
+d[9] (out)                          0.14 r            0.60         0.46
+d[8] (out)                          0.08 f            0.60         0.52
+
+1
+cell_name:  add/intadd_1/U3
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[11] (out)                         0.21 f            0.60         0.39
+d[10] (out)                         0.20 r            0.60         0.40
+d[9] (out)                          0.14 r            0.60         0.46
+
+1
+cell_name:  add/intadd_1/U2
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[11] (out)                         0.21 f            0.60         0.39
+d[10] (out)                         0.20 r            0.60         0.40
+
+1
+cell_name:  add/U11
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U9
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add/U3
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 r            0.60         0.29
+d[29] (out)                         0.27 r            0.60         0.33
+d[27] (out)                         0.27 r            0.60         0.33
+d[21] (out)                         0.27 f            0.60         0.33
+d[30] (out)                         0.26 r            0.60         0.34
+d[22] (out)                         0.26 f            0.60         0.34
+d[28] (out)                         0.25 f            0.60         0.35
+d[26] (out)                         0.24 f            0.60         0.36
+d[20] (out)                         0.23 f            0.60         0.37
+d[25] (out)                         0.21 r            0.60         0.39
+d[17] (out)                         0.21 r            0.60         0.39
+d[19] (out)                         0.20 r            0.60         0.40
+d[24] (out)                         0.18 f            0.60         0.42
+d[18] (out)                         0.18 f            0.60         0.42
+d[16] (out)                         0.18 f            0.60         0.42
+d[23] (out)                         0.15 r            0.60         0.45
+d[15] (out)                         0.15 r            0.60         0.45
+d[14] (out)                         0.12 f            0.60         0.48
+d[13] (out)                         0.09 r            0.60         0.51
+
+1
+cell_name:  add/U7
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 r            0.60         0.29
+d[29] (out)                         0.27 f            0.60         0.33
+d[27] (out)                         0.26 f            0.60         0.34
+d[30] (out)                         0.26 f            0.60         0.34
+d[28] (out)                         0.25 r            0.60         0.35
+d[26] (out)                         0.24 f            0.60         0.36
+d[21] (out)                         0.22 f            0.60         0.38
+d[22] (out)                         0.21 f            0.60         0.39
+d[25] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.19 f            0.60         0.41
+d[24] (out)                         0.18 r            0.60         0.42
+d[19] (out)                         0.16 r            0.60         0.44
+d[23] (out)                         0.16 f            0.60         0.44
+d[18] (out)                         0.14 f            0.60         0.46
+d[17] (out)                         0.14 r            0.60         0.46
+d[16] (out)                         0.12 f            0.60         0.48
+d[15] (out)                         0.09 f            0.60         0.51
+
+1
+cell_name:  add/U8
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.27 r            0.60         0.33
+d[29] (out)                         0.23 r            0.60         0.37
+d[21] (out)                         0.23 f            0.60         0.37
+d[27] (out)                         0.22 r            0.60         0.38
+d[30] (out)                         0.22 r            0.60         0.38
+d[22] (out)                         0.22 f            0.60         0.38
+d[28] (out)                         0.21 f            0.60         0.39
+d[26] (out)                         0.20 f            0.60         0.40
+d[20] (out)                         0.19 f            0.60         0.41
+d[25] (out)                         0.17 r            0.60         0.43
+d[17] (out)                         0.17 f            0.60         0.43
+d[19] (out)                         0.16 r            0.60         0.44
+d[18] (out)                         0.14 f            0.60         0.46
+d[24] (out)                         0.14 f            0.60         0.46
+d[16] (out)                         0.14 r            0.60         0.46
+d[23] (out)                         0.11 f            0.60         0.49
+d[15] (out)                         0.09 r            0.60         0.51
+
+1
+cell_name:  add/U39
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.22 r            0.60         0.38
+d[29] (out)                         0.18 r            0.60         0.42
+d[27] (out)                         0.17 r            0.60         0.43
+d[30] (out)                         0.17 r            0.60         0.43
+d[28] (out)                         0.16 f            0.60         0.44
+d[26] (out)                         0.15 f            0.60         0.45
+d[25] (out)                         0.12 r            0.60         0.48
+d[24] (out)                         0.09 f            0.60         0.51
+
+1
+cell_name:  add/U40
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.34 r            0.60         0.26
+d[29] (out)                         0.30 r            0.60         0.30
+d[27] (out)                         0.29 r            0.60         0.31
+d[21] (out)                         0.29 r            0.60         0.31
+d[30] (out)                         0.29 r            0.60         0.31
+d[22] (out)                         0.28 f            0.60         0.32
+d[28] (out)                         0.28 f            0.60         0.32
+d[26] (out)                         0.27 f            0.60         0.33
+d[20] (out)                         0.26 r            0.60         0.34
+d[25] (out)                         0.24 r            0.60         0.36
+d[17] (out)                         0.23 r            0.60         0.37
+d[19] (out)                         0.22 f            0.60         0.38
+d[24] (out)                         0.21 f            0.60         0.39
+d[15] (out)                         0.21 f            0.60         0.39
+d[18] (out)                         0.21 r            0.60         0.39
+d[16] (out)                         0.21 f            0.60         0.39
+d[14] (out)                         0.19 r            0.60         0.41
+d[23] (out)                         0.17 r            0.60         0.43
+d[13] (out)                         0.16 f            0.60         0.44
+d[12] (out)                         0.13 r            0.60         0.47
+d[11] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U41
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[11] (out)                         0.08 r            0.60         0.52
+
+1
+cell_name:  add/U42
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[11] (out)                         0.21 f            0.60         0.39
+
+1
+cell_name:  add/U43
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[21] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[28] (out)                         0.30 f            0.60         0.30
+d[26] (out)                         0.29 f            0.60         0.31
+d[20] (out)                         0.28 r            0.60         0.32
+d[25] (out)                         0.26 r            0.60         0.34
+d[17] (out)                         0.25 r            0.60         0.35
+d[19] (out)                         0.24 f            0.60         0.36
+d[24] (out)                         0.23 f            0.60         0.37
+d[15] (out)                         0.23 f            0.60         0.37
+d[18] (out)                         0.23 r            0.60         0.37
+d[16] (out)                         0.23 f            0.60         0.37
+d[14] (out)                         0.21 r            0.60         0.39
+d[23] (out)                         0.19 r            0.60         0.41
+d[13] (out)                         0.18 f            0.60         0.42
+d[12] (out)                         0.15 r            0.60         0.45
+
+1
+cell_name:  add/U44
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+add/U49/B2 (AOI21_X1)               0.03 r        infinity     infinity
+add/U68/B2 (AOI21_X1)               0.03 r        infinity     infinity
+
+1
+cell_name:  add/U45
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+add/U49/B2 (AOI21_X1)               0.06 r        infinity     infinity
+add/U68/B2 (AOI21_X1)               0.06 r        infinity     infinity
+
+1
+cell_name:  add/U46
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.35 r            0.60         0.25
+d[29] (out)                         0.31 r            0.60         0.29
+d[27] (out)                         0.31 r            0.60         0.29
+d[21] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.30 r            0.60         0.30
+d[22] (out)                         0.30 f            0.60         0.30
+d[28] (out)                         0.29 f            0.60         0.31
+d[26] (out)                         0.28 f            0.60         0.32
+d[20] (out)                         0.27 r            0.60         0.33
+d[25] (out)                         0.25 r            0.60         0.35
+d[17] (out)                         0.25 r            0.60         0.35
+d[19] (out)                         0.24 f            0.60         0.36
+d[24] (out)                         0.22 f            0.60         0.38
+d[15] (out)                         0.22 f            0.60         0.38
+d[18] (out)                         0.22 r            0.60         0.38
+d[16] (out)                         0.22 f            0.60         0.38
+d[14] (out)                         0.20 r            0.60         0.40
+d[23] (out)                         0.19 r            0.60         0.41
+d[13] (out)                         0.17 f            0.60         0.43
+d[12] (out)                         0.14 r            0.60         0.46
+
+1
+cell_name:  add/U47
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.34 r            0.60         0.26
+d[29] (out)                         0.30 r            0.60         0.30
+d[27] (out)                         0.29 r            0.60         0.31
+d[21] (out)                         0.29 r            0.60         0.31
+d[30] (out)                         0.28 r            0.60         0.32
+d[22] (out)                         0.28 f            0.60         0.32
+d[28] (out)                         0.27 f            0.60         0.33
+d[26] (out)                         0.27 f            0.60         0.33
+d[20] (out)                         0.26 f            0.60         0.34
+d[25] (out)                         0.24 r            0.60         0.36
+d[17] (out)                         0.23 r            0.60         0.37
+d[19] (out)                         0.22 f            0.60         0.38
+d[24] (out)                         0.21 f            0.60         0.39
+d[15] (out)                         0.21 f            0.60         0.39
+d[18] (out)                         0.21 r            0.60         0.39
+d[16] (out)                         0.21 f            0.60         0.39
+d[14] (out)                         0.18 f            0.60         0.42
+d[23] (out)                         0.17 r            0.60         0.43
+d[13] (out)                         0.15 f            0.60         0.45
+d[12] (out)                         0.13 r            0.60         0.47
+
+1
+cell_name:  add/U48
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[21] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[28] (out)                         0.30 f            0.60         0.30
+d[26] (out)                         0.29 f            0.60         0.31
+d[20] (out)                         0.28 r            0.60         0.32
+d[25] (out)                         0.26 r            0.60         0.34
+d[17] (out)                         0.25 r            0.60         0.35
+d[19] (out)                         0.24 f            0.60         0.36
+d[24] (out)                         0.23 f            0.60         0.37
+d[15] (out)                         0.23 f            0.60         0.37
+d[18] (out)                         0.23 r            0.60         0.37
+d[16] (out)                         0.23 f            0.60         0.37
+d[14] (out)                         0.21 r            0.60         0.39
+d[23] (out)                         0.19 r            0.60         0.41
+d[13] (out)                         0.18 f            0.60         0.42
+d[12] (out)                         0.15 r            0.60         0.45
+
+1
+cell_name:  add/U49
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[15] (out)                         0.23 f            0.60         0.37
+d[14] (out)                         0.21 r            0.60         0.39
+d[13] (out)                         0.18 f            0.60         0.42
+d[12] (out)                         0.15 r            0.60         0.45
+
+1
+cell_name:  add/U51
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[15] (out)                         0.23 f            0.60         0.37
+d[14] (out)                         0.21 r            0.60         0.39
+d[13] (out)                         0.18 f            0.60         0.42
+d[12] (out)                         0.15 r            0.60         0.45
+
+1
+cell_name:  add/U52
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[12] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U53
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[12] (out)                         0.15 r            0.60         0.45
+
+1
+cell_name:  add/U54
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.29 r            0.60         0.31
+d[29] (out)                         0.25 r            0.60         0.35
+d[21] (out)                         0.24 f            0.60         0.36
+d[27] (out)                         0.24 r            0.60         0.36
+d[30] (out)                         0.23 r            0.60         0.37
+d[22] (out)                         0.23 f            0.60         0.37
+d[28] (out)                         0.22 f            0.60         0.38
+d[26] (out)                         0.22 f            0.60         0.38
+d[20] (out)                         0.21 f            0.60         0.39
+d[25] (out)                         0.19 r            0.60         0.41
+d[17] (out)                         0.18 f            0.60         0.42
+d[19] (out)                         0.17 r            0.60         0.43
+d[18] (out)                         0.16 f            0.60         0.44
+d[24] (out)                         0.16 f            0.60         0.44
+d[16] (out)                         0.16 r            0.60         0.44
+d[15] (out)                         0.14 f            0.60         0.46
+d[23] (out)                         0.12 f            0.60         0.48
+d[14] (out)                         0.12 r            0.60         0.48
+d[13] (out)                         0.09 f            0.60         0.51
+
+1
+cell_name:  add/U55
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[15] (out)                         0.14 f            0.60         0.46
+d[14] (out)                         0.12 r            0.60         0.48
+d[13] (out)                         0.09 f            0.60         0.51
+
+1
+cell_name:  add/U56
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[15] (out)                         0.23 f            0.60         0.37
+d[14] (out)                         0.21 r            0.60         0.39
+d[13] (out)                         0.18 f            0.60         0.42
+
+1
+cell_name:  add/U57
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.29 r            0.60         0.31
+d[29] (out)                         0.25 r            0.60         0.35
+d[21] (out)                         0.25 f            0.60         0.35
+d[27] (out)                         0.25 r            0.60         0.35
+d[30] (out)                         0.24 r            0.60         0.36
+d[22] (out)                         0.24 f            0.60         0.36
+d[28] (out)                         0.23 f            0.60         0.37
+d[26] (out)                         0.22 f            0.60         0.38
+d[20] (out)                         0.21 f            0.60         0.39
+d[25] (out)                         0.19 r            0.60         0.41
+d[17] (out)                         0.19 r            0.60         0.41
+d[19] (out)                         0.18 r            0.60         0.42
+d[24] (out)                         0.17 f            0.60         0.43
+d[18] (out)                         0.16 f            0.60         0.44
+d[16] (out)                         0.16 f            0.60         0.44
+d[23] (out)                         0.13 r            0.60         0.47
+d[15] (out)                         0.11 f            0.60         0.49
+d[14] (out)                         0.09 r            0.60         0.51
+d[13] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U58
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[13] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U59
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.28 r            0.60         0.32
+d[29] (out)                         0.24 r            0.60         0.36
+d[27] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.23 f            0.60         0.37
+d[30] (out)                         0.23 r            0.60         0.37
+d[22] (out)                         0.22 f            0.60         0.38
+d[28] (out)                         0.22 f            0.60         0.38
+d[26] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.20 f            0.60         0.40
+d[25] (out)                         0.19 r            0.60         0.41
+d[17] (out)                         0.17 f            0.60         0.43
+d[19] (out)                         0.17 r            0.60         0.43
+d[24] (out)                         0.16 f            0.60         0.44
+d[18] (out)                         0.15 f            0.60         0.45
+d[16] (out)                         0.15 r            0.60         0.45
+d[23] (out)                         0.12 f            0.60         0.48
+d[15] (out)                         0.11 r            0.60         0.49
+d[14] (out)                         0.09 f            0.60         0.51
+d[13] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U60
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[13] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U61
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[13] (out)                         0.18 f            0.60         0.42
+
+1
+cell_name:  add/U62
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[15] (out)                         0.23 f            0.60         0.37
+d[14] (out)                         0.21 r            0.60         0.39
+
+1
+cell_name:  add/U63
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[14] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U64
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[14] (out)                         0.21 r            0.60         0.39
+
+1
+cell_name:  add/U65
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[15] (out)                         0.23 f            0.60         0.37
+
+1
+cell_name:  add/U66
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[15] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U67
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[15] (out)                         0.23 f            0.60         0.37
+
+1
+cell_name:  add/U68
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[21] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[28] (out)                         0.30 f            0.60         0.30
+d[26] (out)                         0.29 f            0.60         0.31
+d[20] (out)                         0.28 r            0.60         0.32
+d[25] (out)                         0.26 r            0.60         0.34
+d[17] (out)                         0.25 r            0.60         0.35
+d[19] (out)                         0.24 f            0.60         0.36
+d[24] (out)                         0.23 f            0.60         0.37
+d[18] (out)                         0.23 r            0.60         0.37
+d[16] (out)                         0.23 f            0.60         0.37
+d[23] (out)                         0.19 r            0.60         0.41
+
+1
+cell_name:  add/U69
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 r            0.60         0.29
+d[29] (out)                         0.27 r            0.60         0.33
+d[27] (out)                         0.27 r            0.60         0.33
+d[21] (out)                         0.27 f            0.60         0.33
+d[30] (out)                         0.26 r            0.60         0.34
+d[22] (out)                         0.26 f            0.60         0.34
+d[28] (out)                         0.25 f            0.60         0.35
+d[26] (out)                         0.24 f            0.60         0.36
+d[20] (out)                         0.23 f            0.60         0.37
+d[25] (out)                         0.21 r            0.60         0.39
+d[17] (out)                         0.21 r            0.60         0.39
+d[19] (out)                         0.20 f            0.60         0.40
+d[24] (out)                         0.19 f            0.60         0.41
+d[18] (out)                         0.18 r            0.60         0.42
+d[16] (out)                         0.18 f            0.60         0.42
+d[23] (out)                         0.15 r            0.60         0.45
+
+1
+cell_name:  add/U70
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[21] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[28] (out)                         0.30 f            0.60         0.30
+d[26] (out)                         0.29 f            0.60         0.31
+d[20] (out)                         0.28 r            0.60         0.32
+d[25] (out)                         0.26 r            0.60         0.34
+d[17] (out)                         0.25 r            0.60         0.35
+d[19] (out)                         0.24 f            0.60         0.36
+d[24] (out)                         0.23 f            0.60         0.37
+d[18] (out)                         0.23 r            0.60         0.37
+d[16] (out)                         0.23 f            0.60         0.37
+d[23] (out)                         0.19 r            0.60         0.41
+
+1
+cell_name:  add/U71
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[21] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[28] (out)                         0.30 f            0.60         0.30
+d[26] (out)                         0.29 f            0.60         0.31
+d[20] (out)                         0.28 r            0.60         0.32
+d[25] (out)                         0.26 r            0.60         0.34
+d[17] (out)                         0.25 r            0.60         0.35
+d[19] (out)                         0.24 f            0.60         0.36
+d[24] (out)                         0.23 f            0.60         0.37
+d[18] (out)                         0.23 r            0.60         0.37
+d[16] (out)                         0.23 f            0.60         0.37
+d[23] (out)                         0.19 r            0.60         0.41
+
+1
+cell_name:  add/U73
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.28 r            0.60         0.32
+d[29] (out)                         0.24 r            0.60         0.36
+d[27] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.23 f            0.60         0.37
+d[30] (out)                         0.23 r            0.60         0.37
+d[22] (out)                         0.22 f            0.60         0.38
+d[28] (out)                         0.22 f            0.60         0.38
+d[26] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.20 f            0.60         0.40
+d[25] (out)                         0.19 r            0.60         0.41
+d[17] (out)                         0.17 f            0.60         0.43
+d[19] (out)                         0.17 r            0.60         0.43
+d[24] (out)                         0.16 f            0.60         0.44
+d[18] (out)                         0.15 f            0.60         0.45
+d[16] (out)                         0.15 r            0.60         0.45
+d[23] (out)                         0.12 f            0.60         0.48
+
+1
+cell_name:  add/U74
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.23 f            0.60         0.37
+d[22] (out)                         0.22 f            0.60         0.38
+d[20] (out)                         0.20 f            0.60         0.40
+d[17] (out)                         0.17 f            0.60         0.43
+d[19] (out)                         0.17 r            0.60         0.43
+d[18] (out)                         0.15 f            0.60         0.45
+d[16] (out)                         0.15 r            0.60         0.45
+
+1
+cell_name:  add/U75
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[20] (out)                         0.28 r            0.60         0.32
+d[17] (out)                         0.25 r            0.60         0.35
+d[19] (out)                         0.24 f            0.60         0.36
+d[18] (out)                         0.23 r            0.60         0.37
+d[16] (out)                         0.23 f            0.60         0.37
+
+1
+cell_name:  add/U76
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[17] (out)                         0.25 r            0.60         0.35
+d[16] (out)                         0.23 f            0.60         0.37
+
+1
+cell_name:  add/U77
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 f            0.60         0.29
+d[29] (out)                         0.28 f            0.60         0.32
+d[27] (out)                         0.26 f            0.60         0.34
+d[30] (out)                         0.26 f            0.60         0.34
+d[28] (out)                         0.25 r            0.60         0.35
+d[26] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.23 f            0.60         0.37
+d[22] (out)                         0.21 f            0.60         0.39
+d[25] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.19 f            0.60         0.41
+d[24] (out)                         0.18 r            0.60         0.42
+d[19] (out)                         0.16 r            0.60         0.44
+d[23] (out)                         0.16 f            0.60         0.44
+d[18] (out)                         0.14 f            0.60         0.46
+d[17] (out)                         0.14 f            0.60         0.46
+d[16] (out)                         0.12 f            0.60         0.48
+
+1
+cell_name:  add/U78
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.29 f            0.60         0.31
+d[29] (out)                         0.25 f            0.60         0.35
+d[27] (out)                         0.24 f            0.60         0.36
+d[30] (out)                         0.23 f            0.60         0.37
+d[28] (out)                         0.23 r            0.60         0.37
+d[26] (out)                         0.22 r            0.60         0.38
+d[21] (out)                         0.20 f            0.60         0.40
+d[22] (out)                         0.19 f            0.60         0.41
+d[25] (out)                         0.19 f            0.60         0.41
+d[20] (out)                         0.17 f            0.60         0.43
+d[24] (out)                         0.16 r            0.60         0.44
+d[19] (out)                         0.13 r            0.60         0.47
+d[23] (out)                         0.13 f            0.60         0.47
+d[18] (out)                         0.12 f            0.60         0.48
+d[17] (out)                         0.11 r            0.60         0.49
+d[16] (out)                         0.09 f            0.60         0.51
+
+1
+cell_name:  add/U79
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[17] (out)                         0.25 r            0.60         0.35
+d[16] (out)                         0.23 f            0.60         0.37
+
+1
+cell_name:  add/U80
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[16] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U81
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[16] (out)                         0.23 f            0.60         0.37
+
+1
+cell_name:  add/U82
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+d[24] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.22 r            0.60         0.38
+d[23] (out)                         0.21 f            0.60         0.39
+d[22] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.19 r            0.60         0.41
+d[19] (out)                         0.15 f            0.60         0.45
+d[18] (out)                         0.12 f            0.60         0.48
+d[17] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U83
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.33 r            0.60         0.27
+d[29] (out)                         0.29 r            0.60         0.31
+d[27] (out)                         0.28 r            0.60         0.32
+d[30] (out)                         0.27 r            0.60         0.33
+d[28] (out)                         0.26 f            0.60         0.34
+d[26] (out)                         0.26 f            0.60         0.34
+d[25] (out)                         0.23 r            0.60         0.37
+d[24] (out)                         0.20 f            0.60         0.40
+d[21] (out)                         0.17 r            0.60         0.43
+d[23] (out)                         0.17 f            0.60         0.43
+d[22] (out)                         0.16 f            0.60         0.44
+d[20] (out)                         0.14 r            0.60         0.46
+d[19] (out)                         0.11 f            0.60         0.49
+d[18] (out)                         0.08 r            0.60         0.52
+d[17] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U84
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[17] (out)                         0.25 r            0.60         0.35
+
+1
+cell_name:  add/U85
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[17] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U86
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[17] (out)                         0.25 r            0.60         0.35
+
+1
+cell_name:  add/U87
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 r            0.60         0.23
+d[29] (out)                         0.33 r            0.60         0.27
+d[27] (out)                         0.32 r            0.60         0.28
+d[30] (out)                         0.31 r            0.60         0.29
+d[28] (out)                         0.30 f            0.60         0.30
+d[26] (out)                         0.30 f            0.60         0.30
+d[25] (out)                         0.27 r            0.60         0.33
+d[24] (out)                         0.24 f            0.60         0.36
+d[21] (out)                         0.22 r            0.60         0.38
+d[22] (out)                         0.21 f            0.60         0.39
+d[23] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.18 r            0.60         0.42
+d[19] (out)                         0.15 f            0.60         0.45
+d[18] (out)                         0.12 r            0.60         0.48
+
+1
+cell_name:  add/U88
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 f            0.60         0.29
+d[29] (out)                         0.28 f            0.60         0.32
+d[27] (out)                         0.26 f            0.60         0.34
+d[30] (out)                         0.26 f            0.60         0.34
+d[28] (out)                         0.25 r            0.60         0.35
+d[26] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.23 f            0.60         0.37
+d[22] (out)                         0.21 f            0.60         0.39
+d[25] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.19 f            0.60         0.41
+d[24] (out)                         0.18 r            0.60         0.42
+d[19] (out)                         0.16 r            0.60         0.44
+d[23] (out)                         0.16 f            0.60         0.44
+d[18] (out)                         0.14 f            0.60         0.46
+
+1
+cell_name:  add/U92
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[18] (out)                         0.23 r            0.60         0.37
+
+1
+cell_name:  add/U93
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[18] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U94
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[18] (out)                         0.23 r            0.60         0.37
+
+1
+cell_name:  add/U95
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.33 r            0.60         0.27
+d[29] (out)                         0.29 f            0.60         0.31
+d[27] (out)                         0.28 r            0.60         0.32
+d[30] (out)                         0.27 f            0.60         0.33
+d[28] (out)                         0.27 r            0.60         0.33
+d[26] (out)                         0.26 f            0.60         0.34
+d[25] (out)                         0.23 r            0.60         0.37
+d[24] (out)                         0.20 f            0.60         0.40
+d[21] (out)                         0.18 r            0.60         0.42
+d[23] (out)                         0.17 f            0.60         0.43
+d[22] (out)                         0.17 f            0.60         0.43
+d[20] (out)                         0.14 r            0.60         0.46
+d[19] (out)                         0.11 f            0.60         0.49
+
+1
+cell_name:  add/U96
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.33 r            0.60         0.27
+d[29] (out)                         0.29 r            0.60         0.31
+d[27] (out)                         0.28 r            0.60         0.32
+d[30] (out)                         0.27 r            0.60         0.33
+d[28] (out)                         0.26 f            0.60         0.34
+d[26] (out)                         0.26 f            0.60         0.34
+d[25] (out)                         0.23 r            0.60         0.37
+d[24] (out)                         0.20 f            0.60         0.40
+d[21] (out)                         0.17 r            0.60         0.43
+d[23] (out)                         0.17 f            0.60         0.43
+d[22] (out)                         0.16 f            0.60         0.44
+d[20] (out)                         0.14 r            0.60         0.46
+d[19] (out)                         0.11 f            0.60         0.49
+
+1
+cell_name:  add/U97
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.32 f            0.60         0.28
+d[29] (out)                         0.29 f            0.60         0.31
+d[27] (out)                         0.28 f            0.60         0.32
+d[30] (out)                         0.27 f            0.60         0.33
+d[28] (out)                         0.26 r            0.60         0.34
+d[26] (out)                         0.25 r            0.60         0.35
+d[25] (out)                         0.22 f            0.60         0.38
+d[24] (out)                         0.19 r            0.60         0.41
+d[21] (out)                         0.17 f            0.60         0.43
+d[23] (out)                         0.17 f            0.60         0.43
+d[22] (out)                         0.16 f            0.60         0.44
+d[20] (out)                         0.14 f            0.60         0.46
+d[19] (out)                         0.10 r            0.60         0.50
+
+1
+cell_name:  add/U98
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.32 f            0.60         0.28
+d[29] (out)                         0.29 f            0.60         0.31
+d[27] (out)                         0.28 f            0.60         0.32
+d[30] (out)                         0.27 f            0.60         0.33
+d[28] (out)                         0.27 r            0.60         0.33
+d[26] (out)                         0.25 r            0.60         0.35
+d[25] (out)                         0.23 f            0.60         0.37
+d[24] (out)                         0.20 r            0.60         0.40
+d[21] (out)                         0.17 f            0.60         0.43
+d[23] (out)                         0.17 f            0.60         0.43
+d[22] (out)                         0.16 f            0.60         0.44
+d[20] (out)                         0.14 f            0.60         0.46
+d[19] (out)                         0.11 r            0.60         0.49
+
+1
+cell_name:  add/U99
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+d[24] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.22 r            0.60         0.38
+d[23] (out)                         0.21 f            0.60         0.39
+d[22] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.19 r            0.60         0.41
+d[19] (out)                         0.15 f            0.60         0.45
+
+1
+cell_name:  add/U100
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[20] (out)                         0.28 r            0.60         0.32
+d[19] (out)                         0.24 f            0.60         0.36
+
+1
+cell_name:  add/U101
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[19] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U102
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[19] (out)                         0.24 f            0.60         0.36
+
+1
+cell_name:  add/U104
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.32 r            0.60         0.28
+d[29] (out)                         0.28 f            0.60         0.32
+d[27] (out)                         0.27 r            0.60         0.33
+d[30] (out)                         0.26 r            0.60         0.34
+d[28] (out)                         0.26 r            0.60         0.34
+d[26] (out)                         0.25 f            0.60         0.35
+d[25] (out)                         0.22 r            0.60         0.38
+d[24] (out)                         0.19 f            0.60         0.41
+d[23] (out)                         0.16 f            0.60         0.44
+d[21] (out)                         0.12 f            0.60         0.48
+d[22] (out)                         0.11 f            0.60         0.49
+d[20] (out)                         0.09 f            0.60         0.51
+
+1
+cell_name:  add/U105
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[20] (out)                         0.28 r            0.60         0.32
+
+1
+cell_name:  add/U106
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[20] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U107
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[20] (out)                         0.28 r            0.60         0.32
+
+1
+cell_name:  add/U108
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.31 r            0.60         0.29
+
+1
+cell_name:  add/U109
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.30 r            0.60         0.30
+d[28] (out)                         0.29 f            0.60         0.31
+d[26] (out)                         0.29 f            0.60         0.31
+d[25] (out)                         0.26 r            0.60         0.34
+d[24] (out)                         0.23 f            0.60         0.37
+d[23] (out)                         0.20 f            0.60         0.40
+d[22] (out)                         0.10 f            0.60         0.50
+d[21] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U110
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.32 r            0.60         0.28
+d[29] (out)                         0.28 r            0.60         0.32
+d[27] (out)                         0.27 r            0.60         0.33
+d[30] (out)                         0.27 r            0.60         0.33
+d[28] (out)                         0.26 f            0.60         0.34
+d[26] (out)                         0.25 f            0.60         0.35
+d[25] (out)                         0.22 r            0.60         0.38
+d[24] (out)                         0.19 f            0.60         0.41
+d[23] (out)                         0.16 f            0.60         0.44
+d[22] (out)                         0.10 f            0.60         0.50
+d[21] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U111
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.31 r            0.60         0.29
+
+1
+cell_name:  add/U112
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.30 r            0.60         0.30
+d[28] (out)                         0.29 f            0.60         0.31
+d[26] (out)                         0.29 f            0.60         0.31
+d[25] (out)                         0.26 r            0.60         0.34
+d[24] (out)                         0.23 f            0.60         0.37
+d[23] (out)                         0.20 f            0.60         0.40
+d[22] (out)                         0.10 f            0.60         0.50
+d[21] (out)                         0.09 r            0.60         0.51
+
+1
+cell_name:  add/U113
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[22] (out)                         0.10 f            0.60         0.50
+d[21] (out)                         0.09 r            0.60         0.51
+
+1
+cell_name:  add/U114
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.32 r            0.60         0.28
+d[29] (out)                         0.28 r            0.60         0.32
+d[27] (out)                         0.28 r            0.60         0.32
+d[30] (out)                         0.27 r            0.60         0.33
+d[28] (out)                         0.26 f            0.60         0.34
+d[26] (out)                         0.25 f            0.60         0.35
+d[25] (out)                         0.22 r            0.60         0.38
+d[24] (out)                         0.19 f            0.60         0.41
+d[23] (out)                         0.16 f            0.60         0.44
+d[22] (out)                         0.10 f            0.60         0.50
+d[21] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U115
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.09 r            0.60         0.51
+
+1
+cell_name:  add/U116
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.31 r            0.60         0.29
+
+1
+cell_name:  add/U117
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.30 r            0.60         0.30
+d[28] (out)                         0.29 f            0.60         0.31
+d[26] (out)                         0.29 f            0.60         0.31
+d[25] (out)                         0.26 r            0.60         0.34
+d[24] (out)                         0.23 f            0.60         0.37
+d[23] (out)                         0.20 f            0.60         0.40
+d[22] (out)                         0.10 f            0.60         0.50
+
+1
+cell_name:  add/U118
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.32 r            0.60         0.28
+d[29] (out)                         0.28 r            0.60         0.32
+d[27] (out)                         0.28 r            0.60         0.32
+d[30] (out)                         0.27 r            0.60         0.33
+d[28] (out)                         0.26 f            0.60         0.34
+d[26] (out)                         0.25 f            0.60         0.35
+d[25] (out)                         0.22 r            0.60         0.38
+d[24] (out)                         0.19 f            0.60         0.41
+d[23] (out)                         0.16 f            0.60         0.44
+d[22] (out)                         0.10 f            0.60         0.50
+
+1
+cell_name:  add/U119
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[22] (out)                         0.30 f            0.60         0.30
+
+1
+cell_name:  add/U120
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[22] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U121
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[22] (out)                         0.30 f            0.60         0.30
+
+1
+cell_name:  add/U122
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.30 r            0.60         0.30
+d[28] (out)                         0.29 f            0.60         0.31
+d[26] (out)                         0.29 f            0.60         0.31
+d[25] (out)                         0.26 r            0.60         0.34
+d[24] (out)                         0.23 f            0.60         0.37
+d[23] (out)                         0.20 f            0.60         0.40
+
+1
+cell_name:  add/U123
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.36 r            0.60         0.24
+d[29] (out)                         0.32 r            0.60         0.28
+d[27] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.30 r            0.60         0.30
+d[28] (out)                         0.29 f            0.60         0.31
+d[26] (out)                         0.29 f            0.60         0.31
+d[25] (out)                         0.26 r            0.60         0.34
+d[24] (out)                         0.23 f            0.60         0.37
+d[23] (out)                         0.20 f            0.60         0.40
+
+1
+cell_name:  add/U127
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.35 r            0.60         0.25
+d[29] (out)                         0.31 r            0.60         0.29
+d[27] (out)                         0.31 r            0.60         0.29
+d[30] (out)                         0.30 r            0.60         0.30
+d[28] (out)                         0.29 f            0.60         0.31
+d[26] (out)                         0.28 f            0.60         0.32
+d[25] (out)                         0.25 r            0.60         0.35
+d[24] (out)                         0.22 f            0.60         0.38
+d[23] (out)                         0.19 f            0.60         0.41
+
+1
+cell_name:  add/U128
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+d[24] (out)                         0.24 r            0.60         0.36
+d[23] (out)                         0.21 f            0.60         0.39
+
+1
+cell_name:  add/U130
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.32 r            0.60         0.28
+d[29] (out)                         0.29 f            0.60         0.31
+d[27] (out)                         0.28 r            0.60         0.32
+d[30] (out)                         0.27 r            0.60         0.33
+d[28] (out)                         0.26 r            0.60         0.34
+d[26] (out)                         0.25 f            0.60         0.35
+d[25] (out)                         0.23 r            0.60         0.37
+d[24] (out)                         0.20 f            0.60         0.40
+d[23] (out)                         0.17 f            0.60         0.43
+
+1
+cell_name:  add/U131
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.32 r            0.60         0.28
+d[29] (out)                         0.29 f            0.60         0.31
+d[27] (out)                         0.28 r            0.60         0.32
+d[30] (out)                         0.27 r            0.60         0.33
+d[28] (out)                         0.26 r            0.60         0.34
+d[26] (out)                         0.25 f            0.60         0.35
+d[25] (out)                         0.23 r            0.60         0.37
+d[24] (out)                         0.20 f            0.60         0.40
+d[23] (out)                         0.17 f            0.60         0.43
+
+1
+cell_name:  add/U132
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.35 r            0.60         0.25
+d[29] (out)                         0.31 f            0.60         0.29
+d[27] (out)                         0.30 r            0.60         0.30
+d[30] (out)                         0.29 r            0.60         0.31
+d[28] (out)                         0.28 f            0.60         0.32
+d[26] (out)                         0.28 f            0.60         0.32
+d[25] (out)                         0.25 r            0.60         0.35
+d[24] (out)                         0.22 f            0.60         0.38
+d[23] (out)                         0.19 f            0.60         0.41
+
+1
+cell_name:  add/U133
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.35 r            0.60         0.25
+d[29] (out)                         0.31 f            0.60         0.29
+d[27] (out)                         0.30 r            0.60         0.30
+d[30] (out)                         0.29 r            0.60         0.31
+d[28] (out)                         0.28 f            0.60         0.32
+d[26] (out)                         0.28 f            0.60         0.32
+d[25] (out)                         0.25 r            0.60         0.35
+d[24] (out)                         0.22 f            0.60         0.38
+d[23] (out)                         0.19 f            0.60         0.41
+
+1
+cell_name:  add/U134
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+d[24] (out)                         0.24 r            0.60         0.36
+d[23] (out)                         0.21 f            0.60         0.39
+
+1
+cell_name:  add/U135
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+d[24] (out)                         0.24 r            0.60         0.36
+d[23] (out)                         0.21 f            0.60         0.39
+
+1
+cell_name:  add/U136
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+d[24] (out)                         0.24 r            0.60         0.36
+d[23] (out)                         0.21 f            0.60         0.39
+
+1
+cell_name:  add/U137
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[23] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U138
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[23] (out)                         0.21 f            0.60         0.39
+
+1
+cell_name:  add/U139
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+d[24] (out)                         0.24 r            0.60         0.36
+
+1
+cell_name:  add/U140
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[24] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U141
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[24] (out)                         0.24 r            0.60         0.36
+
+1
+cell_name:  add/U143
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.18 r            0.60         0.42
+d[29] (out)                         0.14 f            0.60         0.46
+d[27] (out)                         0.13 f            0.60         0.47
+d[30] (out)                         0.13 r            0.60         0.47
+d[28] (out)                         0.12 f            0.60         0.48
+d[26] (out)                         0.11 r            0.60         0.49
+d[25] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U144
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[27] (out)                         0.32 f            0.60         0.28
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+
+1
+cell_name:  add/U145
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[25] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U146
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[25] (out)                         0.27 f            0.60         0.33
+
+1
+cell_name:  add/U147
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.21 r            0.60         0.39
+d[29] (out)                         0.18 f            0.60         0.42
+d[30] (out)                         0.16 r            0.60         0.44
+d[28] (out)                         0.15 r            0.60         0.45
+d[27] (out)                         0.12 r            0.60         0.48
+d[26] (out)                         0.10 f            0.60         0.50
+
+1
+cell_name:  add/U148
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.21 r            0.60         0.39
+d[29] (out)                         0.18 f            0.60         0.42
+d[30] (out)                         0.16 r            0.60         0.44
+d[28] (out)                         0.15 r            0.60         0.45
+d[27] (out)                         0.12 r            0.60         0.48
+d[26] (out)                         0.10 f            0.60         0.50
+
+1
+cell_name:  add/U149
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.20 r            0.60         0.40
+d[29] (out)                         0.16 r            0.60         0.44
+d[30] (out)                         0.15 r            0.60         0.45
+d[28] (out)                         0.14 f            0.60         0.46
+d[27] (out)                         0.12 r            0.60         0.48
+d[26] (out)                         0.09 f            0.60         0.51
+
+1
+cell_name:  add/U151
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[27] (out)                         0.12 r            0.60         0.48
+d[26] (out)                         0.09 f            0.60         0.51
+
+1
+cell_name:  add/U152
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[27] (out)                         0.32 f            0.60         0.28
+d[26] (out)                         0.30 r            0.60         0.30
+
+1
+cell_name:  add/U153
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.20 f            0.60         0.40
+d[30] (out)                         0.15 f            0.60         0.45
+d[29] (out)                         0.13 r            0.60         0.47
+d[28] (out)                         0.11 f            0.60         0.49
+d[26] (out)                         0.08 f            0.60         0.52
+d[27] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U154
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[26] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U155
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.21 r            0.60         0.39
+d[29] (out)                         0.17 r            0.60         0.43
+d[30] (out)                         0.16 r            0.60         0.44
+d[28] (out)                         0.15 f            0.60         0.45
+d[27] (out)                         0.09 f            0.60         0.51
+d[26] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U156
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[26] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U157
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[26] (out)                         0.30 r            0.60         0.30
+
+1
+cell_name:  add/U158
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[27] (out)                         0.32 f            0.60         0.28
+
+1
+cell_name:  add/U159
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[27] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U160
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[27] (out)                         0.32 f            0.60         0.28
+
+1
+cell_name:  add/U161
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+
+1
+cell_name:  add/U162
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.22 f            0.60         0.38
+d[29] (out)                         0.18 f            0.60         0.42
+d[30] (out)                         0.16 f            0.60         0.44
+d[28] (out)                         0.16 r            0.60         0.44
+
+1
+cell_name:  add/U163
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.20 f            0.60         0.40
+d[29] (out)                         0.16 f            0.60         0.44
+d[30] (out)                         0.15 f            0.60         0.45
+d[28] (out)                         0.14 r            0.60         0.46
+
+1
+cell_name:  add/U164
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.22 f            0.60         0.38
+d[29] (out)                         0.18 f            0.60         0.42
+d[30] (out)                         0.16 f            0.60         0.44
+d[28] (out)                         0.16 r            0.60         0.44
+
+1
+cell_name:  add/U165
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+
+1
+cell_name:  add/U166
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[29] (out)                         0.33 f            0.60         0.27
+d[28] (out)                         0.31 r            0.60         0.29
+
+1
+cell_name:  add/U167
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.19 f            0.60         0.41
+d[30] (out)                         0.14 f            0.60         0.46
+d[29] (out)                         0.13 f            0.60         0.47
+d[28] (out)                         0.10 r            0.60         0.50
+
+1
+cell_name:  add/U168
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.20 f            0.60         0.40
+d[30] (out)                         0.15 f            0.60         0.45
+d[29] (out)                         0.13 r            0.60         0.47
+d[28] (out)                         0.11 f            0.60         0.49
+
+1
+cell_name:  add/U169
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[29] (out)                         0.33 f            0.60         0.27
+d[28] (out)                         0.31 r            0.60         0.29
+
+1
+cell_name:  add/U170
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.19 f            0.60         0.41
+d[30] (out)                         0.14 f            0.60         0.46
+d[28] (out)                         0.08 f            0.60         0.52
+d[29] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U171
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[28] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U172
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.20 f            0.60         0.40
+d[30] (out)                         0.15 f            0.60         0.45
+d[29] (out)                         0.08 f            0.60         0.52
+d[28] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U174
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[28] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U175
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[28] (out)                         0.31 r            0.60         0.29
+
+1
+cell_name:  add/U176
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[29] (out)                         0.33 f            0.60         0.27
+
+1
+cell_name:  add/U177
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[29] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U178
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[29] (out)                         0.33 f            0.60         0.27
+
+1
+cell_name:  add/U179
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.19 f            0.60         0.41
+d[30] (out)                         0.14 f            0.60         0.46
+
+1
+cell_name:  add/U180
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.20 f            0.60         0.40
+d[30] (out)                         0.15 f            0.60         0.45
+
+1
+cell_name:  add/U181
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.18 f            0.60         0.42
+d[30] (out)                         0.13 f            0.60         0.47
+
+1
+cell_name:  add/U182
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.19 f            0.60         0.41
+d[30] (out)                         0.14 f            0.60         0.46
+
+1
+cell_name:  add/U183
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.19 f            0.60         0.41
+d[30] (out)                         0.14 f            0.60         0.46
+
+1
+cell_name:  add/U184
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.20 f            0.60         0.40
+d[30] (out)                         0.15 f            0.60         0.45
+
+1
+cell_name:  add/U185
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[30] (out)                         0.32 f            0.60         0.28
+
+1
+cell_name:  add/U186
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[30] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U187
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[30] (out)                         0.32 f            0.60         0.28
+
+1
+cell_name:  add/U188
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+
+1
+cell_name:  add/U189
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.07 r            0.60         0.53
+
+1
+cell_name:  add/U218
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+
+1
+cell_name:  add/U1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[20] (out)                         0.28 r            0.60         0.32
+d[19] (out)                         0.24 f            0.60         0.36
+
+1
+cell_name:  add/U2
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[21] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[20] (out)                         0.28 r            0.60         0.32
+d[19] (out)                         0.24 f            0.60         0.36
+d[18] (out)                         0.23 r            0.60         0.37
+
+1
+cell_name:  add/U4
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.22 f            0.60         0.38
+d[29] (out)                         0.18 f            0.60         0.42
+d[30] (out)                         0.16 f            0.60         0.44
+d[28] (out)                         0.16 r            0.60         0.44
+
+1
+cell_name:  add/U5
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.22 f            0.60         0.38
+d[29] (out)                         0.18 f            0.60         0.42
+d[30] (out)                         0.16 f            0.60         0.44
+d[28] (out)                         0.16 r            0.60         0.44
+d[27] (out)                         0.14 f            0.60         0.46
+d[26] (out)                         0.11 r            0.60         0.49
+d[25] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U6
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 r            0.60         0.29
+d[29] (out)                         0.27 r            0.60         0.33
+d[27] (out)                         0.26 r            0.60         0.34
+d[30] (out)                         0.26 r            0.60         0.34
+d[28] (out)                         0.25 f            0.60         0.35
+d[26] (out)                         0.24 f            0.60         0.36
+d[25] (out)                         0.21 r            0.60         0.39
+d[24] (out)                         0.18 f            0.60         0.42
+d[23] (out)                         0.15 f            0.60         0.45
+
+1
+cell_name:  add/U37
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 r            0.60         0.29
+d[29] (out)                         0.27 r            0.60         0.33
+d[27] (out)                         0.26 r            0.60         0.34
+d[30] (out)                         0.26 r            0.60         0.34
+d[28] (out)                         0.25 f            0.60         0.35
+d[26] (out)                         0.24 f            0.60         0.36
+d[25] (out)                         0.21 r            0.60         0.39
+d[24] (out)                         0.18 f            0.60         0.42
+d[23] (out)                         0.15 f            0.60         0.45
+d[21] (out)                         0.12 r            0.60         0.48
+d[22] (out)                         0.11 f            0.60         0.49
+d[20] (out)                         0.09 r            0.60         0.51
+
+1
+cell_name:  add/U38
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 r            0.60         0.29
+d[29] (out)                         0.27 r            0.60         0.33
+d[27] (out)                         0.27 r            0.60         0.33
+d[21] (out)                         0.27 f            0.60         0.33
+d[30] (out)                         0.26 r            0.60         0.34
+d[22] (out)                         0.26 f            0.60         0.34
+d[28] (out)                         0.25 f            0.60         0.35
+d[26] (out)                         0.24 f            0.60         0.36
+d[20] (out)                         0.23 f            0.60         0.37
+d[25] (out)                         0.21 r            0.60         0.39
+d[17] (out)                         0.21 r            0.60         0.39
+d[19] (out)                         0.20 f            0.60         0.40
+d[24] (out)                         0.19 f            0.60         0.41
+d[18] (out)                         0.18 r            0.60         0.42
+d[16] (out)                         0.18 f            0.60         0.42
+d[23] (out)                         0.15 r            0.60         0.45
+d[11] (out)                         0.08 r            0.60         0.52
+
+1
+cell_name:  add/U50
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 r            0.60         0.29
+d[29] (out)                         0.27 r            0.60         0.33
+d[27] (out)                         0.27 r            0.60         0.33
+d[21] (out)                         0.27 f            0.60         0.33
+d[30] (out)                         0.26 r            0.60         0.34
+d[22] (out)                         0.26 f            0.60         0.34
+d[28] (out)                         0.25 f            0.60         0.35
+d[26] (out)                         0.24 f            0.60         0.36
+d[20] (out)                         0.23 f            0.60         0.37
+d[25] (out)                         0.21 r            0.60         0.39
+d[17] (out)                         0.21 r            0.60         0.39
+d[19] (out)                         0.20 f            0.60         0.40
+d[24] (out)                         0.19 f            0.60         0.41
+d[18] (out)                         0.18 r            0.60         0.42
+d[16] (out)                         0.18 f            0.60         0.42
+d[15] (out)                         0.16 f            0.60         0.44
+d[23] (out)                         0.15 r            0.60         0.45
+d[14] (out)                         0.14 f            0.60         0.46
+d[13] (out)                         0.11 f            0.60         0.49
+d[11] (out)                         0.08 r            0.60         0.52
+d[12] (out)                         0.08 f            0.60         0.52
+
+1
+cell_name:  add/U72
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.35 f            0.60         0.25
+d[29] (out)                         0.32 f            0.60         0.28
+d[27] (out)                         0.31 f            0.60         0.29
+d[30] (out)                         0.30 f            0.60         0.30
+d[28] (out)                         0.30 r            0.60         0.30
+d[26] (out)                         0.28 r            0.60         0.32
+d[25] (out)                         0.26 f            0.60         0.34
+d[24] (out)                         0.23 r            0.60         0.37
+d[23] (out)                         0.20 f            0.60         0.40
+
+1
+cell_name:  add/U89
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 f            0.60         0.29
+d[29] (out)                         0.28 f            0.60         0.32
+d[27] (out)                         0.26 f            0.60         0.34
+d[30] (out)                         0.26 f            0.60         0.34
+d[28] (out)                         0.25 r            0.60         0.35
+d[26] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.23 f            0.60         0.37
+d[25] (out)                         0.21 f            0.60         0.39
+d[22] (out)                         0.21 r            0.60         0.39
+d[20] (out)                         0.19 f            0.60         0.41
+d[24] (out)                         0.18 r            0.60         0.42
+d[19] (out)                         0.16 r            0.60         0.44
+d[23] (out)                         0.16 f            0.60         0.44
+d[18] (out)                         0.14 f            0.60         0.46
+d[17] (out)                         0.14 f            0.60         0.46
+d[16] (out)                         0.12 r            0.60         0.48
+
+1
+cell_name:  add/U90
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.31 f            0.60         0.29
+d[29] (out)                         0.28 f            0.60         0.32
+d[27] (out)                         0.26 f            0.60         0.34
+d[30] (out)                         0.26 f            0.60         0.34
+d[28] (out)                         0.25 r            0.60         0.35
+d[26] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.23 f            0.60         0.37
+d[22] (out)                         0.21 f            0.60         0.39
+d[25] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.19 f            0.60         0.41
+d[24] (out)                         0.18 r            0.60         0.42
+d[17] (out)                         0.16 f            0.60         0.44
+d[19] (out)                         0.16 r            0.60         0.44
+d[23] (out)                         0.16 f            0.60         0.44
+d[18] (out)                         0.14 f            0.60         0.46
+d[16] (out)                         0.14 r            0.60         0.46
+
+1
+cell_name:  add/U91
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.34 r            0.60         0.26
+d[29] (out)                         0.30 f            0.60         0.30
+d[27] (out)                         0.30 r            0.60         0.30
+d[30] (out)                         0.29 r            0.60         0.31
+d[28] (out)                         0.28 f            0.60         0.32
+d[26] (out)                         0.27 f            0.60         0.33
+d[25] (out)                         0.24 r            0.60         0.36
+d[24] (out)                         0.21 f            0.60         0.39
+d[23] (out)                         0.18 f            0.60         0.42
+
+1
+cell_name:  add/U103
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.34 r            0.60         0.26
+d[29] (out)                         0.30 f            0.60         0.30
+d[27] (out)                         0.30 r            0.60         0.30
+d[30] (out)                         0.29 r            0.60         0.31
+d[28] (out)                         0.28 f            0.60         0.32
+d[26] (out)                         0.27 f            0.60         0.33
+d[25] (out)                         0.24 r            0.60         0.36
+d[24] (out)                         0.21 f            0.60         0.39
+d[23] (out)                         0.18 f            0.60         0.42
+
+1
+cell_name:  add/U124
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+d[24] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.22 r            0.60         0.38
+d[23] (out)                         0.21 f            0.60         0.39
+d[22] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.19 r            0.60         0.41
+d[19] (out)                         0.15 f            0.60         0.45
+d[18] (out)                         0.12 f            0.60         0.48
+
+1
+cell_name:  add/U125
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[28] (out)                         0.31 r            0.60         0.29
+d[26] (out)                         0.30 r            0.60         0.30
+d[25] (out)                         0.27 f            0.60         0.33
+d[24] (out)                         0.24 r            0.60         0.36
+d[21] (out)                         0.22 r            0.60         0.38
+d[23] (out)                         0.21 f            0.60         0.39
+d[22] (out)                         0.21 f            0.60         0.39
+d[20] (out)                         0.19 r            0.60         0.41
+d[19] (out)                         0.15 f            0.60         0.45
+d[18] (out)                         0.12 f            0.60         0.48
+
+1
+cell_name:  U2
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  add
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[31] (out)                         0.37 f            0.60         0.23
+d[29] (out)                         0.33 f            0.60         0.27
+d[27] (out)                         0.32 f            0.60         0.28
+d[30] (out)                         0.32 f            0.60         0.28
+d[21] (out)                         0.31 r            0.60         0.29
+d[28] (out)                         0.31 r            0.60         0.29
+d[22] (out)                         0.30 f            0.60         0.30
+d[26] (out)                         0.30 r            0.60         0.30
+d[20] (out)                         0.28 r            0.60         0.32
+d[25] (out)                         0.27 f            0.60         0.33
+d[17] (out)                         0.25 r            0.60         0.35
+d[19] (out)                         0.24 f            0.60         0.36
+d[24] (out)                         0.24 r            0.60         0.36
+d[15] (out)                         0.23 f            0.60         0.37
+d[18] (out)                         0.23 r            0.60         0.37
+d[16] (out)                         0.23 f            0.60         0.37
+d[23] (out)                         0.21 f            0.60         0.39
+d[11] (out)                         0.21 f            0.60         0.39
+d[14] (out)                         0.21 r            0.60         0.39
+d[10] (out)                         0.20 r            0.60         0.40
+d[13] (out)                         0.18 f            0.60         0.42
+d[12] (out)                         0.15 r            0.60         0.45
+d[9] (out)                          0.14 r            0.60         0.46
+d[8] (out)                          0.08 f            0.60         0.52
+
+1
+cell_name:  U1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_add__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar 30 17:13:42 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1

@@ -1,0 +1,8 @@
+define conf_int_add__noFF__arch_agnos ./conf_int_add__noFF__arch_agnos
+define worklib ./worklib
+define conf_int_add__noFF__multiple_add ./conf_int_add__noFF__multiple_add
+define conf_int_mac__noFF__designed ./conf_int_mac__noFF__designed
+define conf_int_mac__noFF__redundant_ports ./conf_int_mac__noFF__redundant_ports
+define conf_int_mac__noFF__arch_agnos ./conf_int_mac__noFF__arch_agnos
+define conf_int_mac__noFF__truncated ./conf_int_mac__noFF__truncated
+define verilog_N0P0 ./verilog_N0P0

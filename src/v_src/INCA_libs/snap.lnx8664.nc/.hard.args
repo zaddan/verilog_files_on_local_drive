@@ -1,0 +1,6 @@
+-VFILE
+/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_udp.v
+/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog.v
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mul__noFF__arch_agnos__tb.v
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/mul_to_test.v
+-ACCESS +r

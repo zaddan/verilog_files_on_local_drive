@@ -1,0 +1,4 @@
+define conf_int_add__noFF__arch_agnos ./conf_int_add__noFF__arch_agnos
+define worklib ./worklib
+define verilog_N0P0 ./verilog_N0P0
+define verilog_udp ./verilog_udp

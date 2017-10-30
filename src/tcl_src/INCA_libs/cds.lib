@@ -1,0 +1,3 @@
+define verilog_N0P0 ./verilog_N0P0
+define worklib ./worklib
+define verilog_udp ./verilog_udp

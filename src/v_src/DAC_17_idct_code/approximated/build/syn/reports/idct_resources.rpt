@@ -1,0 +1,57 @@
+ 
+****************************************
+Report : resources
+Design : idct_BitWidth31_BitWidth130_4
+Version: L-2016.03-SP5-3
+Date   : Sat Sep  2 19:00:31 2017
+****************************************
+
+
+Resource Report for this hierarchy in file
+        /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/DAC_17_idct_code/approximated/idct_simple_add.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_1        | DW01_add       | width=35   | add_69 (idct_simple_add.v:69) |
+| DP_OP_72_125_8840               |            |                            |
+|                | DP_OP_72_125_8840 |         |                            |
+=============================================================================
+
+Datapath Report for DP_OP_72_125_8840
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_72_125_8840    | mult_add_572_aco (idct_simple_add.v:572)            |
+|                      | C34486 (idct_simple_add.v:671)                      |
+|                      | C34488 (idct_simple_add.v:537)                      |
+|                      | add_588 (idct_simple_add.v:588)                     |
+|                      | add_639 (idct_simple_add.v:639)                     |
+|                      | add_678 (idct_simple_add.v:678)                     |
+|                      | add_572_aco (idct_simple_add.v:572)                 |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 9     |                                          |
+| I2    | PI   | Unsigned | 1     |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 1     |                                          |
+| T30   | IFO  | Unsigned | 9     | I1 * I2 (idct_simple_add.v:572)          |
+| T67   | IFO  | Unsigned | 9     | { I3, I4 } ? I1 : T30 ( idct_simple_add.v:537 idct_simple_add.v:671 ) |
+| O1    | PO   | Unsigned | 9     | T67 + $unsigned(1'b1) ( idct_simple_add.v:572 idct_simple_add.v:588 idct_simple_add.v:639 idct_simple_add.v:678 ) |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_1            | DW01_add         | pparch (area,speed)                 |
+| DP_OP_72_125_8840  | DP_OP_72_125_8840 | str (area,speed)  |                |
+|                    |                  | mult_arch: and     |                |
+===============================================================================
+
+1

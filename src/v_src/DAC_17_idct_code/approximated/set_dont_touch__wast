@@ -1,0 +1,158 @@
+2.  Synopsys Commands                                        Command Reference
+                                set_dont_touch
+
+NAME
+       set_dont_touch
+              Sets  the  dont_touch  attribute on cells, nets, references, and
+              designs in the current design, and on library cells, to  prevent
+              modification  or  replacement  of these objects during optimiza-
+              tion.
+
+SYNTAX
+       status set_dont_touch
+               object_list
+               [true | false]
+
+   Data Types
+       object_list     list
+
+ARGUMENTS
+       object_list
+              Specifies list of objects (cells, nets, references, designs, and
+              library  cells)  on which the dont_touch attribute is to be set,
+              so that the objects will not be modified or replaced.   If  more
+              than one object name is specified, each name must be enclosed in
+              quotation marks (" ") or braces ({}).
+
+       true | false
+              Specifies the value with which to set the dont_touch  attribute.
+              The default is true.
+
+DESCRIPTION
+       This  command sets the dont_touch attribute on cells, nets, references,
+       designs in the current design, and on library cells, to prevent modifi-
+       cation or replacement of these objects during optimization.
+
+       Setting  the  dont_touch  attribute  on  a  hierarchical  cell  implies
+       "dont_touch" on all cells below it that do not have dont_touch  set  to
+       false.
+
+       Setting the dont_touch attribute on a library cell implies "dont_touch"
+       on all instances of that cell.  Setting the dont_touch attribute  on  a
+       net  implies  "dont_touch" only on mapped combinational cells connected
+       to that net.  All mapped combinational cells connected to the net  must
+       be at the same level of hierarchy.
+
+       Note  that  if the enable_keep_signal_dt_net variable is set to true, a
+       different mechanism is used to preserve  a  dont_touch  net.   See  the
+       enable_keep_signal_dt_net man page for more information.
+
+       Setting the dont_touch attribute on a reference implies "dont_touch" on
+       all cells of that reference  during  subsequent  optimizations  of  the
+       design.
+
+       Setting  the  dont_touch  attribute on a design has an effect only when
+       the design is instantiated within another design as a level of  hierar-
+       chy.   In  this case, "dont_touch" on the design implies that all cells
+       under that level of hierarchy are "dont_touch."  Setting dont_touch  on
+       the  top-level  design  has  no  effect  because it is not instantiated
+       within any other design.
+
+       Note the following information:
+
+        o The dont_touch attribute is ignored on nets that have unmapped cells
+         on them.
+
+        o  The  dont_touch attribute applied by the tool on the cells and nets
+         in the transitive fanout of dont_touch_network objects overrides  the
+         false  dont_touch  attribute  value that is set by the set_dont_touch
+         command.  You can see the dont_touch value on cells or nets by  using
+         the report_cell or report_net command.
+
+        o  Setting  the  dont_touch attribute on unmapped cells in Design Com-
+         piler topographical mode causes the  compile_ultra  command  to  fail
+         during execution.
+
+        o  Setting  the  dont_touch  attribute  on selectops and their control
+         logic is not supported if this logic resides at the top level of  the
+         design.
+
+        o  A dont_touch attribute on a clock gating cell or its parent hierar-
+         chical cell will prevent clock gating optimizations from removing  or
+         modifying it.
+
+        o  The dont_touch attribute should be removed by remove_attribute com-
+         mand. It is not equivalent to set_dont_touch to false which will have
+         its   meaning   depending  on  the  context.   E.g.  its  parent  has
+         set_dont_touch is true.  In the DC Explorer flow,  set_dont_touch  to
+         false  on  a  cell  will  be ignored if none of the cell's parent has
+         dont_touch set to true.  In this case, the cell may be optimized away
+         during  compile.  If the cell does not get optimized away during com-
+         pile, the dont_touch false attribute may still be lost after compile.
+
+       The dont_touch attribute affects DFT insertion as follows:
+
+        o  The  dont_touch  attribute indirectly affects DFT insertion by pre-
+         venting the cell type from being changed.  It  is  ignored  for  scan
+         stitching,  test  signal routing, logic insertion. It is also ignored
+         when an identified shift register is split by the scan architect; the
+         head  scan  flip-flops  of  any new shift register segments are scan-
+         replaced even if they have the dont_touchfP attribute applied.
+
+        o A dont_touch attribute applied to a nonscan  sequential  cell  keeps
+         the  cell as a nonscan cell. It will not be scan-replaced or stitched
+         into scan chains. However, nonscan cells identified as shift register
+         elements can be stitched into scan chains.
+
+        o  A  dont_touch  attribute  applied  to  a test-ready (scan-replaced)
+         sequential cell keeps the cell as a scan-replaced cell. If  the  cell
+         is  a  valid  scan cell, it will be stitched into scan chains. If not
+         (due to DRC violations or other directives such  as  set_scan_element
+         false), it will remain as an unstitched test-ready cell.
+
+       When  an  object  name  is  specified, the set_dont_touch command first
+       looks within the current design for a cell that matches that name.   If
+       it  finds a match, a dont_touch attribute is assigned to that cell.  If
+       no match is found, the command next looks within the current design for
+       a  net  that  matches  the  specified  name.   If  a  match is found, a
+       dont_touch attribute is assigned to that net.  If no  match  is  found,
+       the  command  next  looks for a reference, then a design in the system,
+       and finally for a library cell  in  the  system.  The  tool  assigns  a
+       dont_touch attribute to the first object for which it finds a match.
+
+       To remove the dont_touch attribute, use the remove_attribute command.
+
+   Multicorner-Multimode Support
+       This command has no dependency on scenario-specific information.
+
+EXAMPLES
+       The following example specifies that the cells named block1 and analog1
+       are not to be modified during optimization:
+
+         prompt> set_dont_touch [get_cells {block1 analog1}]
+
+       The following example specifies the removal of the dont_touch attribute
+       from the cell named block1:
+
+         prompt> remove_attribute [get_cells block1] dont_touch
+
+       The following example specifies that the net named N1 is not to be mod-
+       ified during optimization:
+
+         prompt> set_dont_touch [get_nets N1] true
+
+SEE ALSO
+       compile(2)
+       get_dont_touch_cells(2)
+       get_dont_touch_nets(2)
+       list_dont_touch_types(2)
+       report_cell(2)
+       report_dont_touch(2)
+       report_net(2)
+       report_reference(2)
+       set_dont_touch_network(2)
+       remove_attribute(2)
+       enable_keep_signal_dt_net(3)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

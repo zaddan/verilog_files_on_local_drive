@@ -1,0 +1,7 @@
+-VFILE
+/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_N0P0.v
+/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_udp.v
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__redundant_ports_32Bit_32Bit_synthesized.v
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__redundant_ports.v
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__redundant_ports__tb.v
+-ACCESS +r

@@ -1,0 +1,471 @@
+2.  Synopsys Commands                                        Command Reference
+                            set_dp_smartgen_options
+
+NAME
+       set_dp_smartgen_options
+              Controls  the  strategies used when generating the datapath cell
+              for arithmetic and shift operators.
+
+SYNTAX
+       status set_dp_smartgen_options
+               [-all_options auto | true | false | default]
+               [-booth_encoding auto | true | false]
+               [-booth_radix8 auto | true | false]
+               [-booth_mux_based auto | true | false]
+               [-booth_cell auto | true | false]
+               [-mult_radix4 auto | true | false]
+               [-mult_nand_based auto | true | false]
+               [-inv_out_adder_cell auto | true | false]
+               [-4to2_compressor_cell auto | true | false]
+               [-adder_radix auto | 2 | 3 | 4]
+               [-ling_adder auto | true | false]
+               [-hybrid_adder auto | true | false]
+               [-carry_select_adder_cell auto | true | false]
+               [-cond_sum_adder auto | true | false]
+               [-sklansky_adder auto | true | false]
+               [-brent_kung_adder auto | true | false]
+               [-bounded_fanout_adder auto | true | false]
+               [-mux_based auto | true | false]
+               [-inv_adder_cell auto | true | false]
+               [-sop2pos_transformation auto | true | false]
+               [-tp_opt_tree auto | true | false]
+               [-tp_oper_sel auto | true | false]
+               [-smart_compare auto | true | false]
+               [-optimize_for default | area | speed | area,speed]
+               [-power_effort off | auto | medium | high]
+               [-mult_arch auto | and | nand | and_radix4 | nand_radix4 | benc_radix4 | benc_radix8 | benc_radix4_mux | benc_radix8_mux]
+               [-hierarchy]
+               [design or cell list]
+
+ARGUMENTS
+       -all_options auto | true | false | default
+              Specifies the default value for all  smart  generation  options.
+              Use  this  option with other options to provide a specific value
+              to one option and default values to other options.
+
+              The -all_options argument also accepts the default value.   This
+              value sets all smart generation options to their defaults.
+
+              The  set_dp_smartgen_options  command always processes the value
+              of the -all_options option before any other options.
+
+       -booth_encoding auto | true | false
+              Controls the uage of Booth-encoding architectures  to  implement
+              multipliers.
+
+              When  set to auto, the default, the tool uses the option only if
+              there is a QoR benefit. When you set the -booth_encoding  option
+              to  true,  the  tool  always  uses  the option. When you set the
+              -booth_encoding option to false, the tool never uses the option.
+
+       -booth_radix8 auto | true | false
+              Controls  the  usage  of radix-8 Booth-encoding architectures to
+              implement multipliers.   This  option  is  active  only  if  the
+              -booth_encoding option is set to auto or true.
+
+              When you set the -booth_radix8  option to auto, the default, the
+              tool uses the -booth_radix8 option option only if there is a QoR
+              benefit.   The tool always uses the -booth_radix8 option when it
+              is set to true and never uses the -booth_radix8 option  when  it
+              is set to false.
+
+       -booth_mux_based auto | true | false
+              Controls the usage of MUX-based Booth encoding. MUX-based encod-
+              ing provides better QoR for technologies with  fast  multiplexer
+              cells. Otherwise, the tool uses XOP-based Booth encoding.
+
+              When  you  set the -booth_mux_based option to auto, the default,
+              the tool uses the option only used if it determines there  is  a
+              QoR  benefit.  When you set the -booth_mux_based option to true,
+              the  tool  always  uses   the   option.   When   you   set   the
+              -booth_mux_based  option  to  false,  the  tool  never  uses the
+              option.
+
+       -booth_cell auto | true | false
+              Controls the usage of special Booth multiplier cells in the tar-
+              get library for compilation.
+
+              When  you  set  the -booth_cell option to auto, the default, the
+              tool uses the option only if it determines there is a QoR  bene-
+              fit.   When  you  set  the  -booth_cell option to true, the tool
+              always uses the option. When you set the -booth_cell  option  to
+              false, the tool never uses the option.
+
+       -mult_radix4 auto | true | false
+              Controls the use of radix-4 non-Booth architectures to implement
+              multipliers.  This option cannot be used if the  -booth_encoding
+              option is set to true.  The -booth_encoding option must be inac-
+              tive (set to auto or false).
+
+              When you set the -mult_radix4 option to auto, the  default,  the
+              tool  uses the option only if it determines there is a QoR bene-
+              fit.  When you set the -mult_radix4 option  to  true,  the  tool
+              always uses the option.  When you set the -mult_radix4 option to
+              false, the tool never uses the  option.   This  option  is  only
+              available in the DesignWare minPower flow.
+
+       -mult_nand_based auto | true | false
+              Controls  the  usage  of NAND-based multiplier structures.  Non-
+              Booth multipliers use AND gates or an  INVERT-NOR  structure  to
+              generate the partial-product bits. This option allows you to use
+              the NAND gates  to  produce  inverted  bits  that  you  can  add
+              directly.  This  can  result  in  lower dynamic power and lesser
+              glitches.
+
+              When you set the -mult_nand_based option to auto,  the  default,
+              the  tool uses the option only when the minPower flow is enabled
+              and if it determines there is a QoR benefit. When  you  set  the
+              -mult_nand_based  option  to  true,  the  tool  always  uses the
+              option. When you set the -mult_nand_based option to  false,  the
+              tool  never  uses the option.  The option has no effect when you
+              use Booth encoding in multipliers.
+
+       -inv_out_adder_cell auto | true | false
+              Controls the usage of full-adder cells  with  inverted  sum-and-
+              carry outputs in the target library for compilation.
+
+              When  you  set  the  -inv_out_adder_cell  option  to  auto,  the
+              default, the tool uses the option only if it determines there is
+              a  QoR  benefit.  When you set the -inv_out_adder_cell option to
+              true, the  tool  always  uses  the  option.  When  you  set  the
+              -inv_out_adder_cell  option  to  false,  the tool never uses the
+              option.
+
+       -4to2_compressor_cell auto | true | false
+              Controls the usage of 4-2 compressor cells in the target library
+              for compilation.
+
+              When  you  set  the  -4to2_compressor_cell  option  to auto, the
+              default, the tool uses the option only if it determines there is
+              a QoR benefit.  When you set the -4to2_compressor_cell option to
+              true, the  tool  always  uses  the  option.  When  you  set  the
+              -4to2_compressor_cell  option  to false, the tool never uses the
+              option.
+
+       -adder_radix auto | 2 | 3 | 4
+              Controls the radix of the  prefix  structure  in  adders.   Most
+              adder architectures use a parallel-prefix structure to propagate
+              carries.  The default prefix structure has radix 2  (combines  2
+              bits  per  prefix  node). Radix 3 and 4 (combine 3 or 4 bits per
+              prefix node) result in fewer, but  more  complex  prefix  nodes.
+              They  can  deliver  better QoR if special cells are available in
+              the technology to implement them.
+
+              When you set the -adder_radix option to auto, the tool automati-
+              cally  selects the optimal radix for best QoR.  When you set the
+              -adder_radix option to 2,  3, or 4,  the  tool  sets  the  radix
+              accordingly. The default is 2.
+
+       -ling_adder auto | true | false
+              Controls the usage of Ling adder architectures.
+
+              When  you  set  the -ling_adder option to auto, the default, the
+              tool uses the option only if it determines there is a QoR  bene-
+              fit.   When  you  set  the  -ling_adder option to true, the tool
+              always uses the option. When you set the -ling_adder  option  to
+              false, the tool never uses the option.
+
+       -hybrid_adder auto | true | false
+              Controls  the  usage  of  hybrid parallel-prefix or carry-select
+              adder architectures (spanning-tree adders).
+
+              When you set the -hybrid_adder option to auto, the default,  the
+              tool  uses the option only if it determines there is a QoR bene-
+              fit.  When you set the -hybrid_adder option to  true,  the  tool
+              always uses the option. When you set the -hybrid_adder option to
+              false, the tool never uses the option.
+
+       -carry_select_adder_cell auto | true | false
+              Controls the usage of carry-select adder  cells  in  the  target
+              library for compilation.
+
+              When  you  set  the -carry_select_adder_cell option to auto, the
+              default, the tool uses the option only if it determines there is
+              a QoR benefit.  When you set the -carry_select_adder_cell option
+              to true, the tool always uses  the  option.  When  you  set  the
+              -carry_select_adder_cell  option  to  false, the tool never uses
+              the option.
+
+       -cond_sum_adder auto | true | false
+              Controls the usage of conditional-sum adder architectures.
+
+              When you set the -cond_sum_adder option to  auto,  the  default,
+              the  tool  uses  the option only if it determines there is a QoR
+              benefit.  When you set the -cond_sum_adder option to  true,  the
+              tool  always  uses  the option. When you set the -cond_sum_adder
+              option to false, the tool never uses the option.
+
+       -sklansky_adder auto | true | false
+              Controls the usage of Sklansky parallel-prefix  adder  architec-
+              tures.   This is a static architecture that is not optimized for
+              context.  It usually results in QoR degradation, but it  can  be
+              more predictable.
+
+              When  you  set the -sklansky_adder option to auto, the tool uses
+              the option only if it determines there is a QoR  benefit.   When
+              you set the -sklansky_adder option to true, the tool always uses
+              the option. When you set the -sklansky_adder  option  to  false,
+              the default, the tool never uses the option.
+
+       -brent_kung_adder auto | true | false
+              Controls the usage of Brent-Kung parallel-prefix adder architec-
+              tures.  This is a static architecture that is not optimized  for
+              context.   It  usually  degrades  QoR,  though  it  is more pre-
+              dictable.
+
+              When you set the -brent_kung_adder option to auto, the tool uses
+              the  option  only if it determines there is a QoR benefit.  When
+              you set the -brent_kung_adder option to true,  the  tool  always
+              uses  the  option.  When you set the -brent_kung_adder option to
+              false, the default, the tool never uses the option.
+
+       -bounded_fanout_adder auto | true | false
+              Controls the usage of bounded fanout adder architectures (Kogge-
+              Stone parallel-prefix architectures).
+
+              When  you set the -bounded_fanout_adder option to auto, the tool
+              uses the option only if it determines there is  a  QoR  benefit.
+              When  you set the -bounded_fanout_adder option to true, the tool
+              always uses the option. When you set  the  -bounded_fanout_adder
+              option to false, the default, the tool never uses the option.
+
+       -mux_based auto | true | false
+              Controls the usage of MUX-based architectures by datapath gener-
+              ators.
+
+              When you set the -mux_based option to  auto,  the  default,  the
+              tool  uses the option only if it determines there is a QoR bene-
+              fit.  When you set the  -mux_based  option  to  true,  the  tool
+              always  uses  the  option. When you set the -mux_based option to
+              false, the tool never uses the option.
+
+       -inv_adder_cell auto | true | false
+              Controls the usage of full adder cells with inverted carry-in or
+              carry-out in the target library for compilation.
+
+              When  you  set the -inv_adder_cell  option to auto, the default,
+              the tool uses the option only if it determines there  is  a  QoR
+              benefit.  When  you set the -inv_adder_cell  option to true, the
+              tool always uses the option.  When you set  the  -inv_adder_cell
+              option to false, the tool never uses the option.
+
+       -sop2pos_transformation auto | true | false
+              Controls  the  usage  of "sop to pos" optimization strategies in
+              datapath blocks.  An example of a "sop 2 pos" transformation  is
+              as follows:
+
+                a*b + a*c -> (b + c) * a
+
+              This optimization can improve design area, at the cost of delay.
+
+              When you set the -sop2pos_transformation  option  to  auto,  the
+              default, the tool uses the option only if it determines there is
+              a QoR benefit.  When you set the -sop2pos_transformation  option
+              to  true,  the  tool  always  uses  the option. When you set the
+              -sop2pos_transformation option to false, the tool never uses the
+              option.
+
+       -tp_opt_tree auto | true | false
+              Controls  the usage of carry-save adder tree for low power opti-
+              mization based on transition probabilities (TP). This  optimiza-
+              tion  reduces  internal  switching  activity  and  therefore the
+              dynamic power in SOPs when the inputs have a non-uniform transi-
+              tion probability distribution.
+
+              When you set the -tp_opt_tree   option to auto, the default, the
+              tool uses the option only if it determines  a  QoR  benefit  and
+              optimized dynamic power.  When you set the -tp_opt_tree   option
+              to true, the tool always uses the option  if  dynamic  power  is
+              optimized.  When  you  set the -tp_opt_tree option to false, the
+              tool never uses the option.
+
+       -tp_oper_sel auto | true | false
+              Controls the selection or ordering of multiplier input  operands
+              for  low  power based on transition probability (TP). This opti-
+              mization can reduce internal switching  activity  and  therefore
+              dynamic power in booth multipliers when the inputs have signifi-
+              cantly different transition probabilities.
+
+              When you set the -tp_oper_sel  option to auto, the default,  the
+              tool  uses  the  option  only if it determines a QoR benefit and
+              optimized dynamic power. When you set the  -tp_oper_sel   option
+              to  true,  the  tool  always uses the option if dynamic power is
+              optimized. When you set the -tp_oper_sel   option to false,  the
+              tool  never uses the option. The option only affects multipliers
+              with booth encoding.
+
+       -smart_compare auto | true | false
+              Controls the ordering of comparator inputs  for  better  timing.
+              Depending  on  the  logic  depth  of  the  comparator  logic, an
+              inverter is required at the output. Flipping the  inputs  elimi-
+              nates  the need for the inverter and shortens the critical path.
+
+              When you set the -smart_compare   option to auto,  the  default,
+              or  true,  the  tool uses the option only if it determines a QoR
+              benefit. When you set the -smart_compare  option to  false,  the
+              tool never uses the option.
+
+       -optimize_for default | area | speed | area,speed
+              Supplies  a  specific optimization goal for the specified cells.
+              This option overrides the default  optimization  goals  for  the
+              specified cell or cells.
+
+       -power_effort off | auto | medium | high
+              Supplies  a  specific  power optimization goal for the specified
+              cells. This option takes effect in the DesignWare minPower flow.
+              It  guides  the generator on power optimization. When the effort
+              is off, the generator does not optimize the netlist  for  power.
+              When  the  effort  is medium, the generator sacrifices delay for
+              power optimization. When the effort is high, the generator  sac-
+              rifices more delay for power.
+
+              When you set the power effort to medium or high, the tool calcu-
+              lates the delay or power  tradeoff  on  the  generated  netlist.
+              After  the  generated design is ungrouped, Design Compiler might
+              recover the timing and give back the power gain.  Therefore, the
+              power  savings  from  medium  and high effort is not guaranteed.
+              The delay or power tradeoff feature is most useful  for  designs
+              that can meet the timing constraint.  Note: DC Explorer does not
+              support this option.
+
+       -mult_arch auto | and | nand | and_radix4 | nand_radix4 | benc_radix4 |
+       benc_radix8 | benc_radix4_mux | benc_radix8_mux
+              Specifies the multiplier architecture to  be  implemented.  This
+              option  is  a  concise  representation for a subset of six smart
+              generation options.
+
+              The different -mult_arch options  translates  to  the  following
+              combinations  of  smart generation settings: and: AND-based non-
+              booth architecture
+               -booth_encoding false -mult_radix4 false -mult_nand_based false
+              nand: NAND-based non-booth architecture
+               -booth_encoding  false -mult_radix4 false -mult_nand_based true
+              and_radix4: AND-based radix-4 non-booth architecture
+               -booth_encoding false -mult_radix4 true -mult_nand_based  false
+              nand_radix4: NAND-based radix-4 non-booth architecture
+               -booth_encoding  false  -mult_radix4 true -mult_nand_based true
+              benc_radix4: radix-4 booth architecture
+               -booth_encoding true -booth_radix8 false -booth_mux_based false
+              benc_radix8: radix-8 booth architecture
+               -booth_encoding  true -booth_radix8 true -booth_mux_based false
+              benc_radix4_mux: MUX-based radix-4 booth architecture
+               -booth_encoding true -booth_radix8 true  -booth_mux_based  true
+              benc_radix8_mux: MUX-based radix-8 booth architecture
+               -booth_encoding true -booth_radix8 true -booth_mux_based true
+
+              When  combined  with  other  smart generation options related to
+              multiplier architecture, the -mult_arch option takes precedence.
+              For  example,  the  following  command  sets the -booth_encoding
+              option  to  true:  prompt>   set_dp_smartgen_options  -mult_arch
+              benc_radix8 -booth_encoding false
+
+              Note:  The -mult_radix4 option, when used either individually or
+              with the -mult_arch option, is available only  when  you  enable
+              the minPower flow. If the minPower flow is not enabled, the tool
+              drops the -mult_radix4 option when  you  run  the  compile_ultra
+              command.
+
+       -hierarchy
+              By default, when the smart generation options are specified on a
+              design or a hierarchical cell, the specified  options  are  only
+              applied  to  the  current  level  of  hierarchy of the specified
+              objects.  When this option is specified, the  command  automati-
+              cally  applies  the  smart  generation  options on all the child
+              instances of the specified objects.
+
+       design or cell list
+              An optional list of cells and designs.  When present, the switch
+              settings in this command affect only the specified objects.
+
+              If  you set conflict smart generation options on a design and an
+              instance that instantiates this design, you get a  warning  mes-
+              sage. The setting on the instance is used by the generator.
+
+DESCRIPTION
+       The  set_dp_smartgen_options  command controls smart generation strate-
+       gies used in datapath synthesis.
+
+       The default value for all  smart  generation  strategies  is  auto.  By
+       default,  the  best  strategies  are  automatically chosen based on the
+       given design constraints.
+
+       When the smart generation options are specified without an object list,
+       the  specified  options  are automatically applied to the entire design
+       through all level of hierarchy regardless  of  the  use  of  -hierarchy
+       option.  When the smart generation options are specified with an object
+       list, the specified options are applied only on the specified  objects.
+       The  object can be a design, a hierarchical cell, or a synthetic opera-
+       tor. The options do not take  effect  when  they  are  applied  on  the
+       generic GTECH cell or the cell that is already mapped to the technology
+       library.
+
+       When the options are applied on a synthetic operator, most options take
+       effect only when the operator is not extracted into a DP_OP cell.  When
+       the operator is extracted  into  DP_OP  cell,  only  the  -optimize_for
+       option   and   the   options   that   control  multiplier  architecture
+       (-mult_arch,    -booth_encoding,    -booth_radix8,    -booth_mux_based,
+       -booh_cell,  -mult_radix4,  and  -mult_nand_based) will be inherited to
+       the DP_OP cell. When the options are copied  to  the  DP_OP  cell,  the
+       options are applied on all operators within the same DP_OP cell.
+
+       When  synthetic  operators  with  different option values are extracted
+       into a DP_OP cell, the DP_OP cell takes the option value based  on  the
+       following  priority:  For  the  -optimize_for  option, the option value
+       speed has the highest priority, area,speed is the next,  and  area  has
+       the lowest priority.  For the options that control multiplier architec-
+       tures, the option value true has the highest priority.   false  is  the
+       next, and auto has the lowest priority.
+
+       The  synthetic  operators could go through multiple complex transforma-
+       tions during compile_ultra. For example, two operators may be shared at
+       the  beginning  and  unshared later depending on the design constrains.
+       When the synthetic  operator  with  the  smart  generation  options  go
+       through  such  transformations,  it is possible that the initial option
+       setting is not preserved.  Pay attention to the SYNOPT messages in  the
+       log file. The message is generated when the smart generation options on
+       the synthetic operators are changed during compile_ultra.
+
+       When you specify the multiple smart  generation  options  on  the  same
+       object,  all options must be set by a single command, except the -opti-
+       mize_for  and  -power_effort  options.  Only  the   -optimize_for   and
+       -power_effort  options  can  be  set  using  a  separate  set_dp_smart-
+       gen_options command.
+
+       When the smart generation options are  specified  on  the  object  that
+       already has other smart generation options, the options set by the pre-
+       vious command are removed, and only the options set by the new  command
+       are  applied.  The following example removes the -mult_arch option from
+       the U1 cell and apply only the -4to2_compressor option:
+          prompt> set_dp_smartgen_options  -mult_arch  benc_radix4  [get_cells
+       U1]
+          prompt>     set_dp_smartgen_options    -4to2_compressor_cell    true
+       [get_cells U1]
+          Warning: Overriding the settings  from  the  previous  set_dp_smart-
+       gen_options command on U1. (UISN-84)
+
+       All options are applied on the U1 cell in the following example:
+           prompt>  set_dp_smartgen_options  -mult_arch benc_radix4 -4to2_com-
+       pressor_cell true [get_cells U1]
+           prompt> set_dp_smartgen_options -optimize_for speed [get_cells U1]
+           prompt> set_dp_smartgen_options -power_effort high [get_cells U1]
+
+       The option values set by set_dp_smartgen_options command are listed  in
+       the datapath optimization report by report_resources command.
+
+EXAMPLES
+       The following example uses set_dp_smartgen_options to control the usage
+       of booth encoded architectures when generating multipliers.
+
+         prompt> set_dp_smartgen_options -booth_encoding true
+
+       The following  example  sets  all  the  options  to  auto,  except  for
+       -booth_encoding,  which  is  set  to  true  and  overrides the value of
+       -all_options:
+
+         set_dp_smartgen_options -all_options auto -booth_encoding true
+
+SEE ALSO
+       report_dp_smartgen_options(2)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

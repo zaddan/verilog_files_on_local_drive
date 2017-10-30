@@ -1,0 +1,12 @@
+foreach non_transition_cells__l__e $non_transition_cells__l__string {
+    set non_transition_cells__l [split  $non_transition_cells__l__e " "]
+    set const [expr [lindex $delays_striving_for__l $counter]]
+    
+#    group_path -name priority_$counter -to $outputs_of_interest -critical_range .5 -weight [expr 5 - $counter]
+#    group_path -default -through $non_transition_cells__l -to $outputs_of_interest
+    
+    set_max_delay $const -through $non_transition_cells__l -to $outputs_of_interest 
+    #set_max_delay $const -group_path priority_$counter -to $outputs_of_interest
+    #echo $first_el >> non_transition_cells__l__acquired__in_tcl
+    incr counter
+}

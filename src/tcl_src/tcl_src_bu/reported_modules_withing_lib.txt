@@ -1,0 +1,248 @@
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/standard.sldb'
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+
+****************************************
+Report : library
+Library: dw_foundation.sldb
+Version: L-2016.03-SP5-3
+Date   : Sun Feb 26 17:19:33 2017
+****************************************
+
+Library Type            : Synthetic
+Tool Created            : L-2016.06-SP3-1
+Date Created            : 01.23.17
+Library Version         : D-2010.03:L-2016.03-DWBB_201603.5.1:95f51e07
+
+Synthetic Modules:
+
+   Module
+   ----------------------------------------------------------------------
+   DW02_mult        design_library: DW02
+                    HDL parameter: A_width = width('A')
+                    HDL parameter: B_width = width('B')
+                    Parameter: PRODUCT_width = B_width + A_width
+                    module type: mult
+
+
+Module Pins:
+
+     Attributes:
+       c - clock_pin
+                                             Default Stall      Pin
+   Module           Pins     Dir  Width      Value   Pin        Attributes
+   ----------------------------------------------------------------------
+   DW02_mult        A        in   A_width                       
+                    B        in   B_width                       
+                    TC       in   1                             
+                    PRODUCT  out  PRODUCT_width                 
+
+
+Module Implementations:
+
+     Attributes/Parameters:
+       v - verify_only
+       V - verification implementation
+       u - dont_use
+       r - regular_licenses
+       l - limited_licenses
+       d - design_library
+       s - priority_set_id
+       p - priority
+       leg - legal
+
+   Module           Implementations      Attributes/Parameters
+   ----------------------------------------------------------------------
+   DW02_mult        verif                v
+
+                    csa                  leg = "(A_width>=1) && (B_width>=1)"
+
+
+Module Bindings:
+
+Module              Binding
+--------------------------------------------------------------------------------
+DW02_mult           b1       bound_operator: MULT_TC_OP
+                             Pin Associations (module, oper):
+                                 A, A
+                                 B, B
+                                 TC,"1"
+                                 PRODUCT, Z
+
+                    b2       bound_operator: MULT_TC_OP
+                             Pin Associations (module, oper):
+                                 A, B
+                                 B, A
+                                 TC,"1"
+                                 PRODUCT, Z
+
+                    b3       bound_operator: MULT_UNS_OP
+                             Pin Associations (module, oper):
+                                 A, A
+                                 B, B
+                                 TC,"0"
+                                 PRODUCT, Z
+
+                    b4       bound_operator: MULT_UNS_OP
+                             Pin Associations (module, oper):
+                                 A, B
+                                 B, A
+                                 TC,"0"
+                                 PRODUCT, Z
+
+
+External Implementations:
+
+     Attributes/Parameters:
+       v - verify_only
+       V - verification implementation
+       u - dont_use
+       r - regular_licenses
+       l - limited_licenses
+       d - design_library
+       s - priority_set_id
+       p - priority
+       leg - legal
+
+   Module           Implementations      Attributes/Parameters
+   ----------------------------------------------------------------------
+   DW02_mult        apparch              r = DesignWare
+                                         d = DW02
+                                         leg = "(A_width>=1) && (B_width>=1)"
+
+                    nbw(replaced with pparch) r = DesignWare
+                                         d = DW02
+                                         leg = "(A_width>=1) && (B_width>=1)"
+
+                    pparch               r = DesignWare
+                                         d = DW02
+                                         leg = "(A_width>=1) && (B_width>=1)"
+
+                    wall(replaced with pparch) r = DesignWare
+                                         d = DW02
+                                         leg = "(A_width>=1) && (B_width>=1)"
+
+1
+
+****************************************
+Report : library
+Library: dw_foundation.sldb
+Version: L-2016.03-SP5-3
+Date   : Sun Feb 26 17:19:33 2017
+****************************************
+
+Library Type            : Synthetic
+Tool Created            : L-2016.06-SP3-1
+Date Created            : 01.23.17
+Library Version         : D-2010.03:L-2016.03-DWBB_201603.5.1:95f51e07
+
+Synthetic Modules:
+
+   Module
+   ----------------------------------------------------------------------
+   DW02_mac         design_library: DW02
+                    HDL parameter: A_width = width('A')
+                    HDL parameter: B_width = width('B')
+                    Parameter: PRODUCT_width = B_width + A_width
+                    module type: multiply_accumulate
+
+
+Module Pins:
+
+     Attributes:
+       c - clock_pin
+                                             Default Stall      Pin
+   Module           Pins     Dir  Width      Value   Pin        Attributes
+   ----------------------------------------------------------------------
+   DW02_mac         A        in   A_width                       
+                    B        in   B_width                       
+                    C        in   PRODUCT_width                 
+                    TC       in   1                             
+                    MAC      out  PRODUCT_width                 
+
+
+Module Implementations:
+
+     Attributes/Parameters:
+       v - verify_only
+       V - verification implementation
+       u - dont_use
+       r - regular_licenses
+       l - limited_licenses
+       d - design_library
+       s - priority_set_id
+       p - priority
+       leg - legal
+
+   Module           Implementations      Attributes/Parameters
+   ----------------------------------------------------------------------
+   DW02_mac         verif                v
+
+                    csa(replaced with apparch) r = DesignWare
+                                         leg = "(A_width>=1) && (B_width>=1)"
+
+                    wall(replaced with pparch) r = DesignWare
+                                         leg = "(A_width>=1) && (B_width>=1)"
+
+
+Module Bindings:
+
+Module              Binding
+--------------------------------------------------------------------------------
+DW02_mac            b1       bound_operator: MAC_TC_OP
+                             Pin Associations (module, oper):
+                                 A, A
+                                 B, B
+                                 C, C
+                                 TC,"1"
+                                 MAC, Z
+
+                    b2       bound_operator: MAC_TC_OP
+                             Pin Associations (module, oper):
+                                 A, B
+                                 B, A
+                                 C, C
+                                 TC,"1"
+                                 MAC, Z
+
+                    b3       bound_operator: MAC_UNS_OP
+                             Pin Associations (module, oper):
+                                 A, A
+                                 B, B
+                                 C, C
+                                 TC,"0"
+                                 MAC, Z
+
+                    b4       bound_operator: MAC_UNS_OP
+                             Pin Associations (module, oper):
+                                 A, B
+                                 B, A
+                                 C, C
+                                 TC,"0"
+                                 MAC, Z
+
+
+External Implementations:
+
+     Attributes/Parameters:
+       v - verify_only
+       V - verification implementation
+       u - dont_use
+       r - regular_licenses
+       l - limited_licenses
+       d - design_library
+       s - priority_set_id
+       p - priority
+       leg - legal
+
+   Module           Implementations      Attributes/Parameters
+   ----------------------------------------------------------------------
+   DW02_mac         apparch              r = DesignWare
+                                         d = DW02
+                                         leg = "(A_width>=1) && (B_width>=1)"
+
+                    pparch               r = DesignWare
+                                         d = DW02
+                                         leg = "(A_width>=1) && (B_width>=1)"
+
+1

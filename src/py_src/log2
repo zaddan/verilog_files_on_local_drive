@@ -1,0 +1,7 @@
+pin__na:rst_reg_reg,  line__nu:489420,arr_t:0.159, req t:0.028
+pin__na:reg_en_reg_reg,  line__nu:492387,arr_t:0.124, req t:0.015
+pin__na:reg_b_reg[5],  line__nu:770,arr_t:0.269, req t:0.002
+pin__na:reg_a_reg[11],  line__nu:19016,arr_t:0.265, req t:0.002
+pin__na:reg_a_reg[13],  line__nu:1050,arr_t:0.269, req t:0.002
+pin__na:reg_a_reg[17],  line__nu:50,arr_t:0.269, req t:0.002
+pin__na:reg_a_reg[1],  line__nu:3250,arr_t:0.267, req t:0.002

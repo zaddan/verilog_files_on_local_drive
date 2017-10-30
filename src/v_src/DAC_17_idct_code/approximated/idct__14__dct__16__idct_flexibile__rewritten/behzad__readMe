@@ -1,0 +1,1 @@
+conf_int is fixed. It was flawed for all other folders (not a major flaw, but b was not getting approximated for the state 1 and 2)

@@ -1,0 +1,145 @@
+cell_name:  mul__inst/U1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH3_DATA_PATH_BITWIDTH4
+Version: L-2016.03-SP5-3
+Date   : Fri May 12 17:38:32 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  mul__inst/U2
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH3_DATA_PATH_BITWIDTH4
+Version: L-2016.03-SP5-3
+Date   : Fri May 12 17:38:32 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[0] (out)                          0.04 f            0.17         0.12
+
+1
+cell_name:  mul__inst/U3
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH3_DATA_PATH_BITWIDTH4
+Version: L-2016.03-SP5-3
+Date   : Fri May 12 17:38:32 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[0] (out)                          0.04 f            0.17         0.12
+
+1
+cell_name:  mul__inst/U4
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH3_DATA_PATH_BITWIDTH4
+Version: L-2016.03-SP5-3
+Date   : Fri May 12 17:38:32 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1
+cell_name:  mul__inst/U5
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH3_DATA_PATH_BITWIDTH4
+Version: L-2016.03-SP5-3
+Date   : Fri May 12 17:38:32 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[1] (out)                          0.04 f            0.17         0.12
+
+1
+cell_name:  mul__inst/U6
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH3_DATA_PATH_BITWIDTH4
+Version: L-2016.03-SP5-3
+Date   : Fri May 12 17:38:32 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[1] (out)                          0.04 f            0.17         0.12
+
+1
+cell_name:  mul__inst
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH3_DATA_PATH_BITWIDTH4
+Version: L-2016.03-SP5-3
+Date   : Fri May 12 17:38:32 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+d[1] (out)                          0.04 f            0.17         0.12
+d[0] (out)                          0.04 f            0.17         0.12
+
+1
+cell_name:  U1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : conf_int_mul__noFF__arch_agnos__w_wrapper_OP_BITWIDTH3_DATA_PATH_BITWIDTH4
+Version: L-2016.03-SP5-3
+Date   : Fri May 12 17:38:32 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+No paths.
+
+1

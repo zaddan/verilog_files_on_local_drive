@@ -1,0 +1,696 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version L-2016.03-SP5-3 for linux64 - Jan 23, 2017 
+
+                    Copyright (c) 1988 - 2017 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/polaris/behzad/.synopsys_dv_prefs.tcl
+#set WDIR /home/unga/sglee/Share/ac_hw_syn
+proc make-reg_l {reg_na reg_lower_bound reg_up_bound} {
+    set reg_l {}
+    set num_l {}
+    for {set a $reg_lower_bound} {$a < $reg_up_bound} {incr a} {
+        lappend num_l $a
+    }
+    foreach el $num_l {
+        #append concat_res reg_a_reg $el 
+        lappend reg_l  "${reg_na}\[${el}\]"
+        #reg_a_reg[${el}]
+    }
+    set reg_l_flattened [join $reg_l]
+    return $reg_l_flattened
+}
+set design_dir_addr "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results" 
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results
+#----------------------------------------------------
+#*** F:DN Parameters
+#----------------------------------------------------
+#---- N: the following should be commented out if the tcl file is invoked by 
+set DESIGN_NAME conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32; #top modules name
+conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+set synth__file ${design_dir_addr}/conf_int_add__noFF__arch_specific_32Bit_32Bit_synthesized.v;#the synthesized verilog file
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_add__noFF__arch_specific_32Bit_32Bit_synthesized.v
+set DATA_PATH_WIDTH 32;
+32
+set CLKGATED_BITWIDTH 4; #numebr of apx bits
+4
+set clk_period 0
+0
+##--- F: apximation
+set apx_optimal 0
+0
+set apx_optimal_mode(first) 1
+1
+set apx_optimal_mode(second) 1
+1
+set apx_optimal_mode(third)  1
+1
+set apx_optimal_mode(fourth) 1
+1
+set msb_1_max_delay .46;#.270 ideally
+.46
+set msb_2_max_delay .46 ;#.261 ideally
+.46
+set msb_3_max_delay .46 ;#.249 ideally
+.46
+set msb_4_max_delay .46 ;#.242 ideally
+.46
+#----------------------------------------------------
+set OP_BITWIDTH $DATA_PATH_WIDTH; #operator bitwidth
+32
+#--- F: printing the parameters into a file
+set parameter_log [open "parameter_log.txt" w]
+file11
+puts $parameter_log "--- TCL'S PARAMETER INFO"
+puts $parameter_log [concat "DATA_PATH_WIDTH:" $DATA_PATH_WIDTH]
+#puts $parameter_log [concat "CLKGATED_BITWIDTH:" $CLKGATED_BITWIDTH] 
+puts $parameter_log [concat "clk_period :" $clk_period] 
+puts $parameter_log [concat "apx_optimal:" $apx_optimal] 
+puts $parameter_log [concat "apx_optimal_mode(first):" $apx_optimal_mode(first)]
+puts $parameter_log [concat "apx_optimal_mode(second):" $apx_optimal_mode(second)]
+puts $parameter_log [concat "apx_optimal_mode(third):"  $apx_optimal_mode(third)]
+puts $parameter_log [concat "apx_optimal_mode(fourth):" $apx_optimal_mode(fourth)]
+puts $parameter_log [concat "msb_1_max_delay:" $msb_1_max_delay] 
+puts $parameter_log [concat "msb_2_max_delay:" $msb_2_max_delay] 
+puts $parameter_log [concat "msb_3_max_delay:" $msb_3_max_delay] 
+puts $parameter_log [concat "msb_4_max_delay:" $msb_4_max_delay] 
+close $parameter_log
+#----------------------------------------------------
+#--- variables
+#----------------------------------------------------
+set WDIR "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn
+#~/behzad_local/verilog_files/synthesis
+set RTLDIR  "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results
+set REPORTS_DIR ${WDIR}/reports
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/reports
+#set DESIGN_NAME unconfig_int_add
+set RESULTS_DIR ${WDIR}/results
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results
+set DCRM_FINAL_TIMING_REPORT timing.rpt
+timing.rpt
+set DCRM_FINAL_AREA_REPORT area.rpt
+area.rpt
+set DCRM_FINAL_POWER_REPORT power.rpt
+power.rpt
+set search_path "${RTLDIR}"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results
+set my_toplevel ${DESIGN_NAME}
+conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+#--- libraries
+#set lib_dir_1 "/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib"
+#set lib_dir_2 "/home/polaris/behzad/behzad_local/verilog_files/libraries"
+set lib_dir_3 "/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db"; #technology library
+/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db
+set synth_lib "/usr/local/packages/synopsys_2016/syn/libraries/syn"
+/usr/local/packages/synopsys_2016/syn/libraries/syn
+set synth_lib_ver "/usr/local/packages/synopsys_2016/syn/dw/sim_ver"
+/usr/local/packages/synopsys_2016/syn/dw/sim_ver
+#set lib_dir_3 "/home/polaris/behzad/behzad_local/verilog_files/libraries/FreePDK45/osu_soc/lib/files"
+#--- NOTE: I had to include *_rvt as well, cause ow the compiler was erroring out
+#set search_path [concat  $search_path $lib_dir_1/stdcell_rvt/db_nldm $lib_dir_1/stdcell_lvt/db_nldm $lib_dir_2/germany_NanGate/db $lib_dir_3]
+set search_path [concat  $search_path $lib_dir_3 $synth_lib $synth_lib_ver] 
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db /usr/local/packages/synopsys_2016/syn/libraries/syn /usr/local/packages/synopsys_2016/syn/dw/sim_ver
+#--- design dir
+#--- library
+#set std_library "saed32rvt_tt1p05v25c.db"
+#set std_library "saed32lvt_tt1p05v25c.db"; #the best(amon lvts)
+#set std_library "saed32lvt_tt1p05vn40c.db"; #did the same as 25c 
+#set std_library "saed32lvt_tt0p85v25c.db"; #did worst that 1.05
+#set  std_library  "saed32lvt_ulvl_ff1p16v25c_i0p85v.db" 
+set  std_library  "noAging.db" 
+noAging.db
+#set std_library "gscl45nm.db"; #PDK45 themselves
+set synth_library_1 "/usr/local/packages/synopsys_2016/syn/libraries/syn/standard.sldb"
+/usr/local/packages/synopsys_2016/syn/libraries/syn/standard.sldb
+set synth_library_2 "/usr/local/packages/synopsys_2016/syn/libraries/syn/dw_foundation.sldb"
+/usr/local/packages/synopsys_2016/syn/libraries/syn/dw_foundation.sldb
+set target_library $std_library; #std cells for mapping
+noAging.db
+set synthetic_library [list $synth_library_1 $synth_library_2]
+/usr/local/packages/synopsys_2016/syn/libraries/syn/standard.sldb /usr/local/packages/synopsys_2016/syn/libraries/syn/dw_foundation.sldb
+set link_library [list $std_library $synth_library_1 $synth_library_2] 
+noAging.db /usr/local/packages/synopsys_2016/syn/libraries/syn/standard.sldb /usr/local/packages/synopsys_2016/syn/libraries/syn/dw_foundation.sldb
+set compile_delete_unloaded_sequential_cells false
+false
+set compile_seqmap_propagate_constants false
+false
+set compile_enable_register_merging false
+false
+set compile_seqmap_enable_output_inversion false
+false
+set AC_NAME $DESIGN_NAME
+conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+#--- specifying libraries 
+#define_design_lib WORK -path ./WORK
+set verilogout_show_unconnected_pins "true"
+true
+#set enable_keep_signal_dt_net true; #*** F:TN if we want to keep the net name (helpful
+# for set_dont_touch
+#set enable_keep_signal true
+#set_dont_use dw_foundation.sldb/DW01_add/apparch ;#*** F:TN to not use this arch
+#set_dont_use dw_foundation.sldb/DW01_add/clf
+#set_dont_use dw_foundation.sldb/DW01/pparch; #*** F:CN can not get it to "not use" this arch
+#report_synlib dw_foundation.sldb DW01_add; #*** F:TN reporting info about DW01_add module
+#                                           #         within the dw_foundation lib
+#--- read the design 
+#analyze -format verilog [list  ${design_dir_addr}/conf_int_mac__noFF__arch_specific_32Bit_32Bit_synthesized.v] 
+#elaborate $my_toplevel 
+#
+read_file  $synth__file -autoread -top $my_toplevel
+== READ_FILE autoread for top design 'conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32' ==
+
+Starting READ_FILE autoread mode...
+Information: Adding '/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_add__noFF__arch_specific_32Bit_32Bit_synthesized.v'.  (AUTOREAD-100)
+Information: Scanning file { conf_int_add__noFF__arch_specific_32Bit_32Bit_synthesized.v }. (AUTOREAD-303)
+Compiling source file /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_add__noFF__arch_specific_32Bit_32Bit_synthesized.v
+Presto compilation completed successfully.
+Elaborating top design conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/standard.sldb'
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/gtech.db'
+  Loading link library 'typical'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'.
+Autoread command completed successfully.
+check_design
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP5-3
+Date:        Thu Mar  9 16:35:29 2017
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Unconnected ports (LINT-28)                                     3
+--------------------------------------------------------------------------------
+
+Warning: In design 'conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'rst' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'b' is not connected to any nets. (LINT-28)
+1
+#--- define design environement (setting up the design environment such as external operating conditions (manufacturing process, temperature, and voltage), loads, drives, fanouts, and wire load models)
+link
+
+  Linking design 'conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  typical (library)           /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db
+  dw_foundation.sldb (library)
+                              /usr/local/packages/synopsys_2016/syn/libraries/syn/dw_foundation.sldb
+
+1
+set all_reg_a_l [make-reg_l "a" 0 $DATA_PATH_WIDTH]
+a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31]
+set all_reg_b_l [make-reg_l "b" 0 $DATA_PATH_WIDTH]
+b[0] b[1] b[2] b[3] b[4] b[5] b[6] b[7] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set all_reg_c_l [make-reg_l "c" 0 $DATA_PATH_WIDTH]
+c[0] c[1] c[2] c[3] c[4] c[5] c[6] c[7] c[8] c[9] c[10] c[11] c[12] c[13] c[14] c[15] c[16] c[17] c[18] c[19] c[20] c[21] c[22] c[23] c[24] c[25] c[26] c[27] c[28] c[29] c[30] c[31]
+set all_reg_a_b_joined [concat $all_reg_a_l $all_reg_b_l]
+a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] b[0] b[1] b[2] b[3] b[4] b[5] b[6] b[7] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set lsb_bits 4
+4
+#$CLKGATED_BITWIDTH
+set msb_bits [expr $DATA_PATH_WIDTH - $lsb_bits]
+28
+#----------------------------------------------------
+#----------------------------------------------------
+#--- lab_1 ,1 means the superclass
+set lsb_1_reg_a_l [make-reg_l "a" 0 $lsb_bits]
+a[0] a[1] a[2] a[3]
+set lsb_1_reg_b_l [make-reg_l "b" 0 $lsb_bits]
+b[0] b[1] b[2] b[3]
+set lsb_1_reg_c_l [make-reg_l "c" 0 $lsb_bits]
+c[0] c[1] c[2] c[3]
+set lsb_1_reg_a_b_joined [concat $lsb_1_reg_a_l $lsb_1_reg_b_l]
+a[0] a[1] a[2] a[3] b[0] b[1] b[2] b[3]
+set msb_1_reg_a_l [make-reg_l "a" $lsb_bits $DATA_PATH_WIDTH]
+a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31]
+set msb_1_reg_b_l [make-reg_l "b" $lsb_bits $DATA_PATH_WIDTH]
+b[4] b[5] b[6] b[7] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set msb_1_reg_c_l [make-reg_l "c" $lsb_bits $DATA_PATH_WIDTH]
+c[4] c[5] c[6] c[7] c[8] c[9] c[10] c[11] c[12] c[13] c[14] c[15] c[16] c[17] c[18] c[19] c[20] c[21] c[22] c[23] c[24] c[25] c[26] c[27] c[28] c[29] c[30] c[31]
+set msb_1_reg_a_b_joined [concat $msb_1_reg_a_l $msb_1_reg_b_l]
+a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] b[4] b[5] b[6] b[7] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set lsb_2_reg_a_l [make-reg_l "a" 0 [expr $lsb_bits + 4]]
+a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7]
+set lsb_2_reg_b_l [make-reg_l "b" 0 [expr $lsb_bits + 4]]
+b[0] b[1] b[2] b[3] b[4] b[5] b[6] b[7]
+set lsb_2_reg_c_l [make-reg_l "c" 0 [expr $lsb_bits + 4]]
+c[0] c[1] c[2] c[3] c[4] c[5] c[6] c[7]
+set lsb_2_reg_a_b_joined [concat $lsb_2_reg_a_l $lsb_2_reg_b_l]
+a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7] b[0] b[1] b[2] b[3] b[4] b[5] b[6] b[7]
+set msb_2_reg_a_l [make-reg_l "a" [expr $lsb_bits + 4] $DATA_PATH_WIDTH]
+a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31]
+set msb_2_reg_b_l [make-reg_l "b" [expr $lsb_bits + 4] $DATA_PATH_WIDTH]
+b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set msb_2_reg_c_l [make-reg_l "c" [expr $lsb_bits + 4] $DATA_PATH_WIDTH]
+c[8] c[9] c[10] c[11] c[12] c[13] c[14] c[15] c[16] c[17] c[18] c[19] c[20] c[21] c[22] c[23] c[24] c[25] c[26] c[27] c[28] c[29] c[30] c[31]
+set msb_2_reg_a_b_joined [concat $msb_2_reg_a_l $msb_2_reg_b_l]
+a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set lsb_3_reg_a_l [make-reg_l "a" 0 [expr $lsb_bits + 8]]
+a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11]
+set lsb_3_reg_b_l [make-reg_l "b" 0 [expr $lsb_bits + 8]]
+b[0] b[1] b[2] b[3] b[4] b[5] b[6] b[7] b[8] b[9] b[10] b[11]
+set lsb_3_reg_c_l [make-reg_l "c" 0 [expr $lsb_bits + 8]]
+c[0] c[1] c[2] c[3] c[4] c[5] c[6] c[7] c[8] c[9] c[10] c[11]
+set lsb_3_reg_a_b_joined [concat $lsb_3_reg_a_l $lsb_3_reg_b_l]
+a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11] b[0] b[1] b[2] b[3] b[4] b[5] b[6] b[7] b[8] b[9] b[10] b[11]
+set msb_3_reg_a_l [make-reg_l "a" [expr $lsb_bits + 8]  $DATA_PATH_WIDTH]
+a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31]
+set msb_3_reg_b_l [make-reg_l "b" [expr $lsb_bits + 8] $DATA_PATH_WIDTH]
+b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set msb_3_reg_c_l [make-reg_l "c" [expr $lsb_bits + 8] $DATA_PATH_WIDTH]
+c[12] c[13] c[14] c[15] c[16] c[17] c[18] c[19] c[20] c[21] c[22] c[23] c[24] c[25] c[26] c[27] c[28] c[29] c[30] c[31]
+set msb_3_reg_a_b_joined [concat $msb_3_reg_a_l $msb_3_reg_b_l]
+a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set lsb_4_reg_a_l [make-reg_l "a" 0 [expr $lsb_bits + 12]]
+a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15]
+set lsb_4_reg_b_l [make-reg_l "b" 0 [expr $lsb_bits + 12]]
+b[0] b[1] b[2] b[3] b[4] b[5] b[6] b[7] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15]
+set lsb_4_reg_c_l [make-reg_l "c" 0 [expr $lsb_bits + 12]]
+c[0] c[1] c[2] c[3] c[4] c[5] c[6] c[7] c[8] c[9] c[10] c[11] c[12] c[13] c[14] c[15]
+set lsb_4_reg_a_b_joined [concat $lsb_4_reg_a_l $lsb_4_reg_b_l]
+a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] b[0] b[1] b[2] b[3] b[4] b[5] b[6] b[7] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15]
+set msb_4_reg_a_l [make-reg_l "a" [expr $lsb_bits + 12] $DATA_PATH_WIDTH]
+a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31]
+set msb_4_reg_b_l [make-reg_l "b" [expr $lsb_bits + 12]  $DATA_PATH_WIDTH]
+b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set msb_4_reg_c_l [make-reg_l "c" [expr $lsb_bits + 12] $DATA_PATH_WIDTH]
+c[16] c[17] c[18] c[19] c[20] c[21] c[22] c[23] c[24] c[25] c[26] c[27] c[28] c[29] c[30] c[31]
+set msb_4_reg_a_b_joined [concat $msb_4_reg_a_l $msb_4_reg_b_l]
+a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+puts "^^^^^^^^^^^^^^^^^^^^^"
+^^^^^^^^^^^^^^^^^^^^^
+puts "msb_1_reg_a_b_joined"
+msb_1_reg_a_b_joined
+puts $msb_1_reg_a_b_joined
+a[4] a[5] a[6] a[7] a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] b[4] b[5] b[6] b[7] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+puts "--------------"
+--------------
+puts "msb_2_reg_a_b_joined"
+msb_2_reg_a_b_joined
+puts $msb_2_reg_a_b_joined
+a[8] a[9] a[10] a[11] a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] b[8] b[9] b[10] b[11] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+puts "--------------"
+--------------
+puts "msb_3_reg_a_b_joined"
+msb_3_reg_a_b_joined
+puts  "msb_3_reg_a_b_joined"
+msb_3_reg_a_b_joined
+puts $msb_3_reg_c_l
+c[12] c[13] c[14] c[15] c[16] c[17] c[18] c[19] c[20] c[21] c[22] c[23] c[24] c[25] c[26] c[27] c[28] c[29] c[30] c[31]
+puts $msb_3_reg_a_b_joined
+a[12] a[13] a[14] a[15] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] b[12] b[13] b[14] b[15] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+puts "--------------"
+--------------
+puts "msb_4_reg_a_b_joined"
+msb_4_reg_a_b_joined
+puts $msb_4_reg_a_b_joined
+a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31] b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+puts "--------------"
+--------------
+#---    ---      ---       ---       ---       ---
+set reg_0_4__a [make-reg_l "a" 0 [expr 0 + $lsb_bits]]
+a[0] a[1] a[2] a[3]
+set reg_0_4__b [make-reg_l "b" 0 [expr 0 + $lsb_bits]]
+b[0] b[1] b[2] b[3]
+set reg_0_4__c [make-reg_l "c" 0 [expr 0 + $lsb_bits]]
+c[0] c[1] c[2] c[3]
+set reg_0_4__a_b_joined [concat $reg_0_4__b $reg_0_4__a]
+b[0] b[1] b[2] b[3] a[0] a[1] a[2] a[3]
+set reg_4_8__a [make-reg_l "a" $lsb_bits [expr $lsb_bits+4]]
+a[4] a[5] a[6] a[7]
+set reg_4_8__b [make-reg_l "b" $lsb_bits [expr $lsb_bits+4]]
+b[4] b[5] b[6] b[7]
+set reg_4_8__c [make-reg_l "c" $lsb_bits [expr $lsb_bits+4]]
+c[4] c[5] c[6] c[7]
+set reg_4_8__a_b_joined [concat $reg_4_8__b $reg_4_8__a]
+b[4] b[5] b[6] b[7] a[4] a[5] a[6] a[7]
+set reg_8_12__a [make-reg_l "a" [expr $lsb_bits+4] [expr $lsb_bits+8]] 
+a[8] a[9] a[10] a[11]
+set reg_8_12__b [make-reg_l "b"  [expr $lsb_bits+4] [expr $lsb_bits+8]]
+b[8] b[9] b[10] b[11]
+set reg_8_12__c [make-reg_l "c"  [expr $lsb_bits+4] [expr $lsb_bits+8]]
+c[8] c[9] c[10] c[11]
+set reg_8_12__a_b_joined [concat $reg_8_12__b $reg_8_12__a]
+b[8] b[9] b[10] b[11] a[8] a[9] a[10] a[11]
+set reg_12_16__a [make-reg_l "a"  [expr $lsb_bits+8] [expr $lsb_bits+12]]
+a[12] a[13] a[14] a[15]
+set reg_12_16__b [make-reg_l "b" [expr $lsb_bits+8] [expr $lsb_bits+12]]
+b[12] b[13] b[14] b[15]
+set reg_12_16__c [make-reg_l "c" [expr $lsb_bits+8] [expr $lsb_bits+12]]
+c[12] c[13] c[14] c[15]
+set reg_12_16__a_b_joined [concat $reg_12_16__b $reg_12_16__a]
+b[12] b[13] b[14] b[15] a[12] a[13] a[14] a[15]
+set reg_16_32__a [make-reg_l "a"  [expr $lsb_bits+12] [expr $lsb_bits+28]]
+a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31]
+set reg_16_32__b [make-reg_l "b" [expr $lsb_bits+12] [expr $lsb_bits+28]]
+b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31]
+set reg_16_32__c [make-reg_l "c" [expr $lsb_bits+12] [expr $lsb_bits+28]]
+c[16] c[17] c[18] c[19] c[20] c[21] c[22] c[23] c[24] c[25] c[26] c[27] c[28] c[29] c[30] c[31]
+set reg_16_32__a_b_joined [concat $reg_16_32__b $reg_16_32__a]
+b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31]
+puts "-----  -----    -----     -----     -----     -----"
+-----  -----    -----     -----     -----     -----
+puts $reg_0_4__a_b_joined
+b[0] b[1] b[2] b[3] a[0] a[1] a[2] a[3]
+puts $reg_4_8__a_b_joined
+b[4] b[5] b[6] b[7] a[4] a[5] a[6] a[7]
+puts $reg_8_12__a_b_joined
+b[8] b[9] b[10] b[11] a[8] a[9] a[10] a[11]
+puts $reg_16_32__a_b_joined
+b[16] b[17] b[18] b[19] b[20] b[21] b[22] b[23] b[24] b[25] b[26] b[27] b[28] b[29] b[30] b[31] a[16] a[17] a[18] a[19] a[20] a[21] a[22] a[23] a[24] a[25] a[26] a[27] a[28] a[29] a[30] a[31]
+#---    ---      ---       ---       ---       ---
+puts "----------------------------------------------------"
+----------------------------------------------------
+puts "----------------------------------------------------"
+----------------------------------------------------
+#set_max_delay $clk_period -from $all_reg_a_b_joined -to $all_reg_c_l 
+set_max_delay $clk_period -from a -to d
+1
+set_max_delay $clk_period -from b -to d
+1
+set_max_delay $clk_period -from c -to d
+1
+#----------------------------------------------------
+#--- F: 1. enforcing total neg-slack
+#------ 2. enforcing priority
+#--- N: creating multiple paths usually adds alot 
+#------ to the compilation time
+#---- if apx design should be optimized for:
+#------- set which bits should be optimize for
+if {$apx_optimal == 1} {
+    #--- F: decide which bits to prioritize 
+    if {$apx_optimal_mode(first) == 1} {
+       set priority_array  $lsb_1_reg_a_b_joined 
+    } elseif { $apx_optimal_mode(second) == 1} {
+       set priority_array  $lsb_2_reg_a_b_joined 
+    } elseif { $apx_optimal_mode(third) == 1} {
+       set priority_array  $lsb_3_reg_a_b_joined 
+    } elseif { $apx_optimal_mode(fourth) == 1} {
+       set priority_array  $lsb_4_reg_a_b_joined 
+    }  
+    
+    foreach pt $all_reg_a_b_joined { 
+        puts $pt   
+        if {[lsearch -exact $priority_array $pt] >= 0} {
+            group_path -name lsb -from $pt -critical_range 0.5 -priority 2 -weight 2
+        } else {
+            group_path -name msb -from $pt -critical_range 0.5 -priority 5 -weight 5
+        }
+    }
+} else {
+    #group_path -name clk -from clk -critical_range 0.5 -priority 100 -weight 100
+    group_path -name clk -from clk
+}
+1
+#FROM HERE:
+#----- TODO: need to set a variabel that activates the following statements
+#----- figure out whether the number of clk gated register effect the optimal baseline
+#-------- if no, don't have to change the CLKGATED_BITWIDTH
+#-------- just need to activate one the followings to impose priority (only the following 
+#-------- not the above if statement
+if {$apx_optimal == 1} {
+    if {$apx_optimal_mode(first) == 1} {
+        puts "optimal first" 
+        set_max_delay $msb_1_max_delay -from $msb_1_reg_a_b_joined -to $msb_1_reg_c_l
+    }
+    if {$apx_optimal_mode(second) == 1} {
+        puts "optimal second" 
+        set_max_delay $msb_2_max_delay -from $msb_2_reg_a_b_joined -to $msb_1_reg_c_l
+    }
+    if {$apx_optimal_mode(third) == 1} {
+        set_max_delay $msb_3_max_delay -from $msb_3_reg_a_b_joined -to $msb_3_reg_c_l
+    }
+    if {$apx_optimal_mode(fourth) == 1} {
+        set_max_delay $msb_4_max_delay -from $msb_4_reg_a_b_joined -to $msb_4_reg_c_l
+    }
+}
+#--- set the optimization constraints 
+create_clock -name clk -period $clk_period [get_ports clk]
+1
+set_ideal_network -no_propagate [get_ports clk]
+1
+set_input_delay -max 0 -clock clk [get_ports b*]     
+1
+set_input_delay -max 0 -clock clk [get_ports a*]     
+1
+set_dont_touch_network [get_clocks clk]
+1
+#---    ---      ---       ---       ---       ---
+#report_timing -path full -from $reg_0_4__a_b_joined -to $all_reg_c_l -sort_by slack -significant_digits 4 >  ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_timing.rpt
+#report_timing -path full -from $reg_4_8__a_b_joined -to $all_reg_c_l -sort_by slack -significant_digits 4 >>  ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_timing.rpt
+#report_timing -path full -from $reg_8_12__a_b_joined -to $all_reg_c_l -sort_by slack -significant_digits 4 >>  ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_timing.rpt
+#report_timing -path full -from $reg_12_16__a_b_joined -to $all_reg_c_l -sort_by slack -significant_digits 4 >>  ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_timing.rpt
+#report_timing -path full -from $reg_16_32__a_b_joined -to $all_reg_c_l -sort_by slack -significant_digits 4 >>  ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_timing.rpt
+#report_timing -path full -sort_by slack -slack_greater_than "-.100" -significant_digits 4 >>  ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_timing.rpt
+#set A_0_12 [make-reg_l "A" 0 14]
+#report_timing -path full -sort_by slack -through [get_nets $A_0_12 -hierarchical] >  ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_timing.rpt
+#report_timing -from c -significant_digits 4 >  ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_timing.rpt
+report_timing -to d -nworst 100 -significant_digits 4 >  ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_timing.rpt
+report_timing -to d -nworst 100 -significant_digits 4 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 100
+Design : conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar  9 16:35:29 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: a (input port clocked by clk)
+  Endpoint: d (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  a (in)                                 0.0000     0.0000 r
+  U1/ZN (NAND2_X2)                       0.0081     0.0081 f
+  U2/ZN (NAND2_X2)                       0.0070     0.0152 r
+  d (out)                                0.0000     0.0152 r
+  data arrival time                                 0.0152
+
+  max_delay                              0.0000     0.0000
+  output external delay                  0.0000     0.0000
+  data required time                                0.0000
+  -----------------------------------------------------------
+  data required time                                0.0000
+  data arrival time                                -0.0152
+  -----------------------------------------------------------
+  slack (VIOLATED)                                 -0.0152
+
+
+  Startpoint: a (input port clocked by clk)
+  Endpoint: d (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 f
+  a (in)                                 0.0000     0.0000 f
+  U1/ZN (NAND2_X2)                       0.0069     0.0069 r
+  U2/ZN (NAND2_X2)                       0.0068     0.0137 f
+  d (out)                                0.0000     0.0137 f
+  data arrival time                                 0.0137
+
+  max_delay                              0.0000     0.0000
+  output external delay                  0.0000     0.0000
+  data required time                                0.0000
+  -----------------------------------------------------------
+  data required time                                0.0000
+  data arrival time                                -0.0137
+  -----------------------------------------------------------
+  slack (VIOLATED)                                 -0.0137
+
+
+  Startpoint: c (input port)
+  Endpoint: d (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 r
+  c (in)                                 0.0000     0.0000 r
+  U2/ZN (NAND2_X2)                       0.0077     0.0077 f
+  d (out)                                0.0000     0.0077 f
+  data arrival time                                 0.0077
+
+  max_delay                              0.0000     0.0000
+  output external delay                  0.0000     0.0000
+  data required time                                0.0000
+  -----------------------------------------------------------
+  data required time                                0.0000
+  data arrival time                                -0.0077
+  -----------------------------------------------------------
+  slack (VIOLATED)                                 -0.0077
+
+
+  Startpoint: c (input port)
+  Endpoint: d (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                   0.0000     0.0000 f
+  c (in)                                 0.0000     0.0000 f
+  U2/ZN (NAND2_X2)                       0.0062     0.0062 r
+  d (out)                                0.0000     0.0062 r
+  data arrival time                                 0.0062
+
+  max_delay                              0.0000     0.0000
+  output external delay                  0.0000     0.0000
+  data required time                                0.0000
+  -----------------------------------------------------------
+  data required time                                0.0000
+  data arrival time                                -0.0062
+  -----------------------------------------------------------
+  slack (VIOLATED)                                 -0.0062
+
+
+1
+report_timing -transition_time -nets -attributes -nosplit
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar  9 16:35:29 2017
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: a (input port clocked by clk)
+  Endpoint: d (output port)
+  Path Group: default
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  input external delay                               0.00       0.00 r
+  a (in)                                   0.00      0.00       0.00 r
+  a (net)                        1                   0.00       0.00 r
+  U1/ZN (NAND2_X2)                         0.01      0.01       0.01 f
+  temp (net)                     1                   0.00       0.01 f
+  U2/ZN (NAND2_X2)                         0.01      0.01       0.02 r
+  d (net)                        1                   0.00       0.02 r
+  d (out)                                  0.01      0.00       0.02 r
+  data arrival time                                             0.02
+
+  max_delay                                          0.00       0.00
+  output external delay                              0.00       0.00
+  data required time                                            0.00
+  ------------------------------------------------------------------------------------------
+  data required time                                            0.00
+  data arrival time                                            -0.02
+  ------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                             -0.02
+
+
+1
+#---    ---      ---       ---       ---       ---
+#report_timing -path full -sort_by slack -from  $input_list -max_path 100 -nworst 2 >  ${REPORTS_DIR}/int_${DESIGN_NAME}_${NAB}_timing1.rpt
+report_area -hierarchy -nosplit > ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_area.rpt
+report_power > ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_power.rpt
+report_constraint -all_violators > ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_constrain_violators.rpt
+report_cell > ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_cells.rpt
+report_resources > ${REPORTS_DIR}/${DESIGN_NAME}__${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit_resources.rpt
+report_net
+ 
+****************************************
+Report : net
+Design : conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Version: L-2016.03-SP5-3
+Date   : Thu Mar  9 16:35:29 2017
+****************************************
+
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+
+Attributes:
+   dr - drc disabled
+
+Net                 Fanout     Fanin      Load   Resistance    Pins   Attributes
+--------------------------------------------------------------------------------
+*Logic1*                 1         1      0.00         0.00       2   dr
+a                        1         1      0.00         0.00       2   
+c                        1         1      0.00         0.00       2   
+d                        1         1      0.00         0.00       2   
+temp                     1         1      0.00         0.00       2   
+--------------------------------------------------------------------------------
+Total 5 nets             5         5      0.00         0.00      10
+Maximum                  1         1      0.00         0.00       2
+Average               1.00      1.00      0.00         0.00    2.00
+1
+#report_qor > ${REPORTS_DIR}/int_${DESIGN_NAME}_${NAB}_qor.rpt
+#report 
+#--- save the design
+#the following generates ddc files 
+set syn_name  ${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit
+conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_32Bit_32Bit
+#write -format ddc -hierarchy -output ${RESULTS_DIR}/${syn_name}_synthesized.ddc
+#the following generates the gatelevel netlist 
+#redirect change_names { change_names -rules verilog -hierarchy -
+#    verbose }
+#write -f verilog -hierarchy -output ${RESULTS_DIR}/${syn_name}_synthesized.v
+write_sdc ${RESULTS_DIR}/${syn_name}_synthesized.sdc
+1
+write_sdf ${RESULTS_DIR}/${syn_name}_synthesized.mapped.sdf; #switching activity file
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_32Bit_32Bit_synthesized.mapped.sdf'. (WT-3)
+1
+remove_design -hierarchy
+Removing design 'conf_int_add__noFF__arch_specific_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'
+1
+exit
+
+Thank you...

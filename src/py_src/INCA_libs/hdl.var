@@ -1,0 +1,8 @@
+define LIB_MAP ( $LIB_MAP, ../../v_src/conf_int_add__noFF__arch_agnos.v => conf_int_add__noFF__arch_agnos )
+define VIEW_MAP ( $VIEW_MAP, .v => v)
+define LIB_MAP ( $LIB_MAP, ../../v_src/conf_int_add__noFF__multiple_add.v => conf_int_add__noFF__multiple_add )
+define LIB_MAP ( $LIB_MAP, ../../v_src/conf_int_mac__noFF__designed.v => conf_int_mac__noFF__designed )
+define LIB_MAP ( $LIB_MAP, ../../v_src/conf_int_mac__noFF__redundant_ports.v => conf_int_mac__noFF__redundant_ports )
+define LIB_MAP ( $LIB_MAP, ../../v_src/conf_int_mac__noFF__arch_agnos.v => conf_int_mac__noFF__arch_agnos )
+define LIB_MAP ( $LIB_MAP, ../../v_src/conf_int_mac__noFF__truncated.v => conf_int_mac__noFF__truncated )
+define LIB_MAP ( $LIB_MAP, ../../../../../libraries/germany_NanGate/verilog_files/verilog_N0P0.v => verilog_N0P0 )

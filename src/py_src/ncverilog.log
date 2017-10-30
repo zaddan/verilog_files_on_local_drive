@@ -1,0 +1,61 @@
+ncverilog(64): 06.10-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+TOOL:	ncverilog(64)	06.10-s002: Started on Mar 09, 2017 at 10:21:31 CST
+ncverilog
+	-v
+	/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_N0P0.v
+	/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_udp.v
+	/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__redundant_ports_32Bit_32Bit_synthesized.v
+	/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__redundant_ports.v
+	/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__redundant_ports__tb.v
+	+access+r
+file: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_udp.v
+file: /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__redundant_ports_32Bit_32Bit_synthesized.v
+	module worklib.conf_int_mac__noFF__redundant_ports_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_Pn4:v
+		errors: 0, warnings: 0
+file: /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__redundant_ports.v
+ncverilog -v /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/*.v /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__redundant_ports_32Bit_32Bit_synthesized.v  /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__redundant_ports.v /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__redundant_ports__tb.v +access+r |tee log 
+                                                                                                     |
+ncvlog: *W,NOCMIC (/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__redundant_ports.v,85|101): error-prone block comment nested within block comment [2.3(IEEE)].
+file: /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src/conf_int_mac__noFF__redundant_ports__tb.v
+	module worklib.test_bench_tb:v
+		errors: 0, warnings: 0
+file: /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/verilog_files/verilog_N0P0.v
+	module verilog_N0P0.AND3_X1:v
+		errors: 0, warnings: 0
+	module verilog_N0P0.NAND3_X4:v
+		errors: 0, warnings: 0
+	module verilog_N0P0.OAI211_X1:v
+		errors: 0, warnings: 0
+		Caching library 'verilog_N0P0' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test_bench_tb:v <0x56a19472>
+			streams:  12, words:  8008
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                7163     115
+		UDPs:                     15       4
+		Primitives:            12168       5
+		Timing outputs:         3650       7
+		Registers:                 8      12
+		Scalar wires:           3658       -
+		Expanded wires:          160       5
+		Vectored wires:           17       -
+		Initial blocks:            7       7
+		Cont. assignments:         9      13
+		Pseudo assignments:        1       1
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.AND4_X1_func:v
+Loading snapshot worklib.AND4_X1_func:v .................... Done
+ncsim> source /usr/local/packages/cadence_2007/ius61/tools/inca/files/ncsimrc
+ncsim> run
+$readmem warning: address incremented out of range. Too many data words read
+	at line 1 of file "../../build/functional/int_values_in_hex.txt". Current address: 1500, address range: [0:1499].
+Simulation complete via $finish(1) at time 2 US + 0
+../v_src/conf_int_mac__noFF__redundant_ports__tb.v:102     $finish;
+ncsim> exit
+TOOL:	ncverilog(64)	06.10-s002: Exiting on Mar 09, 2017 at 10:21:35 CST  (total: 00:00:04)

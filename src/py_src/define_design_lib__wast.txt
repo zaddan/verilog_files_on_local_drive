@@ -1,0 +1,49 @@
+2.  Synopsys Commands                                        Command Reference
+                               define_design_lib
+
+NAME
+       define_design_lib
+              Maps a design library to a UNIX directory.
+
+SYNTAX
+       status define_design_lib
+               library_name
+               -path directory
+
+   Data Types
+       library_name     string
+       directory        string
+
+ARGUMENTS
+       library_name
+              Specifies the library to be mapped.
+
+       -path directory
+              Specifies the directory to which the library is mapped.
+
+DESCRIPTION
+       The  define_design_lib  command  maps a design library to a UNIX direc-
+       tory.  The directory is used to store intermediate  representations  of
+       designs.
+
+       When  define_design_lib  is  used with the design_library_file command,
+       the file is automatically reread when it is changed.  As a  result,  if
+       the  file  contains a library definition that was manually defined with
+       define_design_lib, the manual definition is overridden.
+
+EXAMPLES
+       The following example uses define_design_lib to map the MY_LIB  library
+       to the ~library directory:
+
+         prompt> define_design_lib MY_LIB -path ~/library
+
+SEE ALSO
+       analyze(2)
+       elaborate(2)
+       get_design_lib_path(2)
+       read(2)
+       report_design_lib(2)
+       write_design_lib_paths(2)
+
+                         Version L-2016.03-SP5-3
+            Copyright (c) 2017 Synopsys, Inc. All rights reserved.

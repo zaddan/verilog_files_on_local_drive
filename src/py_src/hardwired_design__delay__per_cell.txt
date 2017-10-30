@@ -1,0 +1,236 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version L-2016.03-SP5-3 for linux64 - Jan 23, 2017 
+
+                    Copyright (c) 1988 - 2017 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/polaris/behzad/.synopsys_dv_prefs.tcl
+#----------------------------------------------------
+#*** F:DN this file syntheizes an arch agnos design for a mac 
+#         where the only contraint is the clk itself.
+#----------------------------------------------------
+#----------------------------------------------------
+#*** F:DN Parameters
+#----------------------------------------------------
+#---- N: the following should be commented out if the tcl file is invoked by 
+#-----   a python function
+#set DATA_PATH_WIDTH 32;
+#set CLKGATED_BITWIDTH 4; #numebr of apx bits
+#set clk_period .65;#.63;#.68;#.7
+#set DESIGN_NAME conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+#set synth_file__na conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons_synthesized.v 
+##----------------------------------------------------
+set OP_BITWIDTH $DATA_PATH_WIDTH; #operator bitwidth
+32
+puts $clk_period
+0.65
+#----------------------------------------------------
+#*** F:DN Variables
+#----------------------------------------------------
+set WDIR "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn
+#~/behzad_local/verilog_files/synthesis
+set RTLDIR  "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+#~/behzad_local/verilog_files/apx_operators/int_ops_apx
+set REPORTS_DIR ${WDIR}/reports
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/reports
+#set DESIGN_NAME conf_int_mac__noFF__arch_agnospper
+set RESULTS_DIR ${WDIR}/results
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results
+set DCRM_FINAL_TIMING_REPORT timing.rpt
+timing.rpt
+set DCRM_FINAL_AREA_REPORT area.rpt
+area.rpt
+set DCRM_FINAL_POWER_REPORT power.rpt
+power.rpt
+set search_path "${RTLDIR}"
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src
+set my_toplevel ${DESIGN_NAME}
+conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+#--- design dir
+set design_dir_addr "/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results" 
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results
+set synth__file ${design_dir_addr}/$synth_file__na
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons_synthesized.v
+#--- libraries
+set lib_dir_1 "/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib"
+/usr/local/packages/synopsys_32.28_07292013/SAED32_EDK/lib
+set lib_dir_2 "/home/polaris/behzad/behzad_local/verilog_files/libraries"
+/home/polaris/behzad/behzad_local/verilog_files/libraries
+set lib_dir_3 "/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db"
+/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db
+set search_path [concat  $search_path $lib_dir_3]
+/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/src/v_src /home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db
+set  std_library  "noAging.db" 
+noAging.db
+set target_library $std_library; #$std_library_2" 
+noAging.db
+set link_library $std_library; #$std_library_2"
+noAging.db
+define_design_lib WORK -path ./WORK
+1
+set verilogout_show_unconnected_pins "true"
+true
+#*** F:DN read the design
+read_file  $synth__file -autoread -top $my_toplevel
+== READ_FILE autoread for top design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32' ==
+
+Starting READ_FILE autoread mode...
+Information: Adding '/home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons_synthesized.v'.  (AUTOREAD-100)
+Information: Scanning file { conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons_synthesized.v }. (AUTOREAD-303)
+Compiling source file /home/polaris/behzad/behzad_local/verilog_files/apx_operators/int_ops_apx/build/syn/results/conf_int_mac__noFF__arch_agnos__w_wrapper_32Bit_32Bit__only_clk_cons_synthesized.v
+Presto compilation completed successfully.
+Elaborating top design conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+Loading db file '/home/polaris/behzad/behzad_local/verilog_files/libraries/germany_NanGate/db/noAging.db'
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/gtech.db'
+Loading db file '/usr/local/packages/synopsys_2016/syn/libraries/syn/standard.sldb'
+  Loading link library 'typical'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'.
+Information: Building the design 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32'. (HDL-193)
+Presto compilation completed successfully.
+Autoread command completed successfully.
+check_design
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP5-3
+Date:        Fri Mar 10 13:31:25 2017
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     19
+    Unconnected ports (LINT-28)                                    19
+
+Cells                                                              17
+    Connected to power or ground (LINT-32)                         16
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'rst' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'a[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'a[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'a[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'a[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'b[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'b[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'b[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'b[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'c[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'c[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'c[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'c[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'c[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'c[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'c[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'c[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'clk' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', port 'rst' is not connected to any nets. (LINT-28)
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[3]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[2]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[1]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'a[0]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'b[3]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'b[2]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'b[1]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'b[0]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'c[7]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'c[6]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'c[5]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'c[4]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'c[3]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'c[2]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'c[1]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', a pin on submodule 'mac' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'c[0]' is connected to logic 0. 
+Warning: In design 'conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32', the same net is connected to more than one pin on submodule 'mac'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'a[3]', 'a[2]'', 'a[1]', 'a[0]', 'b[3]', 'b[2]', 'b[1]', 'b[0]', 'c[7]', 'c[6]', 'c[5]', 'c[4]', 'c[3]', 'c[2]', 'c[1]', 'c[0]'.
+1
+#*** F:DN  set the optimization constraints 
+create_clock -name clk -period $clk_period [get_ports clk]
+1
+set_ideal_network -no_propagate [get_ports clk]
+1
+set_input_delay -max 0 -clock clk [get_ports b*]     
+1
+set_input_delay -max 0 -clock clk [get_ports a*]     
+1
+set_dont_touch_network [get_clocks clk]
+1
+#set enable_keep_signal_dt_net true
+#set enable_keep_signal true
+set compile_delete_unloaded_sequential_cells false
+false
+set compile_seqmap_propagate_constants false
+false
+set compile_enable_register_merging false
+false
+set compile_seqmap_enable_output_inversion false
+false
+set AC_NAME $DESIGN_NAME
+conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32
+#...   ...    ..  ...  ..    ..    ...      ..
+set_max_delay $clk_period -to [all_outputs]
+1
+group_path -name clk -from clk
+1
+#*** F:DN report the results
+set report_file__prefix  ${DESIGN_NAME}_${OP_BITWIDTH}Bit_${DATA_PATH_WIDTH}Bit__only_clk_cons
+conf_int_mac__noFF__arch_agnos__w_wrapper_OP_BITWIDTH32_DATA_PATH_BITWIDTH32_32Bit_32Bit__only_clk_cons
+set timing_log [open "after_hardwiring__timing_log.txt" w]
+file14
+close $timing_log
+foreach_in_collection my_el [get_cells -hierarchical] {
+    set cell_name [get_object_name $my_el] 
+#    #*** F:AN make sure you set the limit properly 
+    echo $cell_name >> "after_hardwiring__timing_log.txt"  
+    report_timing -through $cell_name/* -path end >> "after_hardwiring__timing_log.txt"
+}
+#report_timing -sort_by slack -nworst 1000 -significant_digits 4 >  ${REPORTS_DIR}/${report_file__prefix}__timing.rpt
+#report_area -hierarchy -nosplit > ${REPORTS_DIR}/${report_file__prefix}__area.rpt
+#report_power > ${REPORTS_DIR}/${report_file__prefix}__power.rpt
+#report_constraint -all_violators > ${REPORTS_DIR}/${report_file__prefix}__constraint_violators.rpt
+##report_path_group > ${REPORTS_DIR}/path_groups__garbage_collect.rpt
+##report_constraint > ${REPORTS_DIR}/constraint__garbage_collect.rpt
+#report_cell > ${REPORTS_DIR}/${report_file__prefix}__cells.rpt
+#report_resources > ${REPORTS_DIR}/${report_file__prefix}__resources.rpt
+#report_net
+#
+exit
+
+Thank you...

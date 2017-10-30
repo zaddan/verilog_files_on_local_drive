@@ -1,0 +1,3 @@
+#!/bin/bash
+ncverilog test_apx_int_multiplier.v btm_trunc.v acc_multiplier.v btm.v  rnd2.v +access+rw
+

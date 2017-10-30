@@ -1,0 +1,4 @@
+define LIB_MAP ( $LIB_MAP, ../conf_int_add__noFF__arch_agnos.v => conf_int_add__noFF__arch_agnos )
+define VIEW_MAP ( $VIEW_MAP, .v => v)
+define LIB_MAP ( $LIB_MAP, ../../../../../libraries/germany_NanGate/verilog_files/verilog_N0P0.v => verilog_N0P0 )
+define LIB_MAP ( $LIB_MAP, ../../../../../libraries/germany_NanGate/verilog_files/verilog_udp.v => verilog_udp )

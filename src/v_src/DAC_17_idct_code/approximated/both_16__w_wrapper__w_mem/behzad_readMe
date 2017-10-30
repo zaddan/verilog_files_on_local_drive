@@ -1,0 +1,2 @@
+this has been an attemp to bring in the registers within the wrapper (I had to pass
+in the entire memory, so it's not working)
